@@ -1,0 +1,77 @@
+{
+  "course_description": "This course presents the fundamental concepts of quantum mechanics: wave properties, uncertainty principles, the Schrödinger equation, and operator and matrix methods. Key topics include commutation rule definitions of scalar, vector, and spherical tensor operators; the Wigner-Eckart theorem; and 3j (Clebsch-Gordan) coefficients. In addition, we deal with many-body systems, exemplified by many-electron atoms (“electronic structure”), anharmonically coupled harmonic oscillators (“intramolecular vibrational redistribution: IVR”), and periodic solids.",
+  "course_description_html": "This course presents the fundamental concepts of quantum mechanics: wave properties, uncertainty principles, the Schrödinger equation, and operator and matrix methods. Key topics include commutation rule definitions of scalar, vector, and spherical tensor operators; the Wigner-Eckart theorem; and 3j (Clebsch-Gordan) coefficients. In addition, we deal with many-body systems, exemplified by many-electron atoms (“electronic structure”), anharmonically coupled harmonic oscillators (“intramolecular vibrational redistribution: IVR”), and periodic solids.",
+  "course_image": {
+    "content": "db0a558f-eb6f-a151-1bb1-b3f4515dfb5d",
+    "website": "5-73-quantum-mechanics-i-fall-2018"
+  },
+  "course_image_metadata": {
+    "content_type": "resource",
+    "description": "A graph showing an integral and rapidly oscillating integrands.",
+    "draft": false,
+    "file": "/courses/5-73-quantum-mechanics-i-fall-2018/db0a558feb6fa1511bb1b3f4515dfb5d_5-73f18.jpg",
+    "file_size": 89553,
+    "file_type": "image/jpeg",
+    "image_metadata": {
+      "caption": "From [Lecture #3 Notes](/courses/5-73-quantum-mechanics-i-fall-2018/resources/mit5_73f18_lec3): Learn how to determine the value of the integral without actually evaluating the integral. Amaze your friends!",
+      "credit": "Professor Robert Field. From Lecture Notes #3, 5.73 F18",
+      "image-alt": "A plot showing a bell-shaped curve along the bottom near the x-axis, and three different horizontal jagged lines above, at three different points along the y-axis."
+    },
+    "iscjklanguage": false,
+    "learning_resource_types": [],
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "ocw_type": "OCWImage",
+    "resourcetype": "Image",
+    "title": "5-73f18",
+    "uid": "db0a558f-eb6f-a151-1bb1-b3f4515dfb5d"
+  },
+  "course_image_thumbnail": {
+    "content": "8bb222ca-76b6-a2ac-09d3-b8a241a509ef",
+    "website": "5-73-quantum-mechanics-i-fall-2018"
+  },
+  "course_title": "Quantum Mechanics I",
+  "department_numbers": [
+    "5"
+  ],
+  "extra_course_numbers": "",
+  "image_src": "./static_resources/db0a558feb6fa1511bb1b3f4515dfb5d_5-73f18.jpg",
+  "instructors": [
+    {
+      "first_name": "Robert",
+      "last_name": "Field",
+      "middle_initial": "",
+      "salutation": "Prof.",
+      "title": "Prof. Robert Field",
+      "uid": "3bb00750-4104-95e3-58ad-6f8d7504e607",
+      "url": "https://ocw.mit.edu/search/?q=Prof.+Robert+Field"
+    }
+  ],
+  "learning_resource_types": [
+    "Lecture Notes",
+    "Exams",
+    "Exam Solutions"
+  ],
+  "legacy_uid": "07e8097f-872c-3d0e-b797-8fe63405c946",
+  "level": [
+    "Graduate"
+  ],
+  "primary_course_number": "5.73",
+  "site_short_id": "5.73-fall-2018",
+  "site_uid": "f93e1548-f654-491c-ac81-61508f0b4a53",
+  "site_url_path": "courses/5-73-quantum-mechanics-i-fall-2018",
+  "term": "Fall",
+  "title": "Course Metadata",
+  "topics": [
+    [
+      "Science",
+      "Chemistry",
+      "Physical Chemistry"
+    ],
+    [
+      "Science",
+      "Physics",
+      "Quantum Mechanics"
+    ]
+  ],
+  "year": "2018"
+}

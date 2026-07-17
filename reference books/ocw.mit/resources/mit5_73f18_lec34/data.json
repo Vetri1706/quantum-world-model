@@ -1,0 +1,21 @@
+{
+  "content": "",
+  "content_type": "resource",
+  "description": "",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/1861791c9714e66bc80cc84f1ae84371_MIT5_73F18_Lec34.pdf",
+  "file_size": 1363606,
+  "file_type": "application/pdf",
+  "iscjklanguage": false,
+  "learning_resource_types": [
+    "Lecture Notes"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWFile",
+  "parent_title": "Lecture Notes",
+  "parent_type": "CourseSection",
+  "parent_uid": "f44d9054-5342-af93-4e73-aaa4964ca565",
+  "resourcetype": "Document",
+  "title": "5.73 F2018 Lecture 34: Slater Sum Rule Method",
+  "uid": "1861791c-9714-e66b-c80c-c84f1ae84371"
+}

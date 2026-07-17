@@ -1,0 +1,7 @@
+id: barrier
+name: Potential Barrier
+category: Structural
+belongs_to: vacuum_chamber
+properties: {}
+compatible_experiments:
+  - quantum_tunneling

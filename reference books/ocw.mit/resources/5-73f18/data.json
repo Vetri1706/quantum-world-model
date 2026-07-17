@@ -1,0 +1,21 @@
+{
+  "content": "<p>A graph showing an integral and rapidly oscillating integrands.</p>\n",
+  "content_type": "resource",
+  "description": "A graph showing an integral and rapidly oscillating integrands.",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/db0a558feb6fa1511bb1b3f4515dfb5d_5-73f18.jpg",
+  "file_size": 89553,
+  "file_type": "image/jpeg",
+  "image_metadata": {
+    "caption": "From [Lecture #3 Notes](/courses/5-73-quantum-mechanics-i-fall-2018/resources/mit5_73f18_lec3): Learn how to determine the value of the integral without actually evaluating the integral. Amaze your friends!",
+    "credit": "Professor Robert Field. From Lecture Notes #3, 5.73 F18",
+    "image-alt": "A plot showing a bell-shaped curve along the bottom near the x-axis, and three different horizontal jagged lines above, at three different points along the y-axis."
+  },
+  "iscjklanguage": false,
+  "learning_resource_types": [],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWImage",
+  "resourcetype": "Image",
+  "title": "5-73f18",
+  "uid": "db0a558f-eb6f-a151-1bb1-b3f4515dfb5d"
+}

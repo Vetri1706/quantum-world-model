@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exams on MIT OpenCourseWare</title>
+    <link>/resources/exams/</link>
+    <description>Recent content in Exams on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/exams/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exam 2011</title>
+      <link>/resources/exam-2011/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/exam-2011/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, exam 2011.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exam 2012</title>
+      <link>/resources/exam-2012/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/exam-2012/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, exam 2012.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exam 2013</title>
+      <link>/resources/exam-2013/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/exam-2013/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, exam 2013.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exams</title>
+      <link>/pages/exams/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/exams/data.json</guid>
+      <description>&lt;p&gt;There is an hour and a half closed-book test during the normal lecture time, and a three-hour final exam scheduled during the final exam period.&lt;/p&gt;&#xA;&lt;p&gt;&lt;table&gt;&#xA;&#xA;&lt;thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA; &#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;FORMULA SHEETS&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;Previous versions&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;TESTS / EXAMS&#xA;&lt;/th&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;p&gt;&lt;/thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;Midterm Exam&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/test-formula-sheet/index.html&#34;&gt;Test Formula Sheet (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../resources/test-2011/index.html&#34;&gt;2011 Test (PDF)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../resources/test-2012/index.html&#34;&gt;2012 Test (PDF)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/test-2013/index.html&#34;&gt;2013 Test (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;Final Exam&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/final-exam-formula-sheet/index.html&#34;&gt;Final Exam Formula Sheet (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../resources/exam-2011/index.html&#34;&gt;2011 Final Exam (PDF)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;../../resources/exam-2012/index.html&#34;&gt;2012 Final Exam (PDF)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/exam-2013/index.html&#34;&gt;2013 Final Exam (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Test 2011</title>
+      <link>/resources/test-2011/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/test-2011/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, test 2011.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test 2012</title>
+      <link>/resources/test-2012/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/test-2012/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, test 2012.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test 2013</title>
+      <link>/resources/test-2013/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/test-2013/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, test 2013.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

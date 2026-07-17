@@ -1,0 +1,5032 @@
+1
+00:00:00,060 --> 00:00:01,670
+The following
+content is provided
+
+2
+00:00:01,670 --> 00:00:03,810
+under a Creative
+Commons license.
+
+3
+00:00:03,810 --> 00:00:06,540
+Your support will help MIT
+OpenCourseWare continue
+
+4
+00:00:06,540 --> 00:00:10,120
+to offer high-quality
+educational resources for free.
+
+5
+00:00:10,120 --> 00:00:12,700
+To make a donation or to
+view additional materials
+
+6
+00:00:12,700 --> 00:00:16,600
+from hundreds of MIT courses,
+visit MIT OpenCourseWare
+
+7
+00:00:16,600 --> 00:00:17,275
+at ocw.mit.edu.
+
+8
+00:00:21,400 --> 00:00:27,970
+PROFESSOR: Now, a theorem that
+was quite powerful and applied
+
+9
+00:00:27,970 --> 00:00:33,060
+to complex vector
+spaces for old V longing
+
+10
+00:00:33,060 --> 00:00:40,560
+to V complex vector space.
+
+11
+00:00:40,560 --> 00:00:46,340
+This implied that the
+operator was zero,
+
+12
+00:00:46,340 --> 00:00:51,010
+and it's not true for
+real vector spaces.
+
+13
+00:00:51,010 --> 00:00:54,620
+And we gave a proof that
+made it clear that indeed,
+
+14
+00:00:54,620 --> 00:00:59,970
+a proof wouldn't work
+for a real vector space.
+
+15
+00:00:59,970 --> 00:01:04,489
+I will ask you in the homework
+to do something that presumably
+
+16
+00:01:04,489 --> 00:01:07,020
+would be the first thing
+you would do if you had
+
+17
+00:01:07,020 --> 00:01:11,800
+to try to understand why this
+is true-- take two by two
+
+18
+00:01:11,800 --> 00:01:16,420
+matrices, and just see why
+it has to be 0 in one case,
+
+19
+00:01:16,420 --> 00:01:19,410
+and it doesn't have to
+be 0 in the other case.
+
+20
+00:01:19,410 --> 00:01:22,140
+And I think that will
+give you a better
+
+21
+00:01:22,140 --> 00:01:25,210
+perspective on why this happens.
+
+22
+00:01:25,210 --> 00:01:27,700
+And then once you do
+it for a two by two,
+
+23
+00:01:27,700 --> 00:01:32,600
+and you see how it works, you
+can do it for n by n matrices,
+
+24
+00:01:32,600 --> 00:01:34,250
+and it will be clear as well.
+
+25
+00:01:34,250 --> 00:01:37,220
+So we'll use this theorem.
+
+26
+00:01:37,220 --> 00:01:42,320
+Our immediate application
+of this theorem
+
+27
+00:01:42,320 --> 00:01:50,150
+was a well-known result
+that we could prove now
+
+28
+00:01:50,150 --> 00:01:55,680
+rigorously-- that t is
+equal to t dagger, which
+
+29
+00:01:55,680 --> 00:01:59,200
+is to say the operator
+is equal to the adjoined.
+
+30
+00:01:59,200 --> 00:02:03,740
+And I think I will call
+this-- and in the notes
+
+31
+00:02:03,740 --> 00:02:07,570
+you will see always the
+adjoint, as opposed to Hermitian
+
+32
+00:02:07,570 --> 00:02:08,780
+congregate.
+
+33
+00:02:08,780 --> 00:02:10,789
+And I will say
+whenever the operator
+
+34
+00:02:10,789 --> 00:02:14,860
+is equal to the adjoint,
+that it is Hermitian.
+
+35
+00:02:14,860 --> 00:02:19,150
+So a Hermitian operator
+is equivalent to saying
+
+36
+00:02:19,150 --> 00:02:29,480
+that v Tv is a real number
+for all v. And we proved that.
+
+37
+00:02:34,760 --> 00:02:39,450
+In other words, physically,
+Hermitian operators
+
+38
+00:02:39,450 --> 00:02:43,320
+have real expectation values.
+
+39
+00:02:43,320 --> 00:02:47,420
+This is an expectation value,
+because-- as you remember
+
+40
+00:02:47,420 --> 00:02:51,480
+in the bracket
+notation-- v Tv, you
+
+41
+00:02:51,480 --> 00:02:57,230
+can write it v T
+v-- the same thing.
+
+42
+00:02:57,230 --> 00:03:01,480
+So it is an expectation value,
+so it's an important thing,
+
+43
+00:03:01,480 --> 00:03:04,890
+because we usually deal
+with Hermitian operators,
+
+44
+00:03:04,890 --> 00:03:08,240
+and we want expectation
+values of Hermitian operators
+
+45
+00:03:08,240 --> 00:03:10,770
+to be real.
+
+46
+00:03:10,770 --> 00:03:13,770
+Now that we're talking
+about Hermitian operators,
+
+47
+00:03:13,770 --> 00:03:20,360
+I delay a complete discussion
+of diagonalization,
+
+48
+00:03:20,360 --> 00:03:23,170
+and diagonalization
+of several operators
+
+49
+00:03:23,170 --> 00:03:26,440
+simultaneously, for
+the next lecture.
+
+50
+00:03:26,440 --> 00:03:31,600
+Today, I want to move forward
+a bit and do some other things.
+
+51
+00:03:31,600 --> 00:03:36,310
+And this way we spread out
+a little more the math,
+
+52
+00:03:36,310 --> 00:03:41,070
+and we can begin to look
+more at physical issues,
+
+53
+00:03:41,070 --> 00:03:42,720
+and how they apply here.
+
+54
+00:03:42,720 --> 00:03:46,750
+But at any rate, we're
+just here already,
+
+55
+00:03:46,750 --> 00:03:50,200
+and we can prove two
+basic things that
+
+56
+00:03:50,200 --> 00:03:55,010
+are the kinds of things
+that an 805 student should
+
+57
+00:03:55,010 --> 00:03:57,630
+be able to prove at any time.
+
+58
+00:03:57,630 --> 00:03:59,960
+They're really very simple.
+
+59
+00:03:59,960 --> 00:04:05,020
+And it's a kind of proof that is
+very short-- couple of lines--
+
+60
+00:04:05,020 --> 00:04:08,760
+something you should be able
+to reproduce at any time.
+
+61
+00:04:08,760 --> 00:04:16,070
+So the first theorem
+says the eigenvalues
+
+62
+00:04:16,070 --> 00:04:22,600
+of Hermitian operators-- H
+is for Hermitian-- are real.
+
+63
+00:04:25,430 --> 00:04:34,080
+And I will do a little bit of
+notation, in which I will start
+
+64
+00:04:34,080 --> 00:04:39,030
+with an expression, and
+evaluate it sort of to the left
+
+65
+00:04:39,030 --> 00:04:40,130
+and to the right.
+
+66
+00:04:40,130 --> 00:04:42,820
+So when you have an
+equation, you start here,
+
+67
+00:04:42,820 --> 00:04:44,380
+and you start evaluating there.
+
+68
+00:04:44,380 --> 00:04:51,270
+So I will start with
+this-- consider v Tv.
+
+69
+00:04:51,270 --> 00:04:55,040
+And I will box it
+as being the origin,
+
+70
+00:04:55,040 --> 00:04:57,830
+and I will start evaluating it.
+
+71
+00:04:57,830 --> 00:05:12,230
+Now if v is an eigenvector--
+so let v be an eigenvector so
+
+72
+00:05:12,230 --> 00:05:17,530
+that Tv is equal to lambda v.
+
+73
+00:05:17,530 --> 00:05:22,830
+And now we say consider
+that expression in the box.
+
+74
+00:05:22,830 --> 00:05:24,590
+And you try to evaluate it.
+
+75
+00:05:24,590 --> 00:05:27,600
+So one way to evaluate it--
+I evaluate it to the left,
+
+76
+00:05:27,600 --> 00:05:29,320
+and then evaluate to the right.
+
+77
+00:05:29,320 --> 00:05:32,830
+Is the naive evaluation--
+t on v is lambda v,
+
+78
+00:05:32,830 --> 00:05:34,940
+so substitute it there.
+
+79
+00:05:34,940 --> 00:05:38,690
+v, lambda v-- we know it.
+
+80
+00:05:38,690 --> 00:05:42,740
+And then by homogeneity,
+this lambda goes out,
+
+81
+00:05:42,740 --> 00:05:48,230
+and therefore it's lambda v v.
+
+82
+00:05:48,230 --> 00:05:55,730
+On the other hand, we have
+that we can go to the right.
+
+83
+00:05:55,730 --> 00:06:00,970
+And what is the way you move an
+operator to the first position?
+
+84
+00:06:00,970 --> 00:06:02,580
+By putting a dagger.
+
+85
+00:06:02,580 --> 00:06:04,480
+That's a definition.
+
+86
+00:06:04,480 --> 00:06:05,610
+So this is by definition.
+
+87
+00:06:10,140 --> 00:06:15,190
+Now, we use that the
+operator is Hermitian.
+
+88
+00:06:15,190 --> 00:06:26,700
+So this is equal to Tv v.
+And this is by T Hermitian.
+
+89
+00:06:26,700 --> 00:06:30,960
+Then you can apply again the
+equation of the eigenvalues,
+
+90
+00:06:30,960 --> 00:06:39,220
+so this is lambda v v. And
+by conjugate homogeneity
+
+91
+00:06:39,220 --> 00:06:46,760
+of the first input,
+this is lambda star v v.
+
+92
+00:06:46,760 --> 00:06:48,550
+So at the end of
+the day, you have
+
+93
+00:06:48,550 --> 00:06:52,300
+something on the extreme
+left, and something
+
+94
+00:06:52,300 --> 00:06:53,405
+on the extreme right.
+
+95
+00:06:57,240 --> 00:07:00,230
+v-- if there is
+an eigenvector, v
+
+96
+00:07:00,230 --> 00:07:03,810
+can be assumed to be non-zero.
+
+97
+00:07:03,810 --> 00:07:06,250
+The way we are saying
+things in a sense,
+
+98
+00:07:06,250 --> 00:07:09,340
+0-- we also think of
+it as an eigenvector,
+
+99
+00:07:09,340 --> 00:07:11,700
+but it's a trivial one.
+
+100
+00:07:11,700 --> 00:07:14,690
+But the fact that
+there's an eigenvalue
+
+101
+00:07:14,690 --> 00:07:17,570
+means there's a non-zero v
+that solves this equation.
+
+102
+00:07:17,570 --> 00:07:21,000
+So we're using that non-zero
+v. And therefore, this
+
+103
+00:07:21,000 --> 00:07:24,670
+is a number that is non-zero.
+
+104
+00:07:24,670 --> 00:07:28,510
+You bring one to the
+other side, and you
+
+105
+00:07:28,510 --> 00:07:35,640
+have lambda minus lambda
+star times v v equals 0.
+
+106
+00:07:35,640 --> 00:07:37,490
+This is different from 0.
+
+107
+00:07:40,140 --> 00:07:42,480
+This is different from 0.
+
+108
+00:07:42,480 --> 00:07:45,340
+And therefore, lambda
+is equal to lambda star.
+
+109
+00:07:49,030 --> 00:07:57,170
+So it's a classic proof--
+relatively straightforward.
+
+110
+00:07:57,170 --> 00:08:02,190
+The second theorem is
+as simple to prove.
+
+111
+00:08:02,190 --> 00:08:05,300
+And it's already interesting.
+
+112
+00:08:05,300 --> 00:08:09,660
+And it states that different
+eigenvectors of a Hermitian
+
+113
+00:08:09,660 --> 00:08:14,490
+operator-- well,
+different eigenvalues
+
+114
+00:08:14,490 --> 00:08:16,380
+of Hermitian
+operators correspond
+
+115
+00:08:16,380 --> 00:08:19,630
+to orthogonal eigenfunctions,
+or eigenvectors.
+
+116
+00:08:19,630 --> 00:08:35,140
+So different eigenvalues
+of Hermitian ops correspond
+
+117
+00:08:35,140 --> 00:08:43,080
+to orthogonal eigenfunctions--
+eigenvectors, I'm sorry.
+
+118
+00:08:47,510 --> 00:08:50,080
+So what are we saying here?
+
+119
+00:08:50,080 --> 00:08:55,340
+We're saying that
+suppose you have a v1
+
+120
+00:08:55,340 --> 00:08:59,480
+that [INAUDIBLE] T
+gives you a lambda1 v1.
+
+121
+00:08:59,480 --> 00:09:02,160
+That's one eigenvalue.
+
+122
+00:09:02,160 --> 00:09:08,110
+You have another one-- v2
+is equal to lambda 2 v2,
+
+123
+00:09:08,110 --> 00:09:11,430
+and lambda 1 is
+different from lambda 2.
+
+124
+00:09:14,960 --> 00:09:19,990
+Now, just focusing on a fact
+that is going to show up later,
+
+125
+00:09:19,990 --> 00:09:24,630
+is going to make
+life interesting,
+
+126
+00:09:24,630 --> 00:09:28,460
+is that some
+eigenvalues may have
+
+127
+00:09:28,460 --> 00:09:32,180
+a multiplicity of eigenvectors.
+
+128
+00:09:32,180 --> 00:09:37,190
+In other words, If a
+vector v is an eigenvector,
+
+129
+00:09:37,190 --> 00:09:40,530
+minus v is an eigenvector,
+square root of three v
+
+130
+00:09:40,530 --> 00:09:45,240
+is an eigenvector, but that's
+a one-dimensional subspace.
+
+131
+00:09:45,240 --> 00:09:48,180
+But sometimes for
+a given eigenvalue,
+
+132
+00:09:48,180 --> 00:09:50,510
+there may be a
+higher dimensional
+
+133
+00:09:50,510 --> 00:09:53,850
+subspace of eigenvectors.
+
+134
+00:09:53,850 --> 00:09:57,970
+That's a problem of degeneracy,
+and it's very interesting--
+
+135
+00:09:57,970 --> 00:10:00,840
+makes life really interesting
+in quantum mechanics.
+
+136
+00:10:00,840 --> 00:10:05,800
+So if you have degeneracy,
+and that set of eigenvectors
+
+137
+00:10:05,800 --> 00:10:08,950
+form a subspace, and
+you can choose a basis,
+
+138
+00:10:08,950 --> 00:10:12,850
+and you could have
+several vectors here.
+
+139
+00:10:12,850 --> 00:10:14,630
+Now what do you do in that case?
+
+140
+00:10:14,630 --> 00:10:18,880
+The theorem doesn't say much,
+so it means choose any one.
+
+141
+00:10:18,880 --> 00:10:21,790
+If you had the bases
+there, choose any one.
+
+142
+00:10:21,790 --> 00:10:26,490
+The fact remains that if these
+two eigenvalues are different,
+
+143
+00:10:26,490 --> 00:10:30,900
+then you will be able to show
+that the eigenvectors are
+
+144
+00:10:30,900 --> 00:10:32,220
+orthogonal.
+
+145
+00:10:32,220 --> 00:10:39,530
+So if you have some
+space of eigenvectors--
+
+146
+00:10:39,530 --> 00:10:42,320
+a [INAUDIBLE] higher-dimensional
+space of eigenvectors,
+
+147
+00:10:42,320 --> 00:10:45,700
+one eigenvalue, and another
+space with another--
+
+148
+00:10:45,700 --> 00:10:50,420
+any vector here is orthogonal
+to any vector there.
+
+149
+00:10:50,420 --> 00:10:52,055
+So how do you show this?
+
+150
+00:10:54,710 --> 00:10:56,150
+How do you show this property?
+
+151
+00:10:56,150 --> 00:11:01,420
+Well you have to
+involve v1 and v2,
+
+152
+00:11:01,420 --> 00:11:05,950
+so you're never going to
+be using the property that
+
+153
+00:11:05,950 --> 00:11:08,950
+gives Hermitian, unless
+you have an inner product.
+
+154
+00:11:08,950 --> 00:11:12,240
+So if you don't have any
+idea how to prove that,
+
+155
+00:11:12,240 --> 00:11:15,810
+you presumably at
+some stage realize
+
+156
+00:11:15,810 --> 00:11:18,720
+that you probably have
+to use an inner product.
+
+157
+00:11:18,720 --> 00:11:21,760
+And we should mix
+the vectors, so maybe
+
+158
+00:11:21,760 --> 00:11:25,100
+a V2 inner product with this.
+
+159
+00:11:25,100 --> 00:11:30,295
+So we'll take a v2
+inner product with T v1.
+
+160
+00:11:33,050 --> 00:11:37,260
+And this is interesting,
+because we can use it,
+
+161
+00:11:37,260 --> 00:11:44,960
+that T v1 is lambda 1 v1 to
+show that this is just lambda 1
+
+162
+00:11:44,960 --> 00:11:45,495
+v2 v1.
+
+163
+00:11:48,700 --> 00:11:51,900
+And that already brings
+all kinds of good things.
+
+164
+00:11:51,900 --> 00:11:54,110
+You're interested in
+this inner product.
+
+165
+00:11:54,110 --> 00:11:56,420
+You want to show it's
+0, so it shows up.
+
+166
+00:11:56,420 --> 00:11:57,640
+So it's a good idea.
+
+167
+00:11:57,640 --> 00:12:00,440
+So we have evaluated
+this, and now you
+
+168
+00:12:00,440 --> 00:12:04,700
+have to think of evaluating
+it in a different way.
+
+169
+00:12:04,700 --> 00:12:07,040
+Again, the operator
+is Hermitian,
+
+170
+00:12:07,040 --> 00:12:10,120
+so it's asking you to
+move it to the other side
+
+171
+00:12:10,120 --> 00:12:12,200
+and exploit to that.
+
+172
+00:12:12,200 --> 00:12:14,810
+So we'll move it to the
+other side a little quicker
+
+173
+00:12:14,810 --> 00:12:15,430
+this time.
+
+174
+00:12:15,430 --> 00:12:18,720
+It goes as T dagger, but
+T dagger is equal to T,
+
+175
+00:12:18,720 --> 00:12:20,380
+because it's Hermitian.
+
+176
+00:12:20,380 --> 00:12:24,230
+So this is the center
+of the equation.
+
+177
+00:12:24,230 --> 00:12:25,140
+We go one way.
+
+178
+00:12:25,140 --> 00:12:27,880
+We go the other
+way-- this time down.
+
+179
+00:12:27,880 --> 00:12:37,100
+So we'll put T v2 v1, and
+this is equal to lambda--
+
+180
+00:12:37,100 --> 00:12:45,520
+let me go a little slow
+here-- lambda 2 v2 v1.
+
+181
+00:12:45,520 --> 00:12:49,930
+Your impulse should be it
+goes out as lambda 2 star,
+
+182
+00:12:49,930 --> 00:12:52,980
+but the eigenvalues
+are already real,
+
+183
+00:12:52,980 --> 00:13:05,210
+so it goes out as
+lambda 2 v2 v1,
+
+184
+00:13:05,210 --> 00:13:07,640
+because the operator
+is Hermitian.
+
+185
+00:13:07,640 --> 00:13:10,440
+So at this moment, you
+have these two equations.
+
+186
+00:13:10,440 --> 00:13:13,800
+You bring, say, this
+to the right-hand side,
+
+187
+00:13:13,800 --> 00:13:23,670
+and you get lambda 1 minus
+lambda 2 v1 v2 is equal to 0.
+
+188
+00:13:23,670 --> 00:13:26,780
+And since the eigenvalues
+are supposed to be different,
+
+189
+00:13:26,780 --> 00:13:33,810
+you conclude that v1 inner
+product with v2 is 0.
+
+190
+00:13:33,810 --> 00:13:35,405
+So that's the end of the proof.
+
+191
+00:13:46,240 --> 00:13:48,160
+And those are the
+two properties that
+
+192
+00:13:48,160 --> 00:13:56,660
+are very quickly proven
+with rather little effort.
+
+193
+00:13:56,660 --> 00:14:02,240
+So where do we go from now?
+
+194
+00:14:02,240 --> 00:14:05,750
+Well there's one more
+class of operators
+
+195
+00:14:05,750 --> 00:14:08,320
+that are crucial in the physics.
+
+196
+00:14:08,320 --> 00:14:13,280
+They are perhaps as important
+as the Hermitian operators,
+
+197
+00:14:13,280 --> 00:14:15,070
+if not more.
+
+198
+00:14:15,070 --> 00:14:20,350
+They are some operators that
+are called unitary operators,
+
+199
+00:14:20,350 --> 00:14:22,580
+and the way I will
+introduce them
+
+200
+00:14:22,580 --> 00:14:35,130
+is as follows-- so I will
+say-- it's an economical way
+
+201
+00:14:35,130 --> 00:14:39,523
+to introduce them-- so we'll
+talk about unitary operators.
+
+202
+00:14:45,700 --> 00:14:54,210
+If S is unitary,
+and mathematicians
+
+203
+00:14:54,210 --> 00:15:07,180
+call it anisometry-- if you find
+that S acting on any vector--
+
+204
+00:15:07,180 --> 00:15:12,940
+if you take the norm,
+it's equal to the norm
+
+205
+00:15:12,940 --> 00:15:17,820
+of the vector for all
+u in the vector space.
+
+206
+00:15:24,140 --> 00:15:32,600
+So let's follow this, and
+make a couple of comments.
+
+207
+00:15:32,600 --> 00:15:38,740
+An example-- a trivial
+example-- this operator lambda
+
+208
+00:15:38,740 --> 00:15:39,560
+times the identity.
+
+209
+00:15:42,960 --> 00:15:45,770
+Lambda times the
+identity acts on vectors.
+
+210
+00:15:45,770 --> 00:15:47,810
+What does it do,
+lambda times identity?
+
+211
+00:15:47,810 --> 00:15:50,040
+The identity does
+nothing on the vector,
+
+212
+00:15:50,040 --> 00:15:52,800
+and lambda stretches it.
+
+213
+00:15:52,800 --> 00:16:00,170
+So lambda, in order not to
+change the length of any vector
+
+214
+00:16:00,170 --> 00:16:02,240
+should be kind of 1.
+
+215
+00:16:02,240 --> 00:16:09,100
+Well, in fact, it
+suffices-- it's unitary--
+
+216
+00:16:09,100 --> 00:16:14,430
+if the absolute value
+of lambda is equal to 1.
+
+217
+00:16:14,430 --> 00:16:19,400
+Because then lambda is a phase,
+and it just rotates the vector.
+
+218
+00:16:19,400 --> 00:16:24,110
+Or in other words, you
+know that the norm of av
+
+219
+00:16:24,110 --> 00:16:28,630
+is equal to the absolute
+value of a times
+
+220
+00:16:28,630 --> 00:16:31,550
+the norm of v, where
+this is a number.
+
+221
+00:16:34,920 --> 00:16:37,480
+And remember these two
+norms are different.
+
+222
+00:16:37,480 --> 00:16:39,210
+This is the norm of a vector.
+
+223
+00:16:39,210 --> 00:16:44,210
+This is the normal
+of a complex number.
+
+224
+00:16:44,210 --> 00:16:51,090
+And therefore, if
+you take lambda i u--
+
+225
+00:16:51,090 --> 00:16:58,260
+norm-- is lambda u is equal
+absolute value of lambda u,
+
+226
+00:16:58,260 --> 00:17:02,400
+and absolute value of lambda
+is equal to 1 is the answer.
+
+227
+00:17:02,400 --> 00:17:09,599
+So that's a simple unitary
+operator, but an important one.
+
+228
+00:17:09,599 --> 00:17:15,180
+Another observation--
+what are the vectors
+
+229
+00:17:15,180 --> 00:17:17,670
+annihilated by this operator u?
+
+230
+00:17:24,150 --> 00:17:27,540
+Zero-- it's the only vector,
+because any other vector that's
+
+231
+00:17:27,540 --> 00:17:30,570
+nonzero has some length,
+so it's not killed.
+
+232
+00:17:30,570 --> 00:17:33,510
+So it kills only zero.
+
+233
+00:17:33,510 --> 00:17:42,790
+So the null space of S
+is equal to the 0 vector.
+
+234
+00:17:42,790 --> 00:17:48,480
+So this operator has no
+kernel, nothing nontrivial
+
+235
+00:17:48,480 --> 00:17:49,820
+is put to zero.
+
+236
+00:17:49,820 --> 00:17:52,740
+It's an invertible operator.
+
+237
+00:17:52,740 --> 00:17:53,870
+So s is invertible.
+
+238
+00:18:00,970 --> 00:18:05,680
+So that's a few things
+that you get very cheaply.
+
+239
+00:18:05,680 --> 00:18:09,980
+Now from this
+equation, S u equals
+
+240
+00:18:09,980 --> 00:18:12,270
+u-- if you square
+that equation, you
+
+241
+00:18:12,270 --> 00:18:21,060
+would have S u S
+u is equal to u u.
+
+242
+00:18:21,060 --> 00:18:22,700
+Maybe I should
+probably call it v.
+
+243
+00:18:22,700 --> 00:18:26,890
+I don't know why I called
+it u, but let's stick to u.
+
+244
+00:18:26,890 --> 00:18:31,980
+Now, remember that
+we can move operators
+
+245
+00:18:31,980 --> 00:18:33,690
+from one side to the other.
+
+246
+00:18:33,690 --> 00:18:36,970
+So I'll move this
+one to that side.
+
+247
+00:18:36,970 --> 00:18:40,580
+If you move an S here,
+you would put an S dagger.
+
+248
+00:18:40,580 --> 00:18:46,290
+But since the dagger
+of an S dagger is S,
+
+249
+00:18:46,290 --> 00:18:50,860
+you can move also the S
+to that side as S dagger.
+
+250
+00:18:50,860 --> 00:18:56,920
+So u S dagger, S
+u-- you see that.
+
+251
+00:18:56,920 --> 00:18:58,940
+If you want to
+move this one, you
+
+252
+00:18:58,940 --> 00:19:03,130
+can move it by putting another
+dagger, and you get that one.
+
+253
+00:19:03,130 --> 00:19:07,910
+And this is u u,
+and therefore you
+
+254
+00:19:07,910 --> 00:19:16,810
+get u S dagger, S minus
+the identity acting on u
+
+255
+00:19:16,810 --> 00:19:19,210
+is equal to 0 for all u.
+
+256
+00:19:22,210 --> 00:19:26,500
+So for every vector, this is
+true, because this is true.
+
+257
+00:19:26,500 --> 00:19:29,200
+We just squared it.
+
+258
+00:19:29,200 --> 00:19:32,100
+And now you have our
+favorite theorem,
+
+259
+00:19:32,100 --> 00:19:35,020
+that says if this is true
+in a complex vector space,
+
+260
+00:19:35,020 --> 00:19:37,830
+this is 0, and
+therefore, you've shown
+
+261
+00:19:37,830 --> 00:19:41,035
+that S dagger S is equal to 1.
+
+262
+00:19:44,680 --> 00:19:49,050
+So that's another property
+of unitary operators.
+
+263
+00:19:49,050 --> 00:19:52,830
+In fact that's the way
+it's many times defined.
+
+264
+00:19:52,830 --> 00:19:55,360
+Unitary operators
+sometimes are said
+
+265
+00:19:55,360 --> 00:20:00,590
+to be operators whose
+inverse is S dagger.
+
+266
+00:20:00,590 --> 00:20:02,710
+I will not go into
+the subtleties
+
+267
+00:20:02,710 --> 00:20:07,270
+of what steps in all
+these things I'm saying
+
+268
+00:20:07,270 --> 00:20:11,260
+are true or not true
+for infinite dimensional
+
+269
+00:20:11,260 --> 00:20:15,340
+operators-- infinite
+dimensional vector spaces.
+
+270
+00:20:15,340 --> 00:20:19,070
+So I will assume, and it
+will be true in our examples,
+
+271
+00:20:19,070 --> 00:20:22,170
+that if S dagger is an
+inverse from the left,
+
+272
+00:20:22,170 --> 00:20:23,880
+it's also an inverse
+from the right.
+
+273
+00:20:23,880 --> 00:20:30,420
+And perhaps everything is true
+for infinite dimensional vector
+
+274
+00:20:30,420 --> 00:20:35,240
+spaces, but I'm
+not 100% positive.
+
+275
+00:20:35,240 --> 00:20:50,580
+So S dagger is the
+inverse of S. And that's
+
+276
+00:20:50,580 --> 00:20:54,920
+a pretty important thing.
+
+277
+00:20:54,920 --> 00:21:04,160
+So one last comment on unitary
+operators has to do with basis.
+
+278
+00:21:04,160 --> 00:21:13,980
+So suppose you have an
+orthonormal basis, e1 up to en.
+
+279
+00:21:17,880 --> 00:21:20,015
+Now you can define
+another basis.
+
+280
+00:21:28,280 --> 00:21:33,550
+fi equal-- I'll
+change to a letter
+
+281
+00:21:33,550 --> 00:21:39,910
+U-- U e i where U
+is unitary, so it's
+
+282
+00:21:39,910 --> 00:21:45,720
+like the S. In fact,
+most books in physics
+
+283
+00:21:45,720 --> 00:21:47,450
+call it U for unitary.
+
+284
+00:21:47,450 --> 00:21:50,210
+So maybe I should have changed
+that letter in there, too,
+
+285
+00:21:50,210 --> 00:21:51,340
+as well.
+
+286
+00:21:51,340 --> 00:21:55,190
+So suppose you change basis.
+
+287
+00:21:55,190 --> 00:22:02,580
+You put-- oh, there
+was something else
+
+288
+00:22:02,580 --> 00:22:05,930
+I wanted to say before.
+
+289
+00:22:05,930 --> 00:22:09,170
+Thanks to this
+equation, consider now
+
+290
+00:22:09,170 --> 00:22:14,830
+the following thing-- S U Sv.
+
+291
+00:22:19,530 --> 00:22:24,040
+SUSv-- you can move
+this S, for example,
+
+292
+00:22:24,040 --> 00:22:30,370
+to the other side--
+S dagger S U v,
+
+293
+00:22:30,370 --> 00:22:34,160
+and S dagger S is equal
+to 1, and it's Uv.
+
+294
+00:22:34,160 --> 00:22:36,770
+So this is a pretty
+nice property.
+
+295
+00:22:36,770 --> 00:22:41,030
+We started from the
+fact that it preserved
+
+296
+00:22:41,030 --> 00:22:45,200
+the norm of a single
+vector, of all vectors,
+
+297
+00:22:45,200 --> 00:22:49,670
+and now you see that in fact,
+it preserved the inner product.
+
+298
+00:22:49,670 --> 00:22:53,160
+So if you have two vectors, to
+compare their inner product,
+
+299
+00:22:53,160 --> 00:22:57,700
+compute them after action with
+U or before action with U,
+
+300
+00:22:57,700 --> 00:23:00,620
+and it doesn't
+make a difference.
+
+301
+00:23:00,620 --> 00:23:05,670
+So suppose you define
+a second basis here.
+
+302
+00:23:05,670 --> 00:23:07,630
+You have one orthonormal basis.
+
+303
+00:23:07,630 --> 00:23:10,980
+You define basis
+vectors like this.
+
+304
+00:23:10,980 --> 00:23:21,660
+Then the claim is that the
+f1 up to fn is orthonormal.
+
+305
+00:23:21,660 --> 00:23:26,480
+And for that you simply do
+the following-- you just
+
+306
+00:23:26,480 --> 00:23:36,840
+check f i f j is
+equal to U e i, U e j.
+
+307
+00:23:36,840 --> 00:23:40,540
+By this property, you can
+delete both U's, rules,
+
+308
+00:23:40,540 --> 00:23:45,550
+and therefore this is e i, e j.
+
+309
+00:23:45,550 --> 00:23:48,800
+And that's delta i j.
+
+310
+00:23:48,800 --> 00:23:50,920
+So the new basis is orthonormal.
+
+311
+00:23:56,400 --> 00:23:59,480
+If you play with
+these things, it's
+
+312
+00:23:59,480 --> 00:24:06,460
+easy to get some extra
+curious fact here.
+
+313
+00:24:06,460 --> 00:24:15,150
+Let's think of the matrix
+representation of the operator
+
+314
+00:24:15,150 --> 00:24:24,310
+U. Well, we know
+how these things
+
+315
+00:24:24,310 --> 00:24:28,770
+are, and let's think of
+this in the basis e basis.
+
+316
+00:24:28,770 --> 00:24:37,480
+So U k i is equal to ek U e i.
+
+317
+00:24:40,800 --> 00:24:46,300
+That's the definition
+of U in the basis
+
+318
+00:24:46,300 --> 00:24:58,160
+e-- the matrix elements of
+U. You can try to figure out
+
+319
+00:24:58,160 --> 00:25:02,320
+what is Uki in the f basis.
+
+320
+00:25:02,320 --> 00:25:06,106
+How does operator U
+look in the f basis?
+
+321
+00:25:08,700 --> 00:25:12,320
+Well, let's just do
+it without thinking.
+
+322
+00:25:12,320 --> 00:25:18,720
+So in the f basis,
+I would put fk U fi.
+
+323
+00:25:21,850 --> 00:25:30,750
+Well, but fk is U ek,
+so I'll put Uek Ufi.
+
+324
+00:25:34,080 --> 00:25:44,000
+Now we can delete both
+U's, and it's ek fi.
+
+325
+00:25:44,000 --> 00:25:53,930
+And I can remember what
+fi was, which is ek U ei.
+
+326
+00:25:53,930 --> 00:25:57,700
+And it's just the same
+as the one we had there.
+
+327
+00:25:57,700 --> 00:26:00,790
+So the operator,
+unitary operator,
+
+328
+00:26:00,790 --> 00:26:02,456
+looks the same in both bases.
+
+329
+00:26:06,030 --> 00:26:09,690
+That might seem strange or
+a coincidence, but it's not.
+
+330
+00:26:09,690 --> 00:26:12,200
+So I leave it to
+you to think about,
+
+331
+00:26:12,200 --> 00:26:17,570
+and visualize why
+did that happen.
+
+332
+00:26:17,570 --> 00:26:20,740
+What's the reason?
+
+333
+00:26:20,740 --> 00:26:30,000
+So the bracket notation-- we've
+been using it here and there--
+
+334
+00:26:30,000 --> 00:26:34,650
+and I will ask you to
+please read the notes.
+
+335
+00:26:34,650 --> 00:26:37,410
+The notes will be
+posted this afternoon,
+
+336
+00:26:37,410 --> 00:26:41,180
+and they will have-- not
+maybe all we've done today,
+
+337
+00:26:41,180 --> 00:26:44,360
+but they will have some
+of what we'll do today,
+
+338
+00:26:44,360 --> 00:26:47,190
+and all of what
+we've been doing.
+
+339
+00:26:47,190 --> 00:26:48,900
+And the way it's
+done-- it's first
+
+340
+00:26:48,900 --> 00:26:51,800
+done in this sort of
+inner product language,
+
+341
+00:26:51,800 --> 00:26:55,790
+and then things are done
+in the bracket language.
+
+342
+00:26:55,790 --> 00:26:58,210
+And it's a little
+repetitious, and I'm
+
+343
+00:26:58,210 --> 00:27:00,630
+trying to take out some
+things here and there,
+
+344
+00:27:00,630 --> 00:27:02,250
+so it's less repetitious.
+
+345
+00:27:02,250 --> 00:27:06,260
+But at this moment it's
+probably worth reading it,
+
+346
+00:27:06,260 --> 00:27:07,600
+and reading it again.
+
+347
+00:27:07,600 --> 00:27:08,748
+Yes.
+
+348
+00:27:08,748 --> 00:27:13,230
+AUDIENCE: [INAUDIBLE] if you
+have two orthonormal bases,
+
+349
+00:27:13,230 --> 00:27:17,370
+is the transformation between
+them necessarily unitary?
+
+350
+00:27:17,370 --> 00:27:18,597
+PROFESSOR: Yes, yes.
+
+351
+00:27:23,170 --> 00:27:23,850
+All right.
+
+352
+00:27:23,850 --> 00:27:28,590
+So as I was saying we're going
+to go into the Dirac notation
+
+353
+00:27:28,590 --> 00:27:29,090
+again.
+
+354
+00:27:29,090 --> 00:27:33,160
+And here's an example of a
+place where everybody, I think,
+
+355
+00:27:33,160 --> 00:27:35,940
+tends to use Dirac notation.
+
+356
+00:27:35,940 --> 00:27:40,060
+And the reason is
+a little curious,
+
+357
+00:27:40,060 --> 00:27:44,553
+and you will appreciate
+it quite fast.
+
+358
+00:27:47,510 --> 00:27:50,050
+So this will be
+the case of where
+
+359
+00:27:50,050 --> 00:27:57,273
+we return to x and p operators,
+on a non-denumerable basis.
+
+360
+00:28:08,470 --> 00:28:12,830
+So we're going to
+try to do x and p.
+
+361
+00:28:12,830 --> 00:28:15,730
+now this is the classic
+of Dirac notation.
+
+362
+00:28:15,730 --> 00:28:17,890
+It's probably-- as
+I said-- the place
+
+363
+00:28:17,890 --> 00:28:21,370
+where everybody likes
+to use Dirac notation.
+
+364
+00:28:21,370 --> 00:28:24,750
+And the reason it's efficient
+is because it prevents you
+
+365
+00:28:24,750 --> 00:28:27,850
+from confusing two things.
+
+366
+00:28:27,850 --> 00:28:32,340
+So I've written in
+the notes, and we
+
+367
+00:28:32,340 --> 00:28:36,150
+have all these v's that
+belong to the vector space.
+
+368
+00:28:36,150 --> 00:28:38,580
+And then we put
+this, and we still
+
+369
+00:28:38,580 --> 00:28:41,150
+say it belongs to
+the vector space.
+
+370
+00:28:41,150 --> 00:28:46,310
+And this is just a decoration
+that doesn't do much.
+
+371
+00:28:46,310 --> 00:28:48,050
+And we can play with this.
+
+372
+00:28:48,050 --> 00:28:50,660
+Now, in the
+non-denumerable basis,
+
+373
+00:28:50,660 --> 00:28:53,490
+the catch-- and the
+possible confusion--
+
+374
+00:28:53,490 --> 00:29:02,030
+is that the label is not quite
+a vector in the vector space.
+
+375
+00:29:02,030 --> 00:29:06,490
+So that is the reason why
+the notation is helpful,
+
+376
+00:29:06,490 --> 00:29:11,300
+because it helps you
+distinguish two things that you
+
+377
+00:29:11,300 --> 00:29:13,150
+could confuse.
+
+378
+00:29:13,150 --> 00:29:14,580
+So here we go.
+
+379
+00:29:14,580 --> 00:29:19,080
+We're going to talk
+about coordinate x,
+
+380
+00:29:19,080 --> 00:29:24,260
+and the x operator,
+and the states.
+
+381
+00:29:24,260 --> 00:29:26,500
+Well, this is a state space.
+
+382
+00:29:26,500 --> 00:29:30,360
+So what kind of states
+do we have here?
+
+383
+00:29:30,360 --> 00:29:32,625
+Well, we've talked
+about wave functions,
+
+384
+00:29:32,625 --> 00:29:34,250
+and we could give
+the value of the wave
+
+385
+00:29:34,250 --> 00:29:36,430
+function of different places.
+
+386
+00:29:36,430 --> 00:29:40,560
+We're going to go for a
+more intrinsic definition.
+
+387
+00:29:40,560 --> 00:29:44,525
+We're going to try to
+introduce position states.
+
+388
+00:29:50,970 --> 00:29:56,060
+And position states
+will be called this-- x.
+
+389
+00:30:03,650 --> 00:30:07,060
+Now, what is the meaning
+of this position state?
+
+390
+00:30:07,060 --> 00:30:15,490
+We should think of this
+intuitively as a particle at x.
+
+391
+00:30:18,230 --> 00:30:21,760
+Now here's how you can
+go wrong with this thing,
+
+392
+00:30:21,760 --> 00:30:25,860
+if you stop thinking
+for a second.
+
+393
+00:30:32,660 --> 00:30:37,330
+What is, then, ax?
+
+394
+00:30:37,330 --> 00:30:48,250
+Is it ax, a being a number.
+
+395
+00:30:48,250 --> 00:30:51,140
+Is it the same thing?
+
+396
+00:30:51,140 --> 00:30:53,630
+No, not at all.
+
+397
+00:30:53,630 --> 00:30:58,930
+This is a particle
+at the coordinate ax,
+
+398
+00:30:58,930 --> 00:31:04,530
+and this is a particle at x with
+some different amplitude-- very
+
+399
+00:31:04,530 --> 00:31:05,260
+different.
+
+400
+00:31:05,260 --> 00:31:08,500
+So this is not true--
+typical mistake.
+
+401
+00:31:08,500 --> 00:31:14,770
+This is not minus x.
+
+402
+00:31:14,770 --> 00:31:16,450
+That's totally different.
+
+403
+00:31:16,450 --> 00:31:19,595
+So there's no such
+thing as this, either.
+
+404
+00:31:25,760 --> 00:31:29,310
+It doesn't mean anything.
+
+405
+00:31:29,310 --> 00:31:34,990
+And the reason is that these
+things are not our vectors.
+
+406
+00:31:34,990 --> 00:31:40,670
+Our vector is this whole thing
+that says a particle at x.
+
+407
+00:31:40,670 --> 00:31:45,250
+Maybe to make a
+clearer impression,
+
+408
+00:31:45,250 --> 00:31:47,310
+imagine you're in
+three dimensions,
+
+409
+00:31:47,310 --> 00:31:50,210
+and you have an x vector.
+
+410
+00:31:50,210 --> 00:31:53,965
+So then you have to ket this.
+
+411
+00:31:56,690 --> 00:32:01,370
+This is the ket particle at x.
+
+412
+00:32:01,370 --> 00:32:02,930
+x is now a vector.
+
+413
+00:32:02,930 --> 00:32:05,320
+It's a three-dimensional vector.
+
+414
+00:32:05,320 --> 00:32:08,270
+This is a vector,
+but it's a vector
+
+415
+00:32:08,270 --> 00:32:11,910
+in an infinite
+dimensional space,
+
+416
+00:32:11,910 --> 00:32:15,480
+because the particle
+can be anywhere.
+
+417
+00:32:15,480 --> 00:32:18,990
+So this is a vector
+in quantum mechanics.
+
+418
+00:32:18,990 --> 00:32:21,090
+This is a complex vector space.
+
+419
+00:32:21,090 --> 00:32:25,880
+This is a real vector space,
+and it's the label here.
+
+420
+00:32:25,880 --> 00:32:33,730
+So again, minus x is
+not minus x vector.
+
+421
+00:32:33,730 --> 00:32:35,575
+It's not the vector.
+
+422
+00:32:35,575 --> 00:32:41,060
+The addition of the bra
+has moved you from vectors
+
+423
+00:32:41,060 --> 00:32:43,720
+that you're familiar
+with, to states
+
+424
+00:32:43,720 --> 00:32:45,830
+that are a little more abstract.
+
+425
+00:32:49,270 --> 00:32:52,990
+So the reason this notation is
+quite good is because this is
+
+426
+00:32:52,990 --> 00:32:56,490
+the number, but this i---
+or this is a coordinate,
+
+427
+00:32:56,490 --> 00:33:00,090
+and this is a vector already.
+
+428
+00:33:00,090 --> 00:33:02,572
+So these are going to
+be our basis states,
+
+429
+00:33:02,572 --> 00:33:03,780
+and they are non-denumerable.
+
+430
+00:33:09,790 --> 00:33:13,260
+And here you can
+have that all x must
+
+431
+00:33:13,260 --> 00:33:16,390
+belong to the real numbers,
+because we have particles
+
+432
+00:33:16,390 --> 00:33:22,270
+in a line, while this thing
+can be changed by real numbers.
+
+433
+00:33:22,270 --> 00:33:24,982
+The states can be multiplied
+by complex numbers,
+
+434
+00:33:24,982 --> 00:33:26,565
+because we're doing
+quantum mechanics.
+
+435
+00:33:29,210 --> 00:33:33,260
+So if you want to define
+a vector space-- now,
+
+436
+00:33:33,260 --> 00:33:34,990
+this is all infinite dimension.
+
+437
+00:33:34,990 --> 00:33:36,730
+It's a little
+worse in this sense
+
+438
+00:33:36,730 --> 00:33:39,150
+the basis is non-denumerable.
+
+439
+00:33:39,150 --> 00:33:43,800
+If I use this basis, I cannot
+make a list of all the basis
+
+440
+00:33:43,800 --> 00:33:46,540
+vectors.
+
+441
+00:33:46,540 --> 00:33:49,930
+So for an inner product, we
+will take the following--
+
+442
+00:33:49,930 --> 00:33:58,220
+we will take x with y to
+be delta of x minus y.
+
+443
+00:33:58,220 --> 00:34:00,090
+That will be our inner product.
+
+444
+00:34:00,090 --> 00:34:06,550
+And it has all the properties
+of the inner product
+
+445
+00:34:06,550 --> 00:34:09,250
+that we may want.
+
+446
+00:34:09,250 --> 00:34:13,449
+And what else?
+
+447
+00:34:13,449 --> 00:34:18,370
+Well at this moment,
+we can try to-- this
+
+448
+00:34:18,370 --> 00:34:20,800
+is physically
+sensible, let me say,
+
+449
+00:34:20,800 --> 00:34:23,830
+because if you have a
+particle at one point
+
+450
+00:34:23,830 --> 00:34:26,159
+and a particle at another
+point, the amplitude
+
+451
+00:34:26,159 --> 00:34:31,440
+that this particle at one point
+is at this other point is 0.
+
+452
+00:34:31,440 --> 00:34:33,710
+And these states are
+not normalizable.
+
+453
+00:34:33,710 --> 00:34:35,880
+They correspond to a
+particle at the point,
+
+454
+00:34:35,880 --> 00:34:38,710
+so once you try to normalize
+them, you get infinity,
+
+455
+00:34:38,710 --> 00:34:41,000
+and you can't do much.
+
+456
+00:34:41,000 --> 00:34:45,179
+But what you can do here is
+state more of the properties,
+
+457
+00:34:45,179 --> 00:34:46,860
+and learn how to
+manipulate this.
+
+458
+00:34:46,860 --> 00:34:57,590
+So remember we had one was
+the sum of all e i e i.
+
+459
+00:34:57,590 --> 00:35:00,890
+The unit operator was that.
+
+460
+00:35:00,890 --> 00:35:05,490
+Well, let's try to
+write a similar one.
+
+461
+00:35:05,490 --> 00:35:09,505
+The unit operator will
+be the sum over all x's.
+
+462
+00:35:12,940 --> 00:35:16,640
+And you could say,
+well, looks reasonable,
+
+463
+00:35:16,640 --> 00:35:20,210
+but maybe there's a 1/2
+in here, or some factor.
+
+464
+00:35:20,210 --> 00:35:22,260
+Well, no factor is needed.
+
+465
+00:35:22,260 --> 00:35:30,240
+You can check that-- that you've
+defined this thing properly.
+
+466
+00:35:30,240 --> 00:35:34,650
+So let me do it.
+
+467
+00:35:34,650 --> 00:35:39,010
+So act to on this
+so-called resolution
+
+468
+00:35:39,010 --> 00:35:48,060
+of the identity with the vector
+y, so 1 on y is equal to y.
+
+469
+00:35:48,060 --> 00:35:51,777
+And now let's add
+on the right xxy.
+
+470
+00:35:55,320 --> 00:35:58,670
+This is delta of x minus y.
+
+471
+00:35:58,670 --> 00:36:02,300
+And then when you
+integrate, you get y.
+
+472
+00:36:02,300 --> 00:36:04,750
+So we're fine.
+
+473
+00:36:09,610 --> 00:36:13,120
+So this looks a
+little too abstract,
+
+474
+00:36:13,120 --> 00:36:17,520
+but it's not the abstract if you
+now introduce wave functions.
+
+475
+00:36:17,520 --> 00:36:19,830
+So let's do wave functions.
+
+476
+00:36:19,830 --> 00:36:26,930
+So you have a particle, a
+state of the particle psi.
+
+477
+00:36:26,930 --> 00:36:30,790
+Time would be random, so I will
+put just this psi like that
+
+478
+00:36:30,790 --> 00:36:34,690
+without the bottom line.
+
+479
+00:36:34,690 --> 00:36:37,350
+And let's look at it.
+
+480
+00:36:37,350 --> 00:36:39,343
+Oh, I want to say
+one more thing.
+
+481
+00:36:44,070 --> 00:36:52,500
+The x operator acts on
+the x states to give x x.
+
+482
+00:36:52,500 --> 00:36:56,400
+So these are eigenstates
+of the x operator.
+
+483
+00:36:56,400 --> 00:36:58,400
+We declare them
+to be eigenstates
+
+484
+00:36:58,400 --> 00:37:00,680
+of the x operator
+with eigenvalue x.
+
+485
+00:37:00,680 --> 00:37:04,330
+That's their physical
+interpretation.
+
+486
+00:37:04,330 --> 00:37:08,430
+I probably should
+have said before.
+
+487
+00:37:08,430 --> 00:37:15,030
+Now, if we have a psi as a
+state or a vector, how do
+
+488
+00:37:15,030 --> 00:37:16,530
+we get the wave function?
+
+489
+00:37:16,530 --> 00:37:19,860
+Well, in this language
+the wave function,
+
+490
+00:37:19,860 --> 00:37:23,260
+which we call psi
+of x, is defined
+
+491
+00:37:23,260 --> 00:37:27,365
+to be the overlap of x with psi.
+
+492
+00:37:31,660 --> 00:37:37,810
+And that makes sense,
+because this overlap
+
+493
+00:37:37,810 --> 00:37:42,420
+is a function of this label
+here, where the particle is.
+
+494
+00:37:42,420 --> 00:37:46,310
+And therefore, the result
+is a complex number
+
+495
+00:37:46,310 --> 00:37:49,200
+that is dependent on x.
+
+496
+00:37:49,200 --> 00:37:51,590
+So this belongs to
+the complex numbers,
+
+497
+00:37:51,590 --> 00:37:55,480
+because inner products
+can have complex numbers.
+
+498
+00:37:55,480 --> 00:37:58,040
+Now, I didn't put any
+complex number here,
+
+499
+00:37:58,040 --> 00:38:01,200
+but when you form states,
+you can superpose states
+
+500
+00:38:01,200 --> 00:38:02,610
+with complex numbers.
+
+501
+00:38:02,610 --> 00:38:07,060
+So this psi of x will
+come out this way.
+
+502
+00:38:07,060 --> 00:38:11,110
+And now that you
+are armed with that,
+
+503
+00:38:11,110 --> 00:38:14,440
+you can even think of
+this in a nicer way.
+
+504
+00:38:14,440 --> 00:38:19,290
+The state psi is
+equal to 1 times psi.
+
+505
+00:38:19,290 --> 00:38:22,740
+And then use the
+rest of this formula,
+
+506
+00:38:22,740 --> 00:38:30,940
+so this is integral--
+dx x x psi.
+
+507
+00:38:30,940 --> 00:38:34,460
+And again, the bracket
+notation is quite nice,
+
+508
+00:38:34,460 --> 00:38:37,360
+because the bra
+already meets the ket.
+
+509
+00:38:37,360 --> 00:38:43,875
+This is a number, and
+this is dx x psi of x.
+
+510
+00:38:46,780 --> 00:38:49,760
+This equation has a
+nice interpretation.
+
+511
+00:38:49,760 --> 00:38:55,980
+It says that the state is a
+superposition of the basis
+
+512
+00:38:55,980 --> 00:39:00,130
+states, the position
+states, and the component
+
+513
+00:39:00,130 --> 00:39:03,690
+of your original state
+along the basis state
+
+514
+00:39:03,690 --> 00:39:08,170
+x is precisely the value
+of the wave function at x.
+
+515
+00:39:08,170 --> 00:39:10,270
+So the wave function
+at x is giving you
+
+516
+00:39:10,270 --> 00:39:14,370
+the weight of the state x
+as it enters into the sum.
+
+517
+00:39:17,310 --> 00:39:23,620
+So one can compute more things.
+
+518
+00:39:23,620 --> 00:39:27,750
+You will get practice in
+this type of computations.
+
+519
+00:39:27,750 --> 00:39:31,730
+There are just a limited type
+of variations that you can do,
+
+520
+00:39:31,730 --> 00:39:37,120
+so it's not that complicated.
+
+521
+00:39:37,120 --> 00:39:41,180
+Basically, you can introduce
+resolutions of the identity
+
+522
+00:39:41,180 --> 00:39:42,710
+wherever you need them.
+
+523
+00:39:42,710 --> 00:39:47,050
+And if you introduce too
+many, you waste time,
+
+524
+00:39:47,050 --> 00:39:51,220
+but you typically get
+the answer anyway.
+
+525
+00:39:51,220 --> 00:39:54,970
+So it's not too serious.
+
+526
+00:39:54,970 --> 00:39:56,810
+So suppose you
+want to understand
+
+527
+00:39:56,810 --> 00:39:59,213
+what is the inner
+product of two states.
+
+528
+00:40:02,130 --> 00:40:05,000
+Put the resolution of
+the identity in between.
+
+529
+00:40:05,000 --> 00:40:14,300
+So put phi, and then put
+the integral dx x x psi.
+
+530
+00:40:14,300 --> 00:40:23,380
+Well, the integral goes out,
+and you get phi x x psi.
+
+531
+00:40:23,380 --> 00:40:29,740
+And remember, if
+x psi is psi of x,
+
+532
+00:40:29,740 --> 00:40:36,450
+phi x is the complex conjugate,
+so it's phi star of x.
+
+533
+00:40:36,450 --> 00:40:39,240
+And you knew that.
+
+534
+00:40:39,240 --> 00:40:41,100
+If you have two wave
+functions, and you
+
+535
+00:40:41,100 --> 00:40:45,700
+want to compute the overlap, you
+integrate the complex conjugate
+
+536
+00:40:45,700 --> 00:40:49,700
+of one against the other.
+
+537
+00:40:49,700 --> 00:40:54,235
+So this notation is doing
+all what you want from this.
+
+538
+00:40:58,040 --> 00:41:01,560
+You want to compute a
+matrix element of x.
+
+539
+00:41:06,920 --> 00:41:12,920
+Well, put another resolution
+of the identity here.
+
+540
+00:41:12,920 --> 00:41:19,740
+So this would be integral
+dx phi-- the x hat is here.
+
+541
+00:41:19,740 --> 00:41:23,960
+And then you put x x psi.
+
+542
+00:41:26,820 --> 00:41:30,670
+The x hat on x is x.
+
+543
+00:41:30,670 --> 00:41:33,610
+That's what this
+operator does, so you
+
+544
+00:41:33,610 --> 00:41:46,830
+get integral dx of-- I'll
+put x phi x x psi, which
+
+545
+00:41:46,830 --> 00:41:50,160
+is what you expect
+it to be-- integral
+
+546
+00:41:50,160 --> 00:41:55,260
+of x phi star of x, psi of x.
+
+547
+00:42:00,990 --> 00:42:06,930
+Now we can do exactly the same
+thing with momentum states.
+
+548
+00:42:06,930 --> 00:42:09,790
+So I don't want to
+bore you, so I just
+
+549
+00:42:09,790 --> 00:42:15,520
+list the properties--
+basis states are
+
+550
+00:42:15,520 --> 00:42:19,830
+momenta where the
+momenta is real.
+
+551
+00:42:19,830 --> 00:42:26,520
+p prime p is equal delta
+of p minus p prime.
+
+552
+00:42:26,520 --> 00:42:33,900
+One is the integral dp of p p.
+
+553
+00:42:33,900 --> 00:42:38,725
+And p hat p is equal to p p.
+
+554
+00:42:44,170 --> 00:42:47,350
+So these are the momentum bases.
+
+555
+00:42:47,350 --> 00:42:49,530
+They're exactly analogous.
+
+556
+00:42:49,530 --> 00:42:53,600
+So all what we've
+done for x is true.
+
+557
+00:42:53,600 --> 00:42:57,440
+The completeness
+and normalization
+
+558
+00:42:57,440 --> 00:42:59,930
+work well together,
+like we checked there,
+
+559
+00:42:59,930 --> 00:43:02,610
+and everything is true.
+
+560
+00:43:02,610 --> 00:43:07,830
+The only thing that you need
+to make this more interesting
+
+561
+00:43:07,830 --> 00:43:12,860
+is a relation between the
+x basis and the p basis.
+
+562
+00:43:12,860 --> 00:43:15,440
+And that's where
+physics comes in.
+
+563
+00:43:15,440 --> 00:43:20,250
+Anybody can define these two,
+but then a physical assumption
+
+564
+00:43:20,250 --> 00:43:27,560
+as to what you really mean
+by momentum is necessary.
+
+565
+00:43:27,560 --> 00:43:31,070
+And what we've said is
+that the wave function
+
+566
+00:43:31,070 --> 00:43:36,091
+of a particle with
+momentum p is e to the i
+
+567
+00:43:36,091 --> 00:43:42,370
+px over h bar over
+square root of 2 pi
+
+568
+00:43:42,370 --> 00:43:49,280
+h-- convenient normalization,
+but that was it.
+
+569
+00:43:49,280 --> 00:43:52,090
+That was our physical
+interpretation
+
+570
+00:43:52,090 --> 00:43:55,010
+of the wave function of a
+particle with some momentum.
+
+571
+00:43:55,010 --> 00:43:58,665
+And therefore, if this is
+a wave function, that's xp.
+
+572
+00:44:01,340 --> 00:44:06,650
+A state of momentum p
+has this wave function.
+
+573
+00:44:06,650 --> 00:44:08,400
+So we write this.
+
+574
+00:44:16,180 --> 00:44:21,130
+OK, there are tricks you can
+do, and please read the notes.
+
+575
+00:44:21,130 --> 00:44:24,270
+But let's do a
+little computation.
+
+576
+00:44:24,270 --> 00:44:29,930
+Suppose you want to
+compute what is p on psi.
+
+577
+00:44:29,930 --> 00:44:32,350
+You could say,
+well, I don't know
+
+578
+00:44:32,350 --> 00:44:34,770
+why would I want to do
+something with that?
+
+579
+00:44:34,770 --> 00:44:36,370
+Looks simple enough.
+
+580
+00:44:36,370 --> 00:44:38,000
+Well, it's simple
+enough, but you
+
+581
+00:44:38,000 --> 00:44:42,840
+could say I want to see that
+in terms of wave functions,
+
+582
+00:44:42,840 --> 00:44:44,660
+coordinate space wave functions.
+
+583
+00:44:44,660 --> 00:44:47,530
+Well, if you want to see them in
+terms of coordinate space wave
+
+584
+00:44:47,530 --> 00:44:51,330
+functions, you have to introduce
+a complete set of states.
+
+585
+00:44:51,330 --> 00:44:58,430
+So introduce p x x psi.
+
+586
+00:44:58,430 --> 00:45:00,240
+Then you have this
+wave function,
+
+587
+00:45:00,240 --> 00:45:03,380
+and oh, this is sort
+of known, because it's
+
+588
+00:45:03,380 --> 00:45:10,566
+the complex conjugate of
+this, so it's integral dx
+
+589
+00:45:10,566 --> 00:45:19,300
+px over h bar, square root
+of 2 pi h bar times psi of x.
+
+590
+00:45:19,300 --> 00:45:22,140
+And this was the
+Fourier transform--
+
+591
+00:45:22,140 --> 00:45:26,260
+what we call the Fourier
+transform of the wave function.
+
+592
+00:45:26,260 --> 00:45:33,840
+So we can call it psi tilde
+of p, just to distinguish it,
+
+593
+00:45:33,840 --> 00:45:37,320
+because we called
+psi with x, psi of x.
+
+594
+00:45:37,320 --> 00:45:39,190
+So if I didn't put
+a tilde, you might
+
+595
+00:45:39,190 --> 00:45:41,450
+think it's the same
+functional form,
+
+596
+00:45:41,450 --> 00:45:45,400
+but it's the momentum
+space wave function.
+
+597
+00:45:45,400 --> 00:45:51,180
+So here is the wave
+function in the p basis.
+
+598
+00:45:51,180 --> 00:45:53,690
+It's the Fourier
+transform of the wave
+
+599
+00:45:53,690 --> 00:45:57,220
+function in the x basis.
+
+600
+00:45:57,220 --> 00:46:01,020
+One last computation, and
+then we change subjects again.
+
+601
+00:46:05,710 --> 00:46:10,360
+It's the classic
+computation that you
+
+602
+00:46:10,360 --> 00:46:15,530
+have now a mixed situation,
+in which you have the momentum
+
+603
+00:46:15,530 --> 00:46:20,430
+operator states and
+the coordinate bra.
+
+604
+00:46:20,430 --> 00:46:34,753
+So what is the following
+expression-- X p hat psi?
+
+605
+00:46:44,696 --> 00:46:45,195
+OK.
+
+606
+00:46:49,900 --> 00:46:51,750
+What is your temptation?
+
+607
+00:46:51,750 --> 00:46:57,170
+Your temptation is to say,
+look, this is like the momentum
+
+608
+00:46:57,170 --> 00:47:02,490
+operator acting on the wave
+function in the x basis.
+
+609
+00:47:02,490 --> 00:47:09,790
+It can only be h bar
+over i d dx of psi of x.
+
+610
+00:47:09,790 --> 00:47:13,020
+That's probably what it means.
+
+611
+00:47:13,020 --> 00:47:15,730
+But the notation
+is clear enough,
+
+612
+00:47:15,730 --> 00:47:19,120
+so we can check if that
+is exactly what it is.
+
+613
+00:47:19,120 --> 00:47:22,360
+We can manipulate
+things already.
+
+614
+00:47:22,360 --> 00:47:24,250
+So let's do it.
+
+615
+00:47:24,250 --> 00:47:28,900
+So for that, I first have to
+try to get rid of this operator.
+
+616
+00:47:28,900 --> 00:47:32,840
+Now the only way I know how
+to get rid of this operator p
+
+617
+00:47:32,840 --> 00:47:36,090
+is because it has eigenstates.
+
+618
+00:47:36,090 --> 00:47:40,890
+So it suggests very strongly
+that we should introduce
+
+619
+00:47:40,890 --> 00:47:43,430
+momentum states, complete them.
+
+620
+00:47:43,430 --> 00:47:53,080
+So I'll put v p x p hat p p psi.
+
+621
+00:48:00,660 --> 00:48:03,770
+And now I can
+evaluate the little--
+
+622
+00:48:03,770 --> 00:48:09,050
+because p hat and p is little
+p, or p without the hat.
+
+623
+00:48:09,050 --> 00:48:17,570
+So this is p xp p psi.
+
+624
+00:48:22,470 --> 00:48:28,990
+Now you can look
+at that, and think
+
+625
+00:48:28,990 --> 00:48:32,800
+carefully what should you do.
+
+626
+00:48:32,800 --> 00:48:35,250
+And there's one
+thing that you can
+
+627
+00:48:35,250 --> 00:48:40,200
+do is look at the
+equation on top.
+
+628
+00:48:40,200 --> 00:48:44,100
+And this is a way to
+avoid working very hard.
+
+629
+00:48:44,100 --> 00:48:48,250
+So look at the equation on
+top-- x p is equal to that.
+
+630
+00:48:48,250 --> 00:48:53,240
+How do I get a p
+to multiply this?
+
+631
+00:48:53,240 --> 00:48:57,390
+I can get a p to
+multiply this xp
+
+632
+00:48:57,390 --> 00:49:06,530
+by doing h bar
+over i d dx of x p.
+
+633
+00:49:11,930 --> 00:49:17,790
+Because if I see it there, I
+see that differentiating by d dx
+
+634
+00:49:17,790 --> 00:49:21,160
+brings down an ip over h bar.
+
+635
+00:49:21,160 --> 00:49:24,760
+So if I multiply by h
+bar over i, I get that.
+
+636
+00:49:24,760 --> 00:49:26,055
+So let's do this.
+
+637
+00:49:36,670 --> 00:49:43,730
+Now I claim we can
+take the h over i d
+
+638
+00:49:43,730 --> 00:49:47,690
+dx out of this integral.
+
+639
+00:49:47,690 --> 00:49:51,380
+And the reason is that first,
+it's not an x integral.
+
+640
+00:49:51,380 --> 00:49:55,440
+It's a p integral, and nothing
+else except this factor
+
+641
+00:49:55,440 --> 00:49:56,630
+depends on x.
+
+642
+00:49:56,630 --> 00:49:59,170
+So I take it out and I
+want to bring it back,
+
+643
+00:49:59,170 --> 00:50:01,970
+it will only act on
+this, because this is not
+
+644
+00:50:01,970 --> 00:50:03,920
+x dependent.
+
+645
+00:50:03,920 --> 00:50:10,930
+So you should think of psi, psi
+doesn't have an x dependence.
+
+646
+00:50:10,930 --> 00:50:15,050
+Psi is a state, and here is p--
+doesn't have an x dependence?
+
+647
+00:50:15,050 --> 00:50:18,280
+You say no, it
+does, it looks here.
+
+648
+00:50:18,280 --> 00:50:22,060
+No, but it doesn't have it,
+because it's been integrated.
+
+649
+00:50:22,060 --> 00:50:24,030
+It really doesn't
+have x dependence.
+
+650
+00:50:24,030 --> 00:50:27,140
+So we can take this out.
+
+651
+00:50:27,140 --> 00:50:31,490
+We'll have h over i d dx.
+
+652
+00:50:31,490 --> 00:50:37,140
+And now we have vp x p p psi.
+
+653
+00:50:40,750 --> 00:50:44,850
+And now by completeness,
+this is just 1.
+
+654
+00:50:44,850 --> 00:50:47,070
+So this becomes x psi.
+
+655
+00:50:47,070 --> 00:50:55,750
+So h bar over i d dx of x psi,
+which is what we claimed it
+
+656
+00:50:55,750 --> 00:50:56,340
+would be.
+
+657
+00:50:59,480 --> 00:51:06,083
+So this is rigorous--
+a rigorous derivation.
+
+658
+00:51:08,880 --> 00:51:11,260
+There's no guessing.
+
+659
+00:51:11,260 --> 00:51:13,670
+We've introduced
+complete states until you
+
+660
+00:51:13,670 --> 00:51:17,490
+can see how things act.
+
+661
+00:51:17,490 --> 00:51:19,860
+But the moral is here
+that you shouldn't
+
+662
+00:51:19,860 --> 00:51:22,730
+have to go through this
+more than once in your life,
+
+663
+00:51:22,730 --> 00:51:23,750
+or practice it.
+
+664
+00:51:23,750 --> 00:51:27,270
+But once you see something
+like that, you think.
+
+665
+00:51:27,270 --> 00:51:29,780
+You're using x
+representation, and you're
+
+666
+00:51:29,780 --> 00:51:32,040
+talking about the operator p.
+
+667
+00:51:32,040 --> 00:51:35,140
+It cannot be anything like that.
+
+668
+00:51:35,140 --> 00:51:39,650
+If you want to practice
+something different,
+
+669
+00:51:39,650 --> 00:51:49,860
+show that the analogue p x
+hat psi is equal i h bar d dp
+
+670
+00:51:49,860 --> 00:51:52,920
+of psi tilde.
+
+671
+00:51:52,920 --> 00:51:55,670
+So it's the opposite relation.
+
+672
+00:51:59,140 --> 00:52:00,550
+All right.
+
+673
+00:52:00,550 --> 00:52:01,050
+Questions?
+
+674
+00:52:04,240 --> 00:52:05,212
+Yes.
+
+675
+00:52:05,212 --> 00:52:09,256
+AUDIENCE: So how's one supposed
+to-- so what it appears
+
+676
+00:52:09,256 --> 00:52:11,755
+is happening is you're basically
+taking some state like psi,
+
+677
+00:52:11,755 --> 00:52:15,486
+and you're basically writing
+in terms of some basis.
+
+678
+00:52:15,486 --> 00:52:18,430
+And then you're basically using
+the [INAUDIBLE] coordinates
+
+679
+00:52:18,430 --> 00:52:19,470
+of this thing.
+
+680
+00:52:19,470 --> 00:52:23,780
+But the question is, what does
+this basis actually look like?
+
+681
+00:52:23,780 --> 00:52:27,100
+Like, what do these vectors--
+because if you put them
+
+682
+00:52:27,100 --> 00:52:29,400
+in their own coordinates,
+they're just infinite.
+
+683
+00:52:29,400 --> 00:52:30,430
+PROFESSOR: Yup.
+
+684
+00:52:30,430 --> 00:52:32,290
+AUDIENCE: They're not
+even delta-- I mean--
+
+685
+00:52:32,290 --> 00:52:33,790
+PROFESSOR: They are
+delta functions.
+
+686
+00:52:33,790 --> 00:52:34,980
+AUDIENCE: [INAUDIBLE]
+
+687
+00:52:34,980 --> 00:52:36,980
+PROFESSOR: These vectors
+are delta functions
+
+688
+00:52:36,980 --> 00:52:43,720
+because if you have a state
+that has this as the position
+
+689
+00:52:43,720 --> 00:52:45,550
+state of a particle,
+you find the wave
+
+690
+00:52:45,550 --> 00:52:47,580
+function by doing x on it.
+
+691
+00:52:47,580 --> 00:52:50,120
+That's our definition
+of a wave function.
+
+692
+00:52:50,120 --> 00:52:52,670
+And its infinite.
+
+693
+00:52:52,670 --> 00:52:59,150
+So there's is not too much
+one can say about this.
+
+694
+00:52:59,150 --> 00:53:02,830
+If people want to work
+more mathematically,
+
+695
+00:53:02,830 --> 00:53:05,155
+the more comfortable
+way, what you do
+
+696
+00:53:05,155 --> 00:53:07,950
+is, instead of taking
+infinite things,
+
+697
+00:53:07,950 --> 00:53:10,540
+you put everything
+on a big circle.
+
+698
+00:53:10,540 --> 00:53:13,220
+And then you have
+a Fourier series
+
+699
+00:53:13,220 --> 00:53:18,400
+and they transform as sums,
+and everything goes into sums.
+
+700
+00:53:18,400 --> 00:53:20,210
+But there's no real need.
+
+701
+00:53:20,210 --> 00:53:22,510
+These operations are safe.
+
+702
+00:53:22,510 --> 00:53:27,920
+And we managed to do them,
+and we're OK with them.
+
+703
+00:53:27,920 --> 00:53:30,150
+Other questions?
+
+704
+00:53:30,150 --> 00:53:31,334
+Yes.
+
+705
+00:53:31,334 --> 00:53:32,209
+AUDIENCE: [INAUDIBLE]
+
+706
+00:53:38,926 --> 00:53:39,925
+PROFESSOR: Probably not.
+
+707
+00:53:39,925 --> 00:53:45,000
+You know, infinite
+bases are delicate.
+
+708
+00:53:45,000 --> 00:53:48,510
+Hilbert spaces are infinite
+dimensional vector spaces,
+
+709
+00:53:48,510 --> 00:53:53,670
+and they-- not every
+infinite dimensional space
+
+710
+00:53:53,670 --> 00:53:55,550
+is a Hilbert space.
+
+711
+00:53:55,550 --> 00:53:57,930
+The most important
+thing of a Hilbert space
+
+712
+00:53:57,930 --> 00:54:00,840
+is this norm, this
+inner product.
+
+713
+00:54:00,840 --> 00:54:05,980
+But the other important thing
+is some convergence facts
+
+714
+00:54:05,980 --> 00:54:09,170
+about sequences of
+vectors that converge
+
+715
+00:54:09,170 --> 00:54:11,220
+to points that are on the space.
+
+716
+00:54:11,220 --> 00:54:12,900
+So it's delicate.
+
+717
+00:54:12,900 --> 00:54:15,880
+Infinite dimensional
+spaces can be pretty bad.
+
+718
+00:54:15,880 --> 00:54:19,550
+A Banach space is
+not a Hilbert space.
+
+719
+00:54:19,550 --> 00:54:20,190
+It's more com--
+
+720
+00:54:20,190 --> 00:54:21,800
+AUDIENCE: [INAUDIBLE]
+
+721
+00:54:21,800 --> 00:54:24,640
+PROFESSOR: Only
+for Hilbert spaces,
+
+722
+00:54:24,640 --> 00:54:31,505
+and basically, this problem
+of a particle in a line,
+
+723
+00:54:31,505 --> 00:54:35,630
+or a particle in three space
+is sufficiently well known
+
+724
+00:54:35,630 --> 00:54:40,410
+that we're totally
+comfortable with this somewhat
+
+725
+00:54:40,410 --> 00:54:42,100
+singular operation.
+
+726
+00:54:42,100 --> 00:54:46,110
+So the operator x
+or the operator p
+
+727
+00:54:46,110 --> 00:54:48,960
+may not be what
+mathematicians like them
+
+728
+00:54:48,960 --> 00:54:51,950
+to be-- bounded operators
+in Hilbert spaces.
+
+729
+00:54:51,950 --> 00:54:56,260
+But we know how not to
+make mistakes with them.
+
+730
+00:54:56,260 --> 00:55:00,230
+And if you have a very
+subtle problem, one day
+
+731
+00:55:00,230 --> 00:55:01,950
+you probably have
+to be more careful.
+
+732
+00:55:01,950 --> 00:55:04,740
+But for the problems we're
+interested in now, we don't.
+
+733
+00:55:07,300 --> 00:55:15,270
+So our last topic today is
+uncertainties and uncertainty
+
+734
+00:55:15,270 --> 00:55:17,040
+relations.
+
+735
+00:55:17,040 --> 00:55:21,095
+I probably won't get through all
+of it, but we'll get started.
+
+736
+00:55:27,340 --> 00:55:29,750
+And so we'll have uncertainties.
+
+737
+00:55:38,800 --> 00:55:43,850
+And we will talk
+about operators,
+
+738
+00:55:43,850 --> 00:55:46,760
+and Hermitian operators.
+
+739
+00:55:46,760 --> 00:55:49,560
+So here is the
+question, basically--
+
+740
+00:55:49,560 --> 00:55:53,550
+if you have a state,
+we know the result
+
+741
+00:55:53,550 --> 00:55:57,380
+of a measurement
+of an observable
+
+742
+00:55:57,380 --> 00:56:02,090
+is the eigenvalue of
+a Hermitian operator.
+
+743
+00:56:02,090 --> 00:56:06,730
+Now, if the state is an
+eigenstate of the Hermitian
+
+744
+00:56:06,730 --> 00:56:09,100
+operator, you measure
+the observable,
+
+745
+00:56:09,100 --> 00:56:12,860
+and out comes eigenvalue.
+
+746
+00:56:12,860 --> 00:56:17,290
+And there's no uncertainty
+in the measured observable,
+
+747
+00:56:17,290 --> 00:56:20,000
+because the measured
+observable is an eigenvalue
+
+748
+00:56:20,000 --> 00:56:23,420
+and its state is an eigenstate.
+
+749
+00:56:23,420 --> 00:56:26,480
+The problem arises when
+the state that you're
+
+750
+00:56:26,480 --> 00:56:30,600
+trying to measure
+this property is not
+
+751
+00:56:30,600 --> 00:56:34,240
+an eigenstate of the observable.
+
+752
+00:56:34,240 --> 00:56:36,510
+So you know that the
+interpretation of quantum
+
+753
+00:56:36,510 --> 00:56:40,040
+mechanics is a
+probabilistic distribution.
+
+754
+00:56:40,040 --> 00:56:43,610
+You sometimes get one thing,
+sometimes get another thing,
+
+755
+00:56:43,610 --> 00:56:46,280
+depending on the
+amplitudes of the states
+
+756
+00:56:46,280 --> 00:56:49,500
+to be in those
+particular eigenstates.
+
+757
+00:56:49,500 --> 00:56:51,450
+But there's an uncertainty.
+
+758
+00:56:51,450 --> 00:56:54,420
+At this time, you
+don't know what
+
+759
+00:56:54,420 --> 00:56:57,690
+the measured value will be.
+
+760
+00:56:57,690 --> 00:57:01,620
+So we'll define the uncertainty
+associated to a Hermitian
+
+761
+00:57:01,620 --> 00:57:05,855
+operator, and we want to
+define this uncertainty.
+
+762
+00:57:05,855 --> 00:57:08,000
+So A will be a
+Hermitian operator.
+
+763
+00:57:16,890 --> 00:57:20,400
+And you were talking
+about the uncertainty.
+
+764
+00:57:20,400 --> 00:57:22,812
+Now the uncertainty
+of that operator--
+
+765
+00:57:22,812 --> 00:57:24,770
+the first thing that you
+should remember is you
+
+766
+00:57:24,770 --> 00:57:26,870
+can't talk about the
+uncertainty of the operator
+
+767
+00:57:26,870 --> 00:57:29,500
+unless you give me a state.
+
+768
+00:57:29,500 --> 00:57:32,370
+So all the formulas we're going
+to write for uncertainties
+
+769
+00:57:32,370 --> 00:57:36,790
+are uncertainties of
+operators in some state.
+
+770
+00:57:36,790 --> 00:57:39,635
+So let's call the state psi.
+
+771
+00:57:47,250 --> 00:57:50,510
+And time will not be
+relevant, so maybe I
+
+772
+00:57:50,510 --> 00:57:56,890
+should delete the-- well,
+I'll leave that bar there,
+
+773
+00:57:56,890 --> 00:57:58,470
+just in case.
+
+774
+00:57:58,470 --> 00:58:04,300
+So we're going to try
+to define uncertainty.
+
+775
+00:58:04,300 --> 00:58:08,970
+But before we do that,
+let's try to define
+
+776
+00:58:08,970 --> 00:58:11,350
+another thing-- the
+expectation value.
+
+777
+00:58:11,350 --> 00:58:14,240
+Well, the expectation
+value-- you know it.
+
+778
+00:58:14,240 --> 00:58:17,740
+The expectation value of A,
+and you could put a psi here
+
+779
+00:58:17,740 --> 00:58:24,600
+if you wish, to remind you that
+it depends on the state-- is,
+
+780
+00:58:24,600 --> 00:58:29,080
+well, psi A psi.
+
+781
+00:58:29,080 --> 00:58:31,520
+That's what we call
+expectation value.
+
+782
+00:58:31,520 --> 00:58:36,710
+In the inner product
+notation would be psi A psi.
+
+783
+00:58:41,520 --> 00:58:48,570
+And one thing you know--
+that this thing is real,
+
+784
+00:58:48,570 --> 00:58:55,490
+because the expectation values
+of Hermitian operators is real.
+
+785
+00:58:55,490 --> 00:58:58,280
+That's something we reviewed
+at the beginning of the lecture
+
+786
+00:58:58,280 --> 00:59:01,080
+today.
+
+787
+00:59:01,080 --> 00:59:06,070
+So now comes the
+question, what can I
+
+788
+00:59:06,070 --> 00:59:10,240
+do to define an
+uncertainty of an operator?
+
+789
+00:59:10,240 --> 00:59:15,120
+And an uncertainty-- now
+we've said already something.
+
+790
+00:59:15,120 --> 00:59:18,970
+I wish to define an
+uncertainty that is such
+
+791
+00:59:18,970 --> 00:59:25,310
+that the uncertainty is 0 if
+the state is an eigenstate,
+
+792
+00:59:25,310 --> 00:59:27,720
+and the uncertainty
+is different from 0
+
+793
+00:59:27,720 --> 00:59:29,910
+if it's not an eigenstate.
+
+794
+00:59:29,910 --> 00:59:33,850
+In fact, I wish that
+the uncertainty is 0 if
+
+795
+00:59:33,850 --> 00:59:38,130
+and only if the state
+is an eigenstate.
+
+796
+00:59:38,130 --> 00:59:41,700
+So actually, we
+can achieve that.
+
+797
+00:59:41,700 --> 00:59:50,140
+And in some sense, I think,
+the most intuitive definition
+
+798
+00:59:50,140 --> 00:59:55,670
+is the one that
+I will show here.
+
+799
+00:59:55,670 --> 01:00:00,080
+It's that we define the
+uncertainty, delta A,
+
+800
+01:00:00,080 --> 01:00:01,950
+and I'll put the psi here.
+
+801
+01:00:01,950 --> 01:00:10,060
+So this is called
+the uncertainty of A
+
+802
+01:00:10,060 --> 01:00:11,285
+in the state psi.
+
+803
+01:00:17,330 --> 01:00:19,390
+So we'll define it a simple way.
+
+804
+01:00:19,390 --> 01:00:20,720
+What else do we want?
+
+805
+01:00:20,720 --> 01:00:25,010
+We said this should
+be 0 if and only
+
+806
+01:00:25,010 --> 01:00:28,490
+if the state is an eigenstate.
+
+807
+01:00:28,490 --> 01:00:32,900
+Second, I want this thing
+to be a real number--
+
+808
+01:00:32,900 --> 01:00:35,790
+in fact, a positive number.
+
+809
+01:00:35,790 --> 01:00:40,990
+What function do we know
+in quantum mechanics
+
+810
+01:00:40,990 --> 01:00:43,000
+that can do that magic?
+
+811
+01:00:43,000 --> 01:00:44,940
+Well, it's the norm.
+
+812
+01:00:44,940 --> 01:00:48,610
+The norm function is
+always real and positive.
+
+813
+01:00:48,610 --> 01:00:52,860
+So this-- we'll try to
+set it equal to a norm.
+
+814
+01:00:52,860 --> 01:01:00,870
+So it's the norm of the
+state A minus the expectation
+
+815
+01:01:00,870 --> 01:01:08,240
+value of A times
+1 acting on psi.
+
+816
+01:01:08,240 --> 01:01:12,170
+This will be our definition
+of the uncertainty.
+
+817
+01:01:16,010 --> 01:01:18,233
+So it's the norm of this vector.
+
+818
+01:01:23,280 --> 01:01:25,700
+Now let's look at this.
+
+819
+01:01:25,700 --> 01:01:32,730
+Suppose the norm
+uncertainty is 0.
+
+820
+01:01:36,230 --> 01:01:40,180
+And if the uncertainty is
+0, this vector must be 0.
+
+821
+01:01:40,180 --> 01:01:49,960
+So A minus expectation
+value of A on psi is 0.
+
+822
+01:01:49,960 --> 01:02:00,330
+Or A psi is equal to
+expectation value of A on psi.
+
+823
+01:02:00,330 --> 01:02:02,090
+The 1 doesn't do much.
+
+824
+01:02:02,090 --> 01:02:04,460
+Many people don't write the 1.
+
+825
+01:02:04,460 --> 01:02:08,030
+I could get tired
+and stop writing it.
+
+826
+01:02:08,030 --> 01:02:13,630
+You should-- probably it's
+good manners to write the i,
+
+827
+01:02:13,630 --> 01:02:16,910
+but it's not all that necessary.
+
+828
+01:02:16,910 --> 01:02:18,500
+You don't get that confused.
+
+829
+01:02:18,500 --> 01:02:21,970
+If there's an operator
+and a number here,
+
+830
+01:02:21,970 --> 01:02:24,310
+it must be an identity matrix.
+
+831
+01:02:24,310 --> 01:02:28,880
+So the uncertainty is 0, the
+vector is 0, then this is true.
+
+832
+01:02:28,880 --> 01:02:32,200
+Now, you say, well, this
+equation looks kind of funny,
+
+833
+01:02:32,200 --> 01:02:37,270
+but it says that psi
+is an eigenstate of A,
+
+834
+01:02:37,270 --> 01:02:40,230
+because this is a number.
+
+835
+01:02:40,230 --> 01:02:42,300
+It looks a little
+funny, because we're
+
+836
+01:02:42,300 --> 01:02:46,580
+accustomed to A psi lambda
+psi, but this is a number.
+
+837
+01:02:46,580 --> 01:02:49,410
+And in fact, let me
+show you one thing.
+
+838
+01:02:49,410 --> 01:02:57,320
+If you have A psi equal
+lambda psi-- oh, I
+
+839
+01:02:57,320 --> 01:03:00,426
+should say here that
+psi is normalized.
+
+840
+01:03:04,220 --> 01:03:08,010
+If psi would not be normalized,
+you change the normalization.
+
+841
+01:03:08,010 --> 01:03:10,765
+You change the uncertainty.
+
+842
+01:03:10,765 --> 01:03:11,890
+So it should be normalized.
+
+843
+01:03:14,530 --> 01:03:19,980
+And look at this-- if you
+have a psi equal lambda psi,
+
+844
+01:03:19,980 --> 01:03:27,130
+do the inner product with psi.
+
+845
+01:03:27,130 --> 01:03:33,510
+Psi comma A psi would
+be equal to lambda,
+
+846
+01:03:33,510 --> 01:03:36,810
+because psi inner
+product with psi is 1.
+
+847
+01:03:36,810 --> 01:03:38,310
+But what is this?
+
+848
+01:03:38,310 --> 01:03:41,730
+This is the
+expectation value of A.
+
+849
+01:03:41,730 --> 01:03:46,010
+So actually, given
+our definition,
+
+850
+01:03:46,010 --> 01:03:50,750
+the eigenvalue of some
+operator on this state
+
+851
+01:03:50,750 --> 01:03:53,720
+is the expectation value of
+the operator in the state.
+
+852
+01:03:53,720 --> 01:03:58,910
+So back to the argument--
+if the uncertainty is 0,
+
+853
+01:03:58,910 --> 01:04:01,000
+the state is an eigenstate.
+
+854
+01:04:01,000 --> 01:04:06,130
+And the eigenvalue happens to
+be the expectation value-- that
+
+855
+01:04:06,130 --> 01:04:07,480
+is, if the uncertainty is 0.
+
+856
+01:04:07,480 --> 01:04:12,220
+On the other hand, if you are
+in an eigenstate, you're here.
+
+857
+01:04:12,220 --> 01:04:15,180
+Then lambda is A,
+and this equation
+
+858
+01:04:15,180 --> 01:04:18,470
+shows that this vector is
+0, and therefore you get 0.
+
+859
+01:04:18,470 --> 01:04:25,860
+So you've shown that this norm
+or this uncertainty is 0, if
+
+860
+01:04:25,860 --> 01:04:29,820
+and only if the state
+is an eigenstate.
+
+861
+01:04:29,820 --> 01:04:32,550
+And that's a very
+powerful statement.
+
+862
+01:04:32,550 --> 01:04:36,130
+The statement that's
+always known by everybody
+
+863
+01:04:36,130 --> 01:04:40,480
+is that if you have
+an eigenstate-- yes--
+
+864
+01:04:40,480 --> 01:04:41,450
+no uncertainty.
+
+865
+01:04:41,450 --> 01:04:45,700
+But if there's no uncertainty,
+you must have an eigenstate.
+
+866
+01:04:45,700 --> 01:04:48,360
+That's the second
+part, and uses the fact
+
+867
+01:04:48,360 --> 01:04:53,420
+that the only vector with 0 norm
+is the zero vector-- a thing
+
+868
+01:04:53,420 --> 01:04:56,490
+that we use over and over again.
+
+869
+01:04:56,490 --> 01:05:00,930
+So let me make a
+couple more comments
+
+870
+01:05:00,930 --> 01:05:02,430
+on how you compute this.
+
+871
+01:05:05,020 --> 01:05:09,525
+So that's the
+uncertainty so far.
+
+872
+01:05:15,620 --> 01:05:17,970
+So the uncertainty
+vanishes in that case.
+
+873
+01:05:17,970 --> 01:05:24,420
+Now, we can square this
+equation to find a formula that
+
+874
+01:05:24,420 --> 01:05:30,130
+is perhaps more familiar--
+not necessarily more useful,
+
+875
+01:05:30,130 --> 01:05:31,440
+but also good.
+
+876
+01:05:31,440 --> 01:05:34,500
+For computations, it's
+pretty good-- delta A
+
+877
+01:05:34,500 --> 01:05:38,180
+of psi, which is
+real-- we square it.
+
+878
+01:05:38,180 --> 01:05:42,100
+Well, the norm square
+is the inner product
+
+879
+01:05:42,100 --> 01:05:58,560
+of this A minus A
+psi A minus A psi.
+
+880
+01:05:58,560 --> 01:06:02,090
+Norm squared is the inner
+product of these two vectors.
+
+881
+01:06:02,090 --> 01:06:04,800
+Now, the thing
+that we like to do
+
+882
+01:06:04,800 --> 01:06:09,420
+is to move this
+factor to that side.
+
+883
+01:06:09,420 --> 01:06:13,650
+How do you move a factor on the
+first input to the other input?
+
+884
+01:06:13,650 --> 01:06:16,600
+You take the adjoint.
+
+885
+01:06:16,600 --> 01:06:18,660
+So I should move
+it with an adjoint.
+
+886
+01:06:18,660 --> 01:06:20,370
+So what do I get?
+
+887
+01:06:20,370 --> 01:06:31,210
+Psi, and then I get the
+adjoint and this factor again.
+
+888
+01:06:39,010 --> 01:06:44,320
+Now, I should put a dagger
+here, but let me not put it,
+
+889
+01:06:44,320 --> 01:06:47,990
+because A is Hermitian.
+
+890
+01:06:47,990 --> 01:06:53,800
+And moreover, expectation
+value of A is real.
+
+891
+01:06:53,800 --> 01:06:57,140
+Remember-- so no
+need for the dagger,
+
+892
+01:06:57,140 --> 01:06:58,920
+so you can put the
+dagger, and then
+
+893
+01:06:58,920 --> 01:07:02,290
+explain that this is
+Hermitian and this is real--
+
+894
+01:07:02,290 --> 01:07:05,910
+or just not put it.
+
+895
+01:07:05,910 --> 01:07:08,700
+And now look at this.
+
+896
+01:07:08,700 --> 01:07:10,580
+This is a typical calculation.
+
+897
+01:07:10,580 --> 01:07:12,255
+You'll do it many, many times.
+
+898
+01:07:14,780 --> 01:07:18,440
+You just spread out the things.
+
+899
+01:07:18,440 --> 01:07:20,800
+So let me just do it once.
+
+900
+01:07:20,800 --> 01:07:27,360
+Here you get A squared minus
+A expectation value of A minus
+
+901
+01:07:27,360 --> 01:07:32,960
+expectation value of
+A A plus expectation
+
+902
+01:07:32,960 --> 01:07:36,135
+value of A squared psi.
+
+903
+01:07:41,030 --> 01:07:44,850
+So I multiplied everything,
+but you shouldn't be all
+
+904
+01:07:44,850 --> 01:07:49,820
+that-- I should put
+a 1 here, probably--
+
+905
+01:07:49,820 --> 01:07:51,450
+shouldn't worry about this much.
+
+906
+01:07:51,450 --> 01:07:54,850
+This is just a number and
+an A, a number and an A.
+
+907
+01:07:54,850 --> 01:07:56,010
+The order doesn't matter.
+
+908
+01:07:56,010 --> 01:07:59,120
+These two terms are
+really the same.
+
+909
+01:07:59,120 --> 01:08:04,520
+Well, let me go
+slowly on this once.
+
+910
+01:08:04,520 --> 01:08:06,020
+What is the first term?
+
+911
+01:08:06,020 --> 01:08:09,770
+It's psi A squared psi, so
+it's the expectation value
+
+912
+01:08:09,770 --> 01:08:12,870
+of A squared.
+
+913
+01:08:12,870 --> 01:08:15,260
+Now, what is this term?
+
+914
+01:08:15,260 --> 01:08:18,960
+Well, you have a number
+here, which is real.
+
+915
+01:08:18,960 --> 01:08:23,220
+It goes out of whatever you're
+doing, and you have psi A psi.
+
+916
+01:08:23,220 --> 01:08:26,090
+So this is expectation
+value of A.
+
+917
+01:08:26,090 --> 01:08:28,590
+And from the leftover
+psi A psi, you
+
+918
+01:08:28,590 --> 01:08:36,640
+get another expectation
+value of A. So this is A A.
+
+919
+01:08:36,640 --> 01:08:39,430
+Here the same thing--
+the number goes out,
+
+920
+01:08:39,430 --> 01:08:42,220
+and you're left with
+a psi A psi, which
+
+921
+01:08:42,220 --> 01:08:49,010
+is another expectation value
+of A, so you get minus A A.
+
+922
+01:08:49,010 --> 01:08:53,430
+And you have a plus
+expectation value of A squared.
+
+923
+01:08:53,430 --> 01:08:56,890
+And I don't need the i anymore,
+because the expectation values
+
+924
+01:08:56,890 --> 01:08:58,490
+have been taken.
+
+925
+01:08:58,490 --> 01:09:00,689
+And this always happens.
+
+926
+01:09:00,689 --> 01:09:03,920
+It's a minus here, a
+minus here, and a plus
+
+927
+01:09:03,920 --> 01:09:06,964
+here, so there's just one
+minus at the end of the day.
+
+928
+01:09:16,100 --> 01:09:21,529
+One minus at the end of the
+day, and a familiar, or famous
+
+929
+01:09:21,529 --> 01:09:31,779
+formula comes out that
+delta of A on psi squared
+
+930
+01:09:31,779 --> 01:09:36,250
+is equal to the expectation
+value of A squared minus
+
+931
+01:09:36,250 --> 01:09:41,420
+expectation value of A squared.
+
+932
+01:09:41,420 --> 01:09:44,430
+Which shows something
+quite powerful.
+
+933
+01:09:44,430 --> 01:09:48,120
+This has connections, of course,
+with statistical mechanics
+
+934
+01:09:48,120 --> 01:09:49,193
+and standard deviations.
+
+935
+01:09:52,920 --> 01:09:56,390
+It's a probabilistic
+interpretation of this formula,
+
+936
+01:09:56,390 --> 01:10:00,940
+but one fact that this
+has allowed us to prove
+
+937
+01:10:00,940 --> 01:10:04,050
+is that the expectation
+value of A squared
+
+938
+01:10:04,050 --> 01:10:06,550
+is always greater
+or equal than that,
+
+939
+01:10:06,550 --> 01:10:10,380
+because this number is
+positive, because it
+
+940
+01:10:10,380 --> 01:10:13,670
+is the square of a
+real positive number.
+
+941
+01:10:13,670 --> 01:10:17,610
+So that's a slightly
+non-trivial thing,
+
+942
+01:10:17,610 --> 01:10:19,256
+and it's good to know it.
+
+943
+01:10:23,290 --> 01:10:26,380
+And this formula, of
+course, is very well known.
+
+944
+01:10:29,020 --> 01:10:36,030
+Now, I'm going to leave a funny
+geometrical interpretation
+
+945
+01:10:36,030 --> 01:10:37,020
+of the uncertainty.
+
+946
+01:10:37,020 --> 01:10:40,110
+Maybe you will find
+it illuminating,
+
+947
+01:10:40,110 --> 01:10:42,580
+in some ways turning
+into pictures
+
+948
+01:10:42,580 --> 01:10:45,460
+all these calculations
+we've done.
+
+949
+01:10:45,460 --> 01:10:48,460
+I think it actually
+adds value to it,
+
+950
+01:10:48,460 --> 01:10:52,680
+and I don't think
+it's very well known,
+
+951
+01:10:52,680 --> 01:10:57,380
+or it's kind of funny, because
+it must not be very well known.
+
+952
+01:10:57,380 --> 01:11:01,630
+But maybe people don't
+find it that suggestive.
+
+953
+01:11:01,630 --> 01:11:04,020
+I kind of find it suggestive.
+
+954
+01:11:04,020 --> 01:11:09,550
+So here's what I want
+to say geometrically.
+
+955
+01:11:09,550 --> 01:11:12,110
+You have this vector space,
+and you have a vector psi.
+
+956
+01:11:17,770 --> 01:11:22,180
+Then you come along, and
+you add with the operator
+
+957
+01:11:22,180 --> 01:11:27,890
+A. Now the fact that
+this thing is not
+
+958
+01:11:27,890 --> 01:11:32,510
+and eigenstate means that
+after you add with A,
+
+959
+01:11:32,510 --> 01:11:35,500
+you don't keep in
+the same direction.
+
+960
+01:11:35,500 --> 01:11:37,180
+You go in different directions.
+
+961
+01:11:37,180 --> 01:11:41,670
+So here is A psi.
+
+962
+01:11:48,350 --> 01:11:50,630
+So what can we say here?
+
+963
+01:11:50,630 --> 01:11:55,700
+Well, actually
+here is this thing.
+
+964
+01:11:55,700 --> 01:12:00,030
+Think of this vector
+space spanned by psi.
+
+965
+01:12:03,740 --> 01:12:06,850
+Let's call it U psi.
+
+966
+01:12:06,850 --> 01:12:10,860
+So it's that line there.
+
+967
+01:12:10,860 --> 01:12:16,680
+You can project this
+in here, orthogonally.
+
+968
+01:12:23,930 --> 01:12:27,030
+Here is the first
+claim-- the vector
+
+969
+01:12:27,030 --> 01:12:30,130
+that you get up to
+here-- this vector-- is
+
+970
+01:12:30,130 --> 01:12:37,210
+nothing else but expectation
+value of A times psi.
+
+971
+01:12:37,210 --> 01:12:40,140
+And that makes sense, because
+it's a number times psi.
+
+972
+01:12:40,140 --> 01:12:44,120
+But precisely the orthogonal
+projection is this.
+
+973
+01:12:44,120 --> 01:12:46,850
+And here, you get an
+orthogonal vector.
+
+974
+01:12:46,850 --> 01:12:48,740
+We'll call it psi perp.
+
+975
+01:12:52,830 --> 01:12:56,000
+And the funny thing
+about this psi perp
+
+976
+01:12:56,000 --> 01:13:00,863
+is that its length is
+precisely the uncertainty.
+
+977
+01:13:05,890 --> 01:13:12,220
+So all this, but you could
+prove-- I'm going to do it.
+
+978
+01:13:12,220 --> 01:13:14,220
+I'm going to show you all
+these things are true,
+
+979
+01:13:14,220 --> 01:13:16,550
+but it gives you a
+bit of an insight.
+
+980
+01:13:16,550 --> 01:13:17,870
+you have a vector.
+
+981
+01:13:17,870 --> 01:13:19,980
+A moves you out.
+
+982
+01:13:19,980 --> 01:13:24,524
+What is the uncertainty is
+this vertical projection--
+
+983
+01:13:24,524 --> 01:13:25,940
+vertical thing is
+the uncertainty.
+
+984
+01:13:25,940 --> 01:13:30,560
+If you're down there,
+you get nothing.
+
+985
+01:13:30,560 --> 01:13:35,130
+So how do we prove that?
+
+986
+01:13:35,130 --> 01:13:41,440
+Well, let's
+construct a projector
+
+987
+01:13:41,440 --> 01:13:49,440
+down to the space U
+psi, which is psi psi.
+
+988
+01:13:49,440 --> 01:13:56,880
+This is a projector,
+just like any e1.
+
+989
+01:13:56,880 --> 01:14:00,660
+e1 is a projection into
+the direction of 1.
+
+990
+01:14:00,660 --> 01:14:04,450
+Well, take your first
+basis vector to be psi,
+
+991
+01:14:04,450 --> 01:14:07,310
+and that's a projection to psi.
+
+992
+01:14:07,310 --> 01:14:11,950
+So let's see what it--
+so the projection to psi.
+
+993
+01:14:11,950 --> 01:14:15,600
+So now let's see
+what it gives you
+
+994
+01:14:15,600 --> 01:14:24,390
+when it acts on A psi--
+this project acting on A psi
+
+995
+01:14:24,390 --> 01:14:31,120
+is equal to psi psi A psi.
+
+996
+01:14:34,280 --> 01:14:36,590
+And again, the usefulness
+of bracket notation
+
+997
+01:14:36,590 --> 01:14:38,400
+is kind of nice here.
+
+998
+01:14:38,400 --> 01:14:39,310
+So what is this?
+
+999
+01:14:39,310 --> 01:14:44,780
+The expectation value of A. So
+indeed psi expectation value
+
+1000
+01:14:44,780 --> 01:14:49,870
+of A is what you get when
+you project this down.
+
+1001
+01:15:00,882 --> 01:15:05,550
+So then, the rest
+is sort of simple.
+
+1002
+01:15:05,550 --> 01:15:13,885
+If you take psi, and
+subtract from psi-- well,
+
+1003
+01:15:13,885 --> 01:15:31,360
+I'll subtract from psi, psi
+times expectation value of A.
+
+1004
+01:15:31,360 --> 01:15:34,270
+I'm sorry, I was
+saying it wrong.
+
+1005
+01:15:34,270 --> 01:15:41,040
+If you think the
+original vector-- A psi,
+
+1006
+01:15:41,040 --> 01:15:45,520
+and subtract from
+it what we took out,
+
+1007
+01:15:45,520 --> 01:15:50,610
+which is psi times expectation
+value of A, the projected
+
+1008
+01:15:50,610 --> 01:15:53,840
+thing-- this is some vector.
+
+1009
+01:15:53,840 --> 01:16:01,880
+But the main thing is that this
+vector is orthogonal to psi.
+
+1010
+01:16:01,880 --> 01:16:02,630
+Why?
+
+1011
+01:16:02,630 --> 01:16:09,450
+If you take a psi on the left,
+this is orthogonal to psi.
+
+1012
+01:16:09,450 --> 01:16:10,830
+And how do you see it?
+
+1013
+01:16:10,830 --> 01:16:13,980
+Put the psi from the left.
+
+1014
+01:16:13,980 --> 01:16:15,340
+And what do you get here?
+
+1015
+01:16:15,340 --> 01:16:19,180
+Psi A psi, which is
+expectation value of A,
+
+1016
+01:16:19,180 --> 01:16:23,840
+psi psi, which is 1, and
+expectation value A is 0.
+
+1017
+01:16:23,840 --> 01:16:30,110
+So this is a vector psi perp.
+
+1018
+01:16:30,110 --> 01:16:35,280
+And this is, of course,
+A minus expectation value
+
+1019
+01:16:35,280 --> 01:16:40,270
+of A acting on the state psi.
+
+1020
+01:16:40,270 --> 01:16:46,300
+Well, precisely the norm of
+psi perp is the norm of this,
+
+1021
+01:16:46,300 --> 01:16:48,510
+but that's what we defined
+to be the uncertainty.
+
+1022
+01:16:51,830 --> 01:17:04,840
+So indeed, the norm of psi
+perp is delta A of psi.
+
+1023
+01:17:04,840 --> 01:17:09,230
+So our ideas of projectors
+and orthogonal projectors
+
+1024
+01:17:09,230 --> 01:17:11,340
+allow you to
+understand better what
+
+1025
+01:17:11,340 --> 01:17:14,010
+is the uncertainty--
+more pictorially.
+
+1026
+01:17:14,010 --> 01:17:18,080
+You have pictures of vectors,
+and orthogonal projections,
+
+1027
+01:17:18,080 --> 01:17:20,550
+and you want to make
+the uncertainty 0,
+
+1028
+01:17:20,550 --> 01:17:24,010
+you have to push
+the A psi into psi.
+
+1029
+01:17:24,010 --> 01:17:28,160
+You have to be an
+eigenstate, and you're there.
+
+1030
+01:17:28,160 --> 01:17:31,430
+Now, the last thing of-- I'll
+use the last five minutes
+
+1031
+01:17:31,430 --> 01:17:37,965
+to motivate the uncertainty,
+the famous uncertainty theorem.
+
+1032
+01:17:59,260 --> 01:18:01,470
+And typically, the
+uncertainly theorem
+
+1033
+01:18:01,470 --> 01:18:09,460
+is useful for A and B--
+two Hermitian operators.
+
+1034
+01:18:13,220 --> 01:18:22,250
+And it relates the uncertainty
+in A on the state psi
+
+1035
+01:18:22,250 --> 01:18:27,570
+to the uncertainty
+in B of psi, saying
+
+1036
+01:18:27,570 --> 01:18:31,535
+it must be greater than
+or equal than some number.
+
+1037
+01:18:38,300 --> 01:18:42,600
+Now, if you look
+at that, and you
+
+1038
+01:18:42,600 --> 01:18:46,580
+think of all the math
+we've been talking about,
+
+1039
+01:18:46,580 --> 01:18:49,870
+you maybe know
+exactly how you're
+
+1040
+01:18:49,870 --> 01:18:51,860
+supposed to prove the
+uncertainty theorem.
+
+1041
+01:18:57,300 --> 01:19:00,070
+Well, what does
+this remind you of?
+
+1042
+01:19:02,830 --> 01:19:05,750
+Cauchy-Schwarz--
+Schwarz inequality,
+
+1043
+01:19:05,750 --> 01:19:08,350
+I'm sorry-- not Cauchy-Schwarz.
+
+1044
+01:19:08,350 --> 01:19:08,850
+Why?
+
+1045
+01:19:08,850 --> 01:19:16,870
+Because for Schwarz inequality,
+you have norm of u, norm of v
+
+1046
+01:19:16,870 --> 01:19:21,600
+is greater than or equal than
+the norm of the inner product
+
+1047
+01:19:21,600 --> 01:19:29,290
+of u and v-- absolute value of
+the inner product of u and v.
+
+1048
+01:19:29,290 --> 01:19:31,660
+Remember, in this thing,
+this is norm of a vector,
+
+1049
+01:19:31,660 --> 01:19:34,910
+this is norm of a vector, and
+this is value of a scalar.
+
+1050
+01:19:34,910 --> 01:19:42,160
+And our uncertainties are norms.
+
+1051
+01:19:42,160 --> 01:19:44,720
+So it better be that.
+
+1052
+01:19:44,720 --> 01:19:46,640
+That inequality is
+the only inequality
+
+1053
+01:19:46,640 --> 01:19:49,800
+that can possibly
+give you the answer.
+
+1054
+01:19:49,800 --> 01:19:54,500
+So how would you set this up?
+
+1055
+01:19:54,500 --> 01:20:04,990
+You would say define-- as we'll
+say f equal A minus A acting
+
+1056
+01:20:04,990 --> 01:20:15,060
+on psi, and g is equal to
+B minus B acting on psi.
+
+1057
+01:20:15,060 --> 01:20:25,730
+And then f f, or f f
+is delta A squared.
+
+1058
+01:20:25,730 --> 01:20:32,806
+f g g is delta B squared.
+
+1059
+01:20:37,730 --> 01:20:42,090
+And you just need to compute
+the inner product of f g,
+
+1060
+01:20:42,090 --> 01:20:44,330
+because you need the mixed one.
+
+1061
+01:20:44,330 --> 01:20:48,420
+So if you want to
+have fun, try it.
+
+1062
+01:20:48,420 --> 01:20:50,380
+We'll do it next time anyway.
+
+1063
+01:20:50,380 --> 01:20:53,600
+All right that's it for today.

@@ -1,0 +1,58 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/source/1.0.0"
+title: QWM Source
+type: object
+properties:
+  title:
+    type: string
+    minLength: 1
+  publisher:
+    type: string
+    minLength: 1
+  source_kind:
+    enum: [course, textbook, institutional-reference, standard, paper, dataset]
+  authority_tier:
+    type: integer
+    minimum: 1
+    maximum: 9
+  canonical_locator:
+    type: string
+    minLength: 1
+    format: uri-reference
+  authors:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
+      minLength: 1
+  publication_year:
+    type: integer
+    minimum: 1600
+    maximum: 9999
+  edition:
+    type: [string, "null"]
+  local_corpus_path:
+    type: [string, "null"]
+    pattern: "^reference-books/"
+  retrieved_on:
+    type: [string, "null"]
+    format: date
+  content_sha256:
+    type: [string, "null"]
+    pattern: "^[a-f0-9]{64}$"
+  license:
+    type: [string, "null"]
+  notes:
+    type: [string, "null"]
+required: [title, publisher, source_kind, authority_tier, canonical_locator]
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+  - if:
+      properties:
+        local_corpus_path:
+          type: string
+      required: [local_corpus_path]
+    then:
+      required: [content_sha256]
+unevaluatedProperties: false

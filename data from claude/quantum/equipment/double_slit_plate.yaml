@@ -1,0 +1,9 @@
+id: double_slit_plate
+name: Double Slit Plate
+category: Optical Component
+belongs_to: earth_laboratory
+properties:
+  slit_separation: { unit: mm }
+  slit_width: { unit: micrometer }
+compatible_experiments:
+  - double_slit

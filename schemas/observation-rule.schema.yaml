@@ -1,0 +1,40 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/observation-rule/1.0.0"
+title: QWM Observation Rule
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  condition:
+    $ref: "common.schema.yaml#/definitions/predicate"
+  outcome:
+    $ref: "common.schema.yaml#/definitions/predicate"
+  equation:
+    allOf:
+      - $ref: "common.schema.yaml#/definitions/entityId"
+      - x-foreign-key:
+          entity_type: equation
+  applicability:
+    type: array
+    items:
+      type: object
+      properties:
+        entity_type:
+          enum: [concept, component, environment]
+        id:
+          $ref: "common.schema.yaml#/definitions/entityId"
+      required: [entity_type, id]
+      additionalProperties: false
+      x-foreign-key:
+        entity_type_from: entity_type
+        id_field: id
+  explanation:
+    type: [string, "null"]
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, condition, outcome, evidence]
+unevaluatedProperties: false

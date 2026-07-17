@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Notes on MIT OpenCourseWare</title>
+    <link>/resources/lecture-notes/</link>
+    <description>Recent content in Lecture Notes on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/lecture-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture Notes</title>
+      <link>/pages/lecture-notes/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/lecture-notes/data.json</guid>
+      <description>&lt;p&gt;&lt;table&gt;&#xA;&#xA;&lt;thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;LEC #&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;TOPICS&#xA;&lt;/th&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;p&gt;&lt;/thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;1–3&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-1/index.html&#34;&gt;Wave Mechanics (PDF)&lt;/a&gt;&lt;a href=&#34;../../resources/mit8_05f13_chap_01/index.html&#34;&gt;Wave Mechanics (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;3–4&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-2/index.html&#34;&gt;Spin One-half, Bras, Kets, and Operators (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;5–8&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-3/index.html&#34;&gt;Linear Algebra: Vector Spaces and Operators (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;9&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-4/index.html&#34;&gt;Dirac&amp;rsquo;s Bra and Ket Notation (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;10–11&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-5/index.html&#34;&gt;Uncertainty Principle and Compatible Observables (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;12–16&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-6/index.html&#34;&gt;Quantum Dynamics (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;16–18&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-7/index.html&#34;&gt;Two State Systems (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;18–20&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-8/index.html&#34;&gt;Multiparticle States and Tensor Products (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;20–23&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-9/index.html&#34;&gt;Angular Momentum (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;24–26&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/lecture-notes-10/index.html&#34;&gt;Addition of Angular Momentum (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 1</title>
+      <link>/resources/lecture-notes-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-1/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 1.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 10</title>
+      <link>/resources/lecture-notes-10/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-10/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 10.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 2</title>
+      <link>/resources/lecture-notes-2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-2/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 3</title>
+      <link>/resources/lecture-notes-3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-3/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 4</title>
+      <link>/resources/lecture-notes-4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-4/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 4.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 5</title>
+      <link>/resources/lecture-notes-5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-5/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 5.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 6</title>
+      <link>/resources/lecture-notes-6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-6/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 6.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 7</title>
+      <link>/resources/lecture-notes-7/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-7/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 7.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 8</title>
+      <link>/resources/lecture-notes-8/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-8/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 8.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lecture Notes 9</title>
+      <link>/resources/lecture-notes-9/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/lecture-notes-9/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 9.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Physics II, Lecture Notes 1</title>
+      <link>/resources/mit8_05f13_chap_01/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit8_05f13_chap_01/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, lecture notes 1.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

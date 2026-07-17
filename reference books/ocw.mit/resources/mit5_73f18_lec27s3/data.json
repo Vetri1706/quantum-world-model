@@ -1,0 +1,21 @@
+{
+  "content": "",
+  "content_type": "resource",
+  "description": "",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/b3a2d6893d95adb33dcb005bdbfc90ce_MIT5_73F18_Lec27s3.pdf",
+  "file_size": 2307253,
+  "file_type": "application/pdf",
+  "iscjklanguage": false,
+  "learning_resource_types": [
+    "Lecture Notes"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWFile",
+  "parent_title": "Lecture Notes",
+  "parent_type": "CourseSection",
+  "parent_uid": "f44d9054-5342-af93-4e73-aaa4964ca565",
+  "resourcetype": "Document",
+  "title": "5.73 F2018 Lecture 27 Supplement 3: A User’s Guide to Angular Momentum Theory",
+  "uid": "b3a2d689-3d95-adb3-3dcb-005bdbfc90ce"
+}

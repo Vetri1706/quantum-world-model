@@ -1,0 +1,7 @@
+id: tunneling_transmission_coefficient
+name: Tunneling Transmission Coefficient
+domain: Quantum Mechanics
+variables: ["T (transmission probability)", "barrier_height", "barrier_width", "particle_energy", "particle_mass", "hbar"]
+solver: "Analytical (rectangular barrier approximation) with numerical fallback for arbitrary shapes"
+used_in:
+  - quantum_tunneling

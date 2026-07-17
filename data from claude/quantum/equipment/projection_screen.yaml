@@ -1,0 +1,8 @@
+id: projection_screen
+name: Projection Screen
+category: Detector Surface
+belongs_to: earth_laboratory
+properties:
+  distance_from_slits: { unit: m }
+compatible_experiments:
+  - double_slit

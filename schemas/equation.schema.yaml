@@ -1,0 +1,56 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/equation/1.0.0"
+title: QWM Equation
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  domain:
+    type: string
+    minLength: 1
+  expression:
+    type: string
+    minLength: 1
+    description: Exact source expression; never simplified by QWM.
+  notation:
+    const: latex
+  symbols:
+    type: object
+    minProperties: 1
+    additionalProperties:
+      type: object
+      properties:
+        description:
+          type: string
+          minLength: 1
+        dimension:
+          type: string
+          minLength: 1
+      required: [description]
+      additionalProperties: false
+  assumptions:
+    type: array
+    items:
+      type: string
+      minLength: 1
+  validity_conditions:
+    type: array
+    items:
+      type: string
+      minLength: 1
+  related_concepts:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: concept
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, domain, expression, notation, symbols, assumptions, evidence]
+unevaluatedProperties: false

@@ -1,0 +1,19 @@
+id: interference
+name: Interference
+category: Concept
+definition: >
+  The phenomenon where two or more waves overlap and combine, reinforcing each other
+  (constructive interference, bright fringes) or canceling each other out (destructive
+  interference, dark fringes), depending on their relative phase.
+
+explained_by:
+  - wave_equation
+used_in:
+  - double_slit
+related_concepts:
+  - wave_particle_duality
+  - superposition
+misconceptions:
+  - fringes_are_just_shadows_misconception
+references:
+  - hyperphysics_double_slit

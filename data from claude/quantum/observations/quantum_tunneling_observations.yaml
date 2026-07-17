@@ -1,0 +1,23 @@
+- id: barrier_width_up_transmission_down
+  condition: barrier_width increases
+  observation: Transmission probability decreases sharply (exponentially)
+  reason: The wave function decays exponentially inside the barrier, so a wider barrier gives it more distance to decay before reaching the far side.
+  experiment: quantum_tunneling
+
+- id: barrier_height_up_transmission_down
+  condition: barrier_height increases
+  observation: Transmission probability decreases
+  reason: A taller barrier increases the decay rate of the wave function inside the barrier region.
+  experiment: quantum_tunneling
+
+- id: energy_up_transmission_up
+  condition: particle_energy increases (approaching or exceeding barrier_height)
+  observation: Transmission probability increases
+  reason: As particle energy approaches the barrier height, less of the wave function needs to decay to cross it; above the barrier height, transmission approaches classical behavior.
+  experiment: quantum_tunneling
+
+- id: mass_up_transmission_down
+  condition: particle_mass increases
+  observation: Transmission probability decreases
+  reason: Heavier particles have a shorter de Broglie wavelength, making their wave function decay faster inside the barrier - this is why tunneling is significant for electrons but negligible for everyday objects.
+  experiment: quantum_tunneling

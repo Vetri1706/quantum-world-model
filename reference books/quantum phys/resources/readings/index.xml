@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on MIT OpenCourseWare</title>
+    <link>/resources/readings/</link>
+    <description>Recent content in Readings on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/readings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readings</title>
+      <link>/pages/readings/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/readings/data.json</guid>
+      <description>&lt;h3 id=&#34;required-textbooks&#34;&gt;Required Textbooks&lt;/h3&gt;&#xA;&#xA;&lt;p&gt;[Griffiths] = Griffiths, David J. &lt;em&gt;Introduction to Quantum Mechanics&lt;/em&gt;. 2nd ed. Pearson Prentice Hall, 2004. ISBN: 9780131118928.&lt;/p&gt;&#xA;&lt;p&gt;[Shankar] = Shankar, Ramamurti. &lt;em&gt;Principles of Quantum Mechanics&lt;/em&gt;. 2nd ed. Plenum Press, 1994. ISBN: 9780306447907.&lt;/p&gt;&#xA;&#xA;    &lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;&#xA;&#xA;&lt;p&gt;Cohen-Tannoudji, Claude. &lt;em&gt;Quantum Mechanics&lt;/em&gt;. 2 vols. Wiley, 2006. ISBN: 9780471164326. (Useful for 8.05 and 8.06: Some students find it too encyclopedic.)&lt;/p&gt;&#xA;&lt;p&gt;Dirac, P. A. M. &lt;em&gt;The Principles of Quantum Mechanics&lt;/em&gt;. 4th ed. Oxford at the Clarendon Press, 1958. (Quantum mechanics from the Master. Deep, hard and rewarding to read, but probably in the summer.)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

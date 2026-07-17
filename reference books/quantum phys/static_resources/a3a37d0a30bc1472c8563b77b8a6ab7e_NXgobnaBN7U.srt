@@ -1,0 +1,5638 @@
+1
+00:00:00,050 --> 00:00:01,670
+The following
+content is provided
+
+2
+00:00:01,670 --> 00:00:03,820
+under a Creative
+Commons license.
+
+3
+00:00:03,820 --> 00:00:06,540
+Your support will help MIT
+OpenCourseWare continue
+
+4
+00:00:06,540 --> 00:00:10,120
+to offer high quality
+educational resources for free.
+
+5
+00:00:10,120 --> 00:00:12,700
+To make a donation or to
+view additional materials
+
+6
+00:00:12,700 --> 00:00:18,050
+from hundreds of MIT courses,
+visit MIT OpenCourseWare
+
+7
+00:00:18,050 --> 00:00:21,200
+at ocw.mit.edu.
+
+8
+00:00:21,200 --> 00:00:24,380
+BARTON ZWIEBACH: Let's begin.
+
+9
+00:00:24,380 --> 00:00:28,730
+So today's lecture will
+deal with the subject
+
+10
+00:00:28,730 --> 00:00:33,620
+of squeeze states
+and photon states.
+
+11
+00:00:33,620 --> 00:00:38,240
+And it all builds up from
+the ideas of coherent states
+
+12
+00:00:38,240 --> 00:00:41,130
+that we were talking
+about last time.
+
+13
+00:00:41,130 --> 00:00:46,335
+So let me begin by reminding
+you about the few facts
+
+14
+00:00:46,335 --> 00:00:49,350
+that we had about
+coherent states.
+
+15
+00:00:49,350 --> 00:00:53,290
+So a coherent state was
+born by taking the ground
+
+16
+00:00:53,290 --> 00:00:56,870
+state of the harmonic
+oscillator and displacing it
+
+17
+00:00:56,870 --> 00:01:01,400
+with a translation
+operator some distance, x0.
+
+18
+00:01:01,400 --> 00:01:03,700
+And then we let
+it go, and we saw
+
+19
+00:01:03,700 --> 00:01:09,270
+that this sort of wave function
+would just move from the left
+
+20
+00:01:09,270 --> 00:01:13,480
+and to the right coherently,
+without spreading out,
+
+21
+00:01:13,480 --> 00:01:15,180
+without changing shape.
+
+22
+00:01:15,180 --> 00:01:17,740
+It would move in a nice way.
+
+23
+00:01:17,740 --> 00:01:23,050
+Now, this was obtained with
+a translation operator, which
+
+24
+00:01:23,050 --> 00:01:27,980
+was an exponential that had
+on the exponent the momentum
+
+25
+00:01:27,980 --> 00:01:29,900
+operator.
+
+26
+00:01:29,900 --> 00:01:34,780
+But we realized eventually that
+the reason it all works out
+
+27
+00:01:34,780 --> 00:01:39,440
+is because its exponential
+of something that
+
+28
+00:01:39,440 --> 00:01:43,600
+depends on creation or
+annihilation operators,
+
+29
+00:01:43,600 --> 00:01:46,130
+and we could do
+something more general,
+
+30
+00:01:46,130 --> 00:01:50,880
+which was to use a
+complex number, alpha,
+
+31
+00:01:50,880 --> 00:01:54,430
+and define a
+displacement operator,
+
+32
+00:01:54,430 --> 00:02:00,110
+a more general one, that is
+some linear combination of a
+
+33
+00:02:00,110 --> 00:02:05,370
+and a dagger with alpha and
+the complex conjugate of alpha.
+
+34
+00:02:05,370 --> 00:02:12,230
+So this is only proportional to
+the momentum if alpha is real,
+
+35
+00:02:12,230 --> 00:02:15,900
+but if alpha is not real,
+that operator in the exponent
+
+36
+00:02:15,900 --> 00:02:17,700
+is not quite the momentum.
+
+37
+00:02:17,700 --> 00:02:22,090
+It's something that has a
+bit of position as well.
+
+38
+00:02:22,090 --> 00:02:25,420
+So this is a more
+general operator,
+
+39
+00:02:25,420 --> 00:02:27,690
+but on the other
+hand, it's clear
+
+40
+00:02:27,690 --> 00:02:30,530
+that it's anti-Hermitian,
+because if you
+
+41
+00:02:30,530 --> 00:02:34,590
+take the dagger of this
+thing, this term becomes
+
+42
+00:02:34,590 --> 00:02:38,050
+that and that term
+becomes this one,
+
+43
+00:02:38,050 --> 00:02:40,270
+each one with a change of sign.
+
+44
+00:02:40,270 --> 00:02:44,150
+So you're really with an
+anti-Hermitian operator.
+
+45
+00:02:44,150 --> 00:02:49,460
+Therefore, the whole
+operator is unitary
+
+46
+00:02:49,460 --> 00:02:53,960
+and you're acting with a
+unitary operator on the vacuum.
+
+47
+00:02:53,960 --> 00:02:56,930
+And therefore, this state
+is also well normalized
+
+48
+00:02:56,930 --> 00:03:00,570
+and represents a state
+with some expectation
+
+49
+00:03:00,570 --> 00:03:01,980
+value of the position.
+
+50
+00:03:01,980 --> 00:03:04,850
+Just like a coherent state,
+we moved it to the right
+
+51
+00:03:04,850 --> 00:03:08,100
+and it had some expectation
+value of the position.
+
+52
+00:03:08,100 --> 00:03:11,720
+But this one also has
+some expectation value
+
+53
+00:03:11,720 --> 00:03:13,450
+of the momentum.
+
+54
+00:03:13,450 --> 00:03:21,930
+So in fact, we realize that the
+real part of alpha in this axis
+
+55
+00:03:21,930 --> 00:03:26,170
+was related to the expectation
+value of the position divided
+
+56
+00:03:26,170 --> 00:03:27,580
+by to the 0.
+
+57
+00:03:27,580 --> 00:03:29,250
+So if you produce
+a coherent state
+
+58
+00:03:29,250 --> 00:03:35,270
+with this value of alpha
+in the complex alpha plane,
+
+59
+00:03:35,270 --> 00:03:38,030
+well, you go down and
+that's the expectation value
+
+60
+00:03:38,030 --> 00:03:39,220
+of the position.
+
+61
+00:03:39,220 --> 00:03:42,420
+You go horizontally,
+well, that's
+
+62
+00:03:42,420 --> 00:03:45,170
+the expectation value
+of the momentum scaled
+
+63
+00:03:45,170 --> 00:03:49,110
+because this alpha is a
+pure number, has no units.
+
+64
+00:03:49,110 --> 00:03:55,560
+So this x over square root
+of 2 d0 and p d0 over h
+
+65
+00:03:55,560 --> 00:04:01,210
+bar have no units, and
+that's how it should be.
+
+66
+00:04:01,210 --> 00:04:06,520
+So we learned also that the
+annihilation operator acting
+
+67
+00:04:06,520 --> 00:04:10,560
+on this coherent state was
+alpha times the coherent state.
+
+68
+00:04:10,560 --> 00:04:13,030
+So it's a very simple property.
+
+69
+00:04:13,030 --> 00:04:17,160
+That number, alpha,
+is the eigenvalue
+
+70
+00:04:17,160 --> 00:04:19,020
+of the destruction operator.
+
+71
+00:04:22,250 --> 00:04:26,550
+Now, that's a one line
+computation based on this,
+
+72
+00:04:26,550 --> 00:04:29,820
+or a two line computation maybe.
+
+73
+00:04:29,820 --> 00:04:34,360
+But it should be a computation
+that is easy for you to do.
+
+74
+00:04:34,360 --> 00:04:40,100
+So make sure you
+know how to get this
+
+75
+00:04:40,100 --> 00:04:43,750
+very quickly from
+this definition.
+
+76
+00:04:43,750 --> 00:04:45,570
+So that's a coherent state.
+
+77
+00:04:45,570 --> 00:04:48,340
+And then the thing we
+finished the lecture
+
+78
+00:04:48,340 --> 00:04:53,080
+with was with the time evolution
+of this coherent state.
+
+79
+00:04:53,080 --> 00:05:00,360
+And the time evolution was that
+as the state, alpha, in time
+
+80
+00:05:00,360 --> 00:05:06,620
+becomes the state alpha at time
+t, it remains a coherent state
+
+81
+00:05:06,620 --> 00:05:09,720
+but the value of
+alpha is changed.
+
+82
+00:05:09,720 --> 00:05:12,160
+In fact, the value
+of alpha is changed
+
+83
+00:05:12,160 --> 00:05:16,890
+in such a way that you can just
+imagine this thing rotating,
+
+84
+00:05:16,890 --> 00:05:20,370
+and rotating with
+angular velocity, omega.
+
+85
+00:05:20,370 --> 00:05:25,870
+So this thing was
+the coherent state,
+
+86
+00:05:25,870 --> 00:05:30,130
+e to the minus i omega t alpha.
+
+87
+00:05:30,130 --> 00:05:34,050
+So this whole complex number,
+instead of being alpha,
+
+88
+00:05:34,050 --> 00:05:35,030
+is just this.
+
+89
+00:05:35,030 --> 00:05:37,650
+There's no comma t.
+
+90
+00:05:37,650 --> 00:05:39,880
+This is the time
+development of the state.
+
+91
+00:05:39,880 --> 00:05:46,330
+And there was a phase here, e
+to the minus i omega t over 2,
+
+92
+00:05:46,330 --> 00:05:49,540
+that was not very relevant.
+
+93
+00:05:49,540 --> 00:05:51,830
+But that's what the
+state was doing in time.
+
+94
+00:05:51,830 --> 00:05:56,890
+So basically, that's
+where we got last time.
+
+95
+00:05:56,890 --> 00:06:00,686
+Before I push on, do
+you have any questions?
+
+96
+00:06:05,710 --> 00:06:11,760
+I did post the notes associated
+to coherent states about half
+
+97
+00:06:11,760 --> 00:06:15,760
+an hour ago, so you have them.
+
+98
+00:06:15,760 --> 00:06:19,830
+You do have two problems
+on coherent states
+
+99
+00:06:19,830 --> 00:06:24,300
+in this homework, so the
+notes should help you.
+
+100
+00:06:24,300 --> 00:06:27,260
+But any questions
+about this picture?
+
+101
+00:06:35,190 --> 00:06:35,690
+OK.
+
+102
+00:06:35,690 --> 00:06:38,710
+So I want to develop
+it a little more
+
+103
+00:06:38,710 --> 00:06:45,730
+before starting
+with squeeze states.
+
+104
+00:06:45,730 --> 00:06:49,810
+So here's what I
+want to tell you.
+
+105
+00:06:49,810 --> 00:06:54,516
+And this is an intuition that
+people have about these states.
+
+106
+00:06:57,500 --> 00:06:59,620
+Alpha is a complex number.
+
+107
+00:06:59,620 --> 00:07:02,970
+And you know, it's a
+well-defined complex number.
+
+108
+00:07:02,970 --> 00:07:06,400
+But you know, this
+is a coherent state,
+
+109
+00:07:06,400 --> 00:07:11,730
+so it's not a
+position eigenstate.
+
+110
+00:07:11,730 --> 00:07:14,755
+It's not a momentum eigenstate.
+
+111
+00:07:14,755 --> 00:07:17,130
+It's not an energy eigenstate.
+
+112
+00:07:17,130 --> 00:07:19,670
+It has all kinds
+of uncertainties.
+
+113
+00:07:19,670 --> 00:07:24,000
+It has uncertainties in
+position, in momentum,
+
+114
+00:07:24,000 --> 00:07:24,890
+and in energy.
+
+115
+00:07:24,890 --> 00:07:26,226
+Yes?
+
+116
+00:07:26,226 --> 00:07:30,242
+AUDIENCE: On that complex plane
+where you have the x and the p,
+
+117
+00:07:30,242 --> 00:07:33,865
+are those expectation values
+of the position of momentum?
+
+118
+00:07:33,865 --> 00:07:34,740
+BARTON ZWIEBACH: Yes.
+
+119
+00:07:34,740 --> 00:07:37,220
+I think I wrote them
+with expectation values
+
+120
+00:07:37,220 --> 00:07:39,600
+of the position of
+momentum last time.
+
+121
+00:07:39,600 --> 00:07:40,710
+Yes.
+
+122
+00:07:40,710 --> 00:07:43,400
+So given alpha,
+that number you get
+
+123
+00:07:43,400 --> 00:07:46,740
+is the expectation value
+of position or expectation
+
+124
+00:07:46,740 --> 00:07:48,336
+value of momentum.
+
+125
+00:07:48,336 --> 00:07:48,835
+Correct.
+
+126
+00:07:51,930 --> 00:07:56,940
+So actually, this is
+the expectation value
+
+127
+00:07:56,940 --> 00:07:59,810
+of the position,
+but the position
+
+128
+00:07:59,810 --> 00:08:03,726
+is a little bit rounded.
+
+129
+00:08:03,726 --> 00:08:06,700
+Yeah, this is the expectation
+value of the position.
+
+130
+00:08:06,700 --> 00:08:07,460
+It's a number.
+
+131
+00:08:07,460 --> 00:08:11,360
+But intuitively, this
+is spread out a little.
+
+132
+00:08:11,360 --> 00:08:16,020
+The position is
+not just one point.
+
+133
+00:08:16,020 --> 00:08:18,425
+This is a coherent state.
+
+134
+00:08:18,425 --> 00:08:21,370
+It looks like a
+Gaussian wave function.
+
+135
+00:08:21,370 --> 00:08:25,650
+The momentum is also
+spread out a little.
+
+136
+00:08:25,650 --> 00:08:29,900
+So in some sense, many people
+draw this as a little blob.
+
+137
+00:08:38,419 --> 00:08:43,039
+And that blob represents
+your intuition
+
+138
+00:08:43,039 --> 00:08:46,275
+that yes, the
+expectation value is this
+
+139
+00:08:46,275 --> 00:08:48,210
+and the expectation
+value is this,
+
+140
+00:08:48,210 --> 00:08:53,680
+but the position is, well,
+somewhere around this thing
+
+141
+00:08:53,680 --> 00:08:57,890
+and somewhere around that stuff.
+
+142
+00:08:57,890 --> 00:09:02,810
+You can complain, this is very
+hand wavy, but it's useful.
+
+143
+00:09:02,810 --> 00:09:06,660
+It's good to have that physical
+picture that the state really
+
+144
+00:09:06,660 --> 00:09:11,610
+is some sort of blob here, not
+that the expectation values are
+
+145
+00:09:11,610 --> 00:09:16,950
+not well defined, but rather
+that it's something like this.
+
+146
+00:09:16,950 --> 00:09:24,270
+And I want to relate it to
+an idea that comes along
+
+147
+00:09:24,270 --> 00:09:27,890
+with waves, and it's
+important for what
+
+148
+00:09:27,890 --> 00:09:30,890
+we're going to be
+doing later today.
+
+149
+00:09:30,890 --> 00:09:41,920
+If you have a wave with energy
+e, and suppose your wave
+
+150
+00:09:41,920 --> 00:09:45,740
+is a light wave.
+
+151
+00:09:45,740 --> 00:09:49,090
+Light wave with energy e.
+
+152
+00:09:49,090 --> 00:09:53,660
+And it's described by,
+say, A cosine omega t.
+
+153
+00:09:53,660 --> 00:09:56,450
+That's some component
+of the electric field
+
+154
+00:09:56,450 --> 00:10:00,910
+or the magnetic
+field for this wave.
+
+155
+00:10:00,910 --> 00:10:01,970
+It is like that.
+
+156
+00:10:01,970 --> 00:10:06,190
+Well, we've been talking
+about energy time uncertainty,
+
+157
+00:10:06,190 --> 00:10:11,580
+and we know that unless we
+make things very precise.
+
+158
+00:10:11,580 --> 00:10:14,900
+It's easy to get things wrong.
+
+159
+00:10:14,900 --> 00:10:20,630
+So I will first do
+something fairly imprecise
+
+160
+00:10:20,630 --> 00:10:24,550
+to give you a feeling of
+what people talk about,
+
+161
+00:10:24,550 --> 00:10:27,925
+and then we'll use this picture
+to do it more precisely.
+
+162
+00:10:30,650 --> 00:10:39,620
+So if you have
+this wave, the face
+
+163
+00:10:39,620 --> 00:10:44,526
+of this wave-- we'll
+call it phi-- is omega t.
+
+164
+00:10:44,526 --> 00:10:49,350
+And if we are naive
+there, the face
+
+165
+00:10:49,350 --> 00:10:54,280
+is divided by omega
+is the error in time.
+
+166
+00:10:58,090 --> 00:11:05,650
+Now, this wave has energy E.
+It has some number of photons.
+
+167
+00:11:05,650 --> 00:11:12,245
+So the energy, E, is the number
+of photons times h bar omega.
+
+168
+00:11:12,245 --> 00:11:14,380
+N is equal to number of photons.
+
+169
+00:11:19,900 --> 00:11:29,430
+And again, we could say delta
+E is delta N h bar omega,
+
+170
+00:11:29,430 --> 00:11:36,270
+and then substitute these
+two relations into this
+
+171
+00:11:36,270 --> 00:11:37,590
+to see what we get.
+
+172
+00:11:37,590 --> 00:11:47,540
+Well, delta E is
+delta N h bar omega.
+
+173
+00:11:47,540 --> 00:11:51,970
+Delta t is delta phi over omega.
+
+174
+00:11:51,970 --> 00:11:55,660
+This should be h bar over 2.
+
+175
+00:11:55,660 --> 00:11:59,180
+The omegas cancel,
+the h bar cancels,
+
+176
+00:11:59,180 --> 00:12:10,860
+and you get delta N delta phi
+is about 1, or 1 over 2 or 1
+
+177
+00:12:10,860 --> 00:12:12,170
+over square root of 2.
+
+178
+00:12:14,680 --> 00:12:17,000
+And that's, in
+fact, the relation
+
+179
+00:12:17,000 --> 00:12:20,340
+that people do take
+somewhat seriously,
+
+180
+00:12:20,340 --> 00:12:24,820
+if you have a wave
+in quantum optics
+
+181
+00:12:24,820 --> 00:12:27,380
+and say, well, the uncertainty
+in the number of photons
+
+182
+00:12:27,380 --> 00:12:31,590
+and the uncertainty in the
+coherence of these photons,
+
+183
+00:12:31,590 --> 00:12:36,610
+the phases, if they're out of
+phase, they're not coherent,
+
+184
+00:12:36,610 --> 00:12:38,360
+there's a relation of this kind.
+
+185
+00:12:38,360 --> 00:12:46,410
+And this derivation is
+certainly pretty bad.
+
+186
+00:12:46,410 --> 00:12:51,470
+It's just not
+precise because even
+
+187
+00:12:51,470 --> 00:12:55,210
+we started with this that is
+not precise unless you really
+
+188
+00:12:55,210 --> 00:12:58,590
+explain what you
+mean by delta t.
+
+189
+00:12:58,590 --> 00:13:02,605
+So let's see if we can make
+some sense of this picture here.
+
+190
+00:13:05,540 --> 00:13:06,880
+So here we go.
+
+191
+00:13:06,880 --> 00:13:10,345
+I want to do a small
+calculation first.
+
+192
+00:13:15,190 --> 00:13:19,000
+So let's see what we have.
+
+193
+00:13:19,000 --> 00:13:23,600
+In this coherent state, what
+is the expectation value
+
+194
+00:13:23,600 --> 00:13:26,860
+of the number operator?
+
+195
+00:13:26,860 --> 00:13:31,720
+Expectation value of the
+number operator in alpha.
+
+196
+00:13:31,720 --> 00:13:34,210
+Well, the number
+operator in alpha,
+
+197
+00:13:34,210 --> 00:13:40,000
+you would do this a
+dagger a in alpha.
+
+198
+00:13:40,000 --> 00:13:47,420
+These are easy to do because a
+on alpha is alpha times alpha,
+
+199
+00:13:47,420 --> 00:13:51,160
+and if you dagger that
+equation, a dagger on alpha
+
+200
+00:13:51,160 --> 00:13:53,090
+is alpha star.
+
+201
+00:13:53,090 --> 00:13:59,720
+So you get-- I'll go slowly--
+alpha alpha star here,
+
+202
+00:13:59,720 --> 00:14:02,055
+and then you get alpha alpha.
+
+203
+00:14:04,990 --> 00:14:07,200
+And alpha has unit norm.
+
+204
+00:14:07,200 --> 00:14:12,350
+These are numbers, so
+this is equal to length
+
+205
+00:14:12,350 --> 00:14:13,605
+of alpha squared.
+
+206
+00:14:20,580 --> 00:14:23,990
+So if this is a
+harmonic oscillator,
+
+207
+00:14:23,990 --> 00:14:28,450
+the expectation value of the
+number operator, in fact,
+
+208
+00:14:28,450 --> 00:14:33,030
+is the length squared
+of this vector.
+
+209
+00:14:33,030 --> 00:14:35,480
+Now, how about N squared?
+
+210
+00:14:39,030 --> 00:14:41,430
+N squared is a little
+more work because you
+
+211
+00:14:41,430 --> 00:14:47,410
+have alpha a dagger
+a a dagger a alpha.
+
+212
+00:14:51,090 --> 00:14:53,885
+This one gives me
+the factor you know,
+
+213
+00:14:53,885 --> 00:14:56,182
+this one gives me
+the factor you know.
+
+214
+00:14:56,182 --> 00:15:04,170
+And therefore, we already
+have alpha squared times alpha
+
+215
+00:15:04,170 --> 00:15:07,950
+a a dagger alpha.
+
+216
+00:15:07,950 --> 00:15:10,760
+And here, the a's
+and the a daggers
+
+217
+00:15:10,760 --> 00:15:14,560
+are kind of in the
+wrong order because I
+
+218
+00:15:14,560 --> 00:15:21,110
+know what a is on a ket,
+but a is now on the bra.
+
+219
+00:15:21,110 --> 00:15:23,840
+And I know what a
+dagger is on the bra,
+
+220
+00:15:23,840 --> 00:15:27,490
+but now a dagger is on the ket.
+
+221
+00:15:27,490 --> 00:15:29,130
+But the answer is simple.
+
+222
+00:15:29,130 --> 00:15:34,020
+You replace this
+by the commutator
+
+223
+00:15:34,020 --> 00:15:37,790
+plus the reverse order.
+
+224
+00:15:37,790 --> 00:15:41,580
+So this is equal to the
+commutator, which is 1,
+
+225
+00:15:41,580 --> 00:15:44,425
+plus the thing in
+the reverse order.
+
+226
+00:15:49,830 --> 00:15:53,380
+And this is 1 plus
+alpha squared.
+
+227
+00:15:53,380 --> 00:16:00,610
+So you have alpha squared
+times 1 plus alpha squared,
+
+228
+00:16:00,610 --> 00:16:03,860
+and that's the expectation
+value of N squared.
+
+229
+00:16:03,860 --> 00:16:07,130
+All that, because we're
+actually interested in what
+
+230
+00:16:07,130 --> 00:16:13,250
+is delta N, the uncertainty
+in N in the coherent state.
+
+231
+00:16:13,250 --> 00:16:17,060
+And that would be
+this, square root
+
+232
+00:16:17,060 --> 00:16:21,750
+of this, which is alpha
+to the fourth plus alpha
+
+233
+00:16:21,750 --> 00:16:28,550
+squared minus the square of
+the expectation value, which
+
+234
+00:16:28,550 --> 00:16:33,100
+is minus alpha to the fourth.
+
+235
+00:16:33,100 --> 00:16:38,610
+And this is length of alpha.
+
+236
+00:16:38,610 --> 00:16:47,876
+So the uncertainty in N
+is just length of alpha.
+
+237
+00:16:47,876 --> 00:16:55,710
+It happens to be the square root
+of the expectation value of N.
+
+238
+00:16:55,710 --> 00:16:59,840
+So in fact, if you
+think of this picture,
+
+239
+00:16:59,840 --> 00:17:03,240
+you're tempted to say,
+oh, this represents
+
+240
+00:17:03,240 --> 00:17:08,750
+the number of excited
+states that you have.
+
+241
+00:17:08,750 --> 00:17:14,050
+This length represents the
+expectation value of N. No.
+
+242
+00:17:14,050 --> 00:17:19,329
+The expectation value of
+N is this length squared.
+
+243
+00:17:19,329 --> 00:17:27,210
+This length represents
+delta N in the picture.
+
+244
+00:17:31,930 --> 00:17:36,430
+So what else can we say?
+
+245
+00:17:36,430 --> 00:17:40,610
+Well, this picture is
+useful because now, I
+
+246
+00:17:40,610 --> 00:17:42,905
+can be a little
+more precise here.
+
+247
+00:17:46,760 --> 00:17:49,390
+This thing is rotating.
+
+248
+00:17:49,390 --> 00:17:54,660
+That is time evolution
+of your coherent state.
+
+249
+00:17:54,660 --> 00:17:57,250
+Now, this thing
+this rotating, but I
+
+250
+00:17:57,250 --> 00:18:00,040
+can ask now how wide this is.
+
+251
+00:18:02,720 --> 00:18:08,400
+So what is the uncertainty
+in x in a coherent state?
+
+252
+00:18:08,400 --> 00:18:11,190
+Well, the uncertainty
+in x in a coherent state
+
+253
+00:18:11,190 --> 00:18:14,650
+is the same as the uncertainty
+of the ground state
+
+254
+00:18:14,650 --> 00:18:17,710
+because you just moved it.
+
+255
+00:18:17,710 --> 00:18:19,940
+Uncertainty doesn't change.
+
+256
+00:18:19,940 --> 00:18:28,080
+So the uncertainty,
+delta x, is in fact
+
+257
+00:18:28,080 --> 00:18:36,460
+this quantity that we call
+d0 over square root of 2.
+
+258
+00:18:36,460 --> 00:18:42,370
+That's the uncertainty delta
+x, and the uncertainty delta p
+
+259
+00:18:42,370 --> 00:18:49,640
+is h bar over d0
+square root of 2.
+
+260
+00:18:49,640 --> 00:18:52,670
+These are not hard to remember.
+
+261
+00:18:52,670 --> 00:18:57,990
+d0 is the length scale of
+the harmonic oscillator,
+
+262
+00:18:57,990 --> 00:19:01,080
+so that's typically what
+the uncertainty should be.
+
+263
+00:19:01,080 --> 00:19:04,620
+The square root of 2, yes,
+it's hard to remember.
+
+264
+00:19:04,620 --> 00:19:07,000
+But delta p is this one.
+
+265
+00:19:07,000 --> 00:19:08,540
+And then the other
+thing that you
+
+266
+00:19:08,540 --> 00:19:12,100
+know is that the product
+should be h bar over 2,
+
+267
+00:19:12,100 --> 00:19:14,030
+so that is correct.
+
+268
+00:19:16,640 --> 00:19:18,970
+Now, look at this.
+
+269
+00:19:18,970 --> 00:19:21,715
+How big is this thing?
+
+270
+00:19:21,715 --> 00:19:26,980
+If the uncertainty in x is
+d0 over square root of 2,
+
+271
+00:19:26,980 --> 00:19:36,540
+this width is about
+how much, roughly?
+
+272
+00:19:47,985 --> 00:19:48,485
+Nobody?
+
+273
+00:19:51,170 --> 00:20:00,230
+This is the uncertainty in
+x, d0 over square root of 2
+
+274
+00:20:00,230 --> 00:20:04,100
+in these units, if you move
+the expectation value of x
+
+275
+00:20:04,100 --> 00:20:07,305
+plus the uncertainty of x over
+2 and the other uncertainty
+
+276
+00:20:07,305 --> 00:20:09,130
+of x roughly.
+
+277
+00:20:09,130 --> 00:20:12,310
+This thing is d0 over
+square root of 2,
+
+278
+00:20:12,310 --> 00:20:17,420
+so it represents
+basically 1/2, because you
+
+279
+00:20:17,420 --> 00:20:21,440
+change the expectation
+value of x by this amount,
+
+280
+00:20:21,440 --> 00:20:26,330
+and then this thing moves 1/2.
+
+281
+00:20:26,330 --> 00:20:30,560
+The size of this
+is 1/2, roughly.
+
+282
+00:20:30,560 --> 00:20:36,240
+Could be 1/4 or could be
+2, but it's roughly 1/2.
+
+283
+00:20:36,240 --> 00:20:43,440
+And the vertical one corresponds
+to the uncertainty in momentum.
+
+284
+00:20:43,440 --> 00:20:47,390
+So intuitively, this is
+h over square root v0,
+
+285
+00:20:47,390 --> 00:20:53,290
+so if you plug it in there,
+this amount, p plus delta p,
+
+286
+00:20:53,290 --> 00:20:57,460
+you'll get 1/2 as well.
+
+287
+00:20:57,460 --> 00:21:01,872
+So in this plot-- yes?
+
+288
+00:21:01,872 --> 00:21:03,800
+AUDIENCE: Wouldn't
+the width be 1
+
+289
+00:21:03,800 --> 00:21:05,728
+because the uncertainty
+is the width
+
+290
+00:21:05,728 --> 00:21:08,717
+in one direction [INAUDIBLE]?
+
+291
+00:21:08,717 --> 00:21:10,300
+BARTON ZWIEBACH:
+Well, the uncertainty
+
+292
+00:21:10,300 --> 00:21:12,970
+is neither the width in
+one direction or not.
+
+293
+00:21:12,970 --> 00:21:16,445
+It's a Gaussian, so I
+don't know where it stops.
+
+294
+00:21:20,940 --> 00:21:26,900
+This picture is not very
+precise when I talk about this,
+
+295
+00:21:26,900 --> 00:21:32,150
+so let me leave it with
+1/2 or something like that.
+
+296
+00:21:32,150 --> 00:21:34,390
+I don't think we can do better.
+
+297
+00:21:34,390 --> 00:21:37,450
+Now, there's also 1/2 here.
+
+298
+00:21:37,450 --> 00:21:43,060
+So finally, we get to something
+that is kind of interesting.
+
+299
+00:21:43,060 --> 00:21:49,050
+If really the state in some
+sense, in terms of x and p,
+
+300
+00:21:49,050 --> 00:21:54,020
+is spread here, and
+this is moving around,
+
+301
+00:21:54,020 --> 00:21:58,000
+the face is a little ambiguous.
+
+302
+00:21:58,000 --> 00:22:00,350
+Because you would say,
+well, the face is this one,
+
+303
+00:22:00,350 --> 00:22:08,170
+but well, you could go the whole
+uncertainty that you go here.
+
+304
+00:22:08,170 --> 00:22:12,120
+The uncertainty in where
+the coherent state is,
+
+305
+00:22:12,120 --> 00:22:21,370
+we could call the face here
+delta phi in this picture.
+
+306
+00:22:21,370 --> 00:22:26,640
+We don't know where this state
+is because it's a little blob.
+
+307
+00:22:26,640 --> 00:22:29,310
+We know the expectation
+values where they are,
+
+308
+00:22:29,310 --> 00:22:32,800
+but the state itself
+is a little imprecise.
+
+309
+00:22:32,800 --> 00:22:35,790
+So there's an angle here
+in this diagram that
+
+310
+00:22:35,790 --> 00:22:39,790
+represents the face because this
+is going with frequency omega
+
+311
+00:22:39,790 --> 00:22:40,460
+t.
+
+312
+00:22:40,460 --> 00:22:42,670
+So this is the face
+as this goes around,
+
+313
+00:22:42,670 --> 00:22:46,865
+so this angle, delta
+phi, is how much.
+
+314
+00:22:50,120 --> 00:22:53,090
+Well, if this is
+1/2 and this is 1/2,
+
+315
+00:22:53,090 --> 00:22:57,750
+I'm going to assume that
+this is 1/2 as well, or 1,
+
+316
+00:22:57,750 --> 00:22:59,380
+or something like that.
+
+317
+00:22:59,380 --> 00:23:02,510
+So it's 1 over this length.
+
+318
+00:23:07,938 --> 00:23:08,896
+That's the uncertainty.
+
+319
+00:23:11,530 --> 00:23:17,280
+But delta N, we calculated.
+
+320
+00:23:17,280 --> 00:23:19,940
+This is roughly.
+
+321
+00:23:19,940 --> 00:23:25,480
+And delta N we calculated,
+and it's exactly alpha.
+
+322
+00:23:25,480 --> 00:23:32,540
+So delta phi delta N
+is about 1 correctly.
+
+323
+00:23:36,800 --> 00:23:39,690
+And here, there is
+at least a picture
+
+324
+00:23:39,690 --> 00:23:42,890
+of what the face uncertainty
+is and why it originates.
+
+325
+00:23:46,120 --> 00:23:47,154
+Yes?
+
+326
+00:23:47,154 --> 00:23:48,612
+AUDIENCE: Can you
+tell me again how
+
+327
+00:23:48,612 --> 00:23:50,370
+the Gaussian relates
+to the uncertainty?
+
+328
+00:23:50,370 --> 00:23:51,536
+BARTON ZWIEBACH: One second.
+
+329
+00:23:51,536 --> 00:23:52,050
+Let me see.
+
+330
+00:23:52,050 --> 00:23:53,216
+I've got one question first.
+
+331
+00:23:53,216 --> 00:23:53,892
+AUDIENCE: Yes.
+
+332
+00:23:53,892 --> 00:23:57,196
+Can you explain one more time
+where the 1/2's come from?
+
+333
+00:23:57,196 --> 00:23:58,140
+[INAUDIBLE] the graph.
+
+334
+00:23:58,140 --> 00:24:00,500
+I'm not sure why.
+
+335
+00:24:00,500 --> 00:24:01,597
+BARTON ZWIEBACH: Yes.
+
+336
+00:24:01,597 --> 00:24:04,762
+AUDIENCE: Are you saying
+that the width is 1/2, or is
+
+337
+00:24:04,762 --> 00:24:06,670
+that how high it is?
+
+338
+00:24:06,670 --> 00:24:09,118
+BARTON ZWIEBACH: The
+width of this little ball.
+
+339
+00:24:09,118 --> 00:24:11,926
+AUDIENCE: So how does that
+follow from the graph?
+
+340
+00:24:16,100 --> 00:24:19,070
+BARTON ZWIEBACH: It's
+a little hand wavy,
+
+341
+00:24:19,070 --> 00:24:22,410
+but I'll say it like this.
+
+342
+00:24:25,630 --> 00:24:41,480
+I expect the
+position, if measured,
+
+343
+00:24:41,480 --> 00:24:52,535
+to be between expectation
+value of x plus minus delta x.
+
+344
+00:24:52,535 --> 00:24:56,470
+So if I'm going to measure
+the position of something
+
+345
+00:24:56,470 --> 00:25:01,440
+in a state, the most likely
+measurement that I will get
+
+346
+00:25:01,440 --> 00:25:04,950
+is the expectation value
+of x, statistically,
+
+347
+00:25:04,950 --> 00:25:06,770
+after I repeat this many times.
+
+348
+00:25:06,770 --> 00:25:10,090
+But if I just
+measure, I'm probably
+
+349
+00:25:10,090 --> 00:25:15,130
+going to get some number
+between this and this.
+
+350
+00:25:15,130 --> 00:25:21,620
+So if you think of this
+diagram not as the expectation
+
+351
+00:25:21,620 --> 00:25:25,310
+value of x in here,
+but whatever you
+
+352
+00:25:25,310 --> 00:25:31,620
+got for x as you measured,
+if you do 1,000 measurements,
+
+353
+00:25:31,620 --> 00:25:36,860
+you're going to get points
+all over here in some region
+
+354
+00:25:36,860 --> 00:25:39,290
+because you measure
+x in one case,
+
+355
+00:25:39,290 --> 00:25:43,300
+then you measure the momentum,
+you get a plot of data,
+
+356
+00:25:43,300 --> 00:25:47,120
+and you measure them all.
+
+357
+00:25:47,120 --> 00:25:51,450
+And then suppose you're
+doing it with x first.
+
+358
+00:25:51,450 --> 00:25:54,910
+You measure x and you say,
+well, I get all kinds of values.
+
+359
+00:25:54,910 --> 00:25:56,640
+I don't know what
+the momentum is,
+
+360
+00:25:56,640 --> 00:25:58,820
+but I get all kinds of values.
+
+361
+00:25:58,820 --> 00:26:02,400
+They're going to run all
+over here between these two
+
+362
+00:26:02,400 --> 00:26:04,600
+positions.
+
+363
+00:26:04,600 --> 00:26:10,910
+So when I add to the expectation
+value of x this thing,
+
+364
+00:26:10,910 --> 00:26:13,530
+when I want to see in
+this graph, what it is,
+
+365
+00:26:13,530 --> 00:26:17,540
+I must divide by
+square root of 2d.
+
+366
+00:26:17,540 --> 00:26:26,770
+So I divide by 1 over square
+root of 2 d0 to see how it goes
+
+367
+00:26:26,770 --> 00:26:29,330
+and how I plot it in
+this graph because these
+
+368
+00:26:29,330 --> 00:26:31,660
+are the units in this graph.
+
+369
+00:26:31,660 --> 00:26:35,460
+So if delta x is d0
+over square root of 2,
+
+370
+00:26:35,460 --> 00:26:38,420
+I'm going to get some values
+that go from the expectation
+
+371
+00:26:38,420 --> 00:26:45,408
+value of x up to 1/2
+more and 1/2 less.
+
+372
+00:26:45,408 --> 00:26:47,256
+AUDIENCE: So it's
+not actually 1/2.
+
+373
+00:26:47,256 --> 00:26:51,570
+It's actually 1/2 times
+whatever that set amount.
+
+374
+00:26:51,570 --> 00:26:53,520
+BARTON ZWIEBACH:
+Well, if I say this,
+
+375
+00:26:53,520 --> 00:26:56,605
+that you obtain between this and
+that, then I should say it's 1.
+
+376
+00:27:00,290 --> 00:27:02,590
+Maybe I had in mind
+that you sort of get
+
+377
+00:27:02,590 --> 00:27:07,740
+most things between
+1/2 of delta x.
+
+378
+00:27:07,740 --> 00:27:11,250
+It's not terribly
+precise, but it's
+
+379
+00:27:11,250 --> 00:27:12,790
+roughly this is the picture.
+
+380
+00:27:12,790 --> 00:27:15,680
+You measure the position,
+you're going to get that.
+
+381
+00:27:15,680 --> 00:27:18,700
+Similarly, you decide
+to measure momentum.
+
+382
+00:27:18,700 --> 00:27:20,760
+You don't measure
+position, measure momentum,
+
+383
+00:27:20,760 --> 00:27:24,440
+and you're going to get
+roughly the expectation value,
+
+384
+00:27:24,440 --> 00:27:28,270
+but you're going to get a
+little plus minus uncertainty.
+
+385
+00:27:28,270 --> 00:27:30,970
+So you're going to all points
+here in your measurement.
+
+386
+00:27:30,970 --> 00:27:34,740
+So this dashed thing
+is your histogram
+
+387
+00:27:34,740 --> 00:27:37,350
+after doing lots of experiments.
+
+388
+00:27:37,350 --> 00:27:40,370
+You have lots of dots in here.
+
+389
+00:27:40,370 --> 00:27:44,190
+And roughly, this is
+how it comes about.
+
+390
+00:27:44,190 --> 00:27:47,980
+It's not terribly precise
+because I cannot put a point
+
+391
+00:27:47,980 --> 00:27:52,520
+either here, because if I
+say the measurement was this,
+
+392
+00:27:52,520 --> 00:27:56,330
+I'm suggesting that I also
+measured the momentum on that
+
+393
+00:27:56,330 --> 00:28:00,150
+state, or I could only
+measure the position.
+
+394
+00:28:00,150 --> 00:28:02,730
+But it's a rough
+idea, rough picture,
+
+395
+00:28:02,730 --> 00:28:05,130
+of how big the spread is here.
+
+396
+00:28:05,130 --> 00:28:07,370
+There is a mathematical
+theory to do
+
+397
+00:28:07,370 --> 00:28:11,400
+this more precisely, although
+physically not much clearer,
+
+398
+00:28:11,400 --> 00:28:15,540
+which are called
+Wigner distributions.
+
+399
+00:28:15,540 --> 00:28:18,680
+I don't think it helps
+too much to understand it,
+
+400
+00:28:18,680 --> 00:28:22,480
+but the rough picture
+is relatively clear.
+
+401
+00:28:22,480 --> 00:28:25,880
+So if you divide by 1
+over square root of 2,
+
+402
+00:28:25,880 --> 00:28:31,380
+this quantity that was equal
+to d over square root of 2,
+
+403
+00:28:31,380 --> 00:28:38,420
+you get, in this scale plus
+1/2 and minus 1/2, so 1, 1, 1,
+
+404
+00:28:38,420 --> 00:28:41,630
+and this value there.
+
+405
+00:28:41,630 --> 00:28:42,840
+There was a question there.
+
+406
+00:28:42,840 --> 00:28:44,880
+Yes?
+
+407
+00:28:44,880 --> 00:28:47,838
+AUDIENCE: Can you explain
+again how the Gaussian relates
+
+408
+00:28:47,838 --> 00:28:49,372
+to the uncertainty [INAUDIBLE]?
+
+409
+00:28:56,540 --> 00:28:58,180
+BARTON ZWIEBACH:
+So I don't know how
+
+410
+00:28:58,180 --> 00:29:00,520
+the Gaussian relates
+to uncertainty in x.
+
+411
+00:29:00,520 --> 00:29:05,500
+So basically, we computed the
+uncertainty in x for the ground
+
+412
+00:29:05,500 --> 00:29:08,820
+state, and I claimed that
+for a coherent state,
+
+413
+00:29:08,820 --> 00:29:12,120
+the uncertainty in x cannot
+change because you just took
+
+414
+00:29:12,120 --> 00:29:14,280
+the state and you moved it away.
+
+415
+00:29:14,280 --> 00:29:17,980
+And the uncertainty
+of x doesn't talk
+
+416
+00:29:17,980 --> 00:29:21,390
+about what the
+expectation value of x is.
+
+417
+00:29:21,390 --> 00:29:23,540
+That changes when
+you move a state.
+
+418
+00:29:23,540 --> 00:29:26,980
+But just how much it's
+spread and how much
+
+419
+00:29:26,980 --> 00:29:30,740
+the state is spread is not
+changed by a translation.
+
+420
+00:29:30,740 --> 00:29:35,240
+So this is the old result for
+the ground state uncertainty,
+
+421
+00:29:35,240 --> 00:29:37,760
+ground state uncertainty,
+and neither is changed.
+
+422
+00:29:44,430 --> 00:29:47,055
+Let's go now into
+our squeezed states.
+
+423
+00:29:57,030 --> 00:30:01,300
+So what are going to
+be squeezed states?
+
+424
+00:30:01,300 --> 00:30:04,200
+They're going to be
+pretty useful states.
+
+425
+00:30:04,200 --> 00:30:06,840
+They have lots of
+applications nowadays.
+
+426
+00:30:06,840 --> 00:30:11,930
+They've been constructed
+over the last 10 years
+
+427
+00:30:11,930 --> 00:30:14,550
+more and more often,
+and people are now
+
+428
+00:30:14,550 --> 00:30:18,670
+able to construct what is called
+squeezed states experimentally.
+
+429
+00:30:18,670 --> 00:30:20,340
+And the way we're
+going to motivate it
+
+430
+00:30:20,340 --> 00:30:27,190
+is by imagining that you have a
+harmonic oscillator, a particle
+
+431
+00:30:27,190 --> 00:30:37,770
+n, and some spring,
+k, or an omega.
+
+432
+00:30:37,770 --> 00:30:39,400
+And there's a Hamiltonian.
+
+433
+00:30:39,400 --> 00:30:51,220
+H is equal to p squared over 2
+m plus 1/2 m omega x squared.
+
+434
+00:30:51,220 --> 00:30:53,220
+But this Hamiltonian
+is going to be
+
+435
+00:30:53,220 --> 00:30:58,920
+the Hamiltonian of a
+particle that has mass m1,
+
+436
+00:30:58,920 --> 00:31:05,300
+and the oscillator
+has frequency w1,
+
+437
+00:31:05,300 --> 00:31:09,940
+and that's what we're going
+to call the first Hamiltonian.
+
+438
+00:31:09,940 --> 00:31:14,270
+After a little while, you
+observe this Hamiltonian.
+
+439
+00:31:17,320 --> 00:31:20,560
+I will erase this thing.
+
+440
+00:31:20,560 --> 00:31:21,690
+We don't need them anymore.
+
+441
+00:31:39,300 --> 00:31:46,380
+We observe this thing and this
+has an uncertainty, delta x,
+
+442
+00:31:46,380 --> 00:31:51,710
+proportional to-- we know this v
+over square root of 2, so h bar
+
+443
+00:31:51,710 --> 00:31:55,830
+over 2 m1 omega 1.
+
+444
+00:31:55,830 --> 00:32:03,560
+And an uncertainty in
+p, which is delta p
+
+445
+00:32:03,560 --> 00:32:10,540
+equals square root of h
+bar m1 omega 1 over 2.
+
+446
+00:32:10,540 --> 00:32:14,410
+And again, they
+saturate the bound
+
+447
+00:32:14,410 --> 00:32:17,950
+if you have your ground state.
+
+448
+00:32:17,950 --> 00:32:19,770
+So ground state is here.
+
+449
+00:32:23,920 --> 00:32:27,220
+These two uncertainties,
+the bound is saturated,
+
+450
+00:32:27,220 --> 00:32:30,620
+all is good.
+
+451
+00:32:30,620 --> 00:32:34,730
+Nevertheless, suddenly,
+at time equals
+
+452
+00:32:34,730 --> 00:32:40,000
+0, this state, this particle,
+is in the ground state.
+
+453
+00:32:40,000 --> 00:32:43,930
+The Hamiltonian changes.
+
+454
+00:32:43,930 --> 00:32:47,810
+There's an abrupt
+change in the physics.
+
+455
+00:32:47,810 --> 00:32:52,270
+Maybe the temperature
+was changed
+
+456
+00:32:52,270 --> 00:32:59,400
+and the spring constant
+changed, or the particle, a drop
+
+457
+00:32:59,400 --> 00:33:02,320
+was added to it and
+its mass changed,
+
+458
+00:33:02,320 --> 00:33:06,550
+but the Hamiltonian has
+changed all of a sudden.
+
+459
+00:33:06,550 --> 00:33:16,470
+So this Hamiltonian, H1,
+is valid for H less than 0
+
+460
+00:33:16,470 --> 00:33:22,490
+and a particle in
+the ground state.
+
+461
+00:33:25,990 --> 00:33:27,720
+So the particle's
+in the ground state,
+
+462
+00:33:27,720 --> 00:33:33,760
+the Hamiltonian is fine there,
+but suddenly, the Hamiltonian
+
+463
+00:33:33,760 --> 00:33:36,020
+changes.
+
+464
+00:33:36,020 --> 00:33:38,560
+The particle identity
+has not changed.
+
+465
+00:33:38,560 --> 00:33:44,860
+The particle is there, but it
+is the Hamilton that changes.
+
+466
+00:33:44,860 --> 00:33:49,480
+So there's an H2,
+p squared over 2 m2
+
+467
+00:33:49,480 --> 00:33:55,550
+plus 1/2 m squared w
+squared 2 x squared.
+
+468
+00:33:58,720 --> 00:34:00,580
+The picture is physically clean.
+
+469
+00:34:00,580 --> 00:34:03,830
+The particle is sitting
+there in the ground state,
+
+470
+00:34:03,830 --> 00:34:08,480
+and suddenly, the parameters
+of the system change.
+
+471
+00:34:08,480 --> 00:34:12,350
+So this particle was
+having a good time,
+
+472
+00:34:12,350 --> 00:34:15,679
+it was at the ground
+state, relaxed.
+
+473
+00:34:15,679 --> 00:34:20,870
+Then suddenly, the wave function
+didn't change at time equals 0.
+
+474
+00:34:20,870 --> 00:34:23,110
+It was spread over
+some distance.
+
+475
+00:34:23,110 --> 00:34:25,690
+No measurement
+was done, nothing.
+
+476
+00:34:25,690 --> 00:34:29,179
+And suddenly, this
+particle finds itself
+
+477
+00:34:29,179 --> 00:34:33,590
+with some wave function
+but in another Hamiltonian.
+
+478
+00:34:33,590 --> 00:34:36,620
+From now on, its
+time evolution is
+
+479
+00:34:36,620 --> 00:34:39,080
+going to be governed by
+the second Hamiltonian.
+
+480
+00:34:42,080 --> 00:34:43,719
+Now, since the
+second Hamiltonian
+
+481
+00:34:43,719 --> 00:34:47,000
+is different from the
+first Hamiltonian,
+
+482
+00:34:47,000 --> 00:34:50,350
+this particle is not going to
+be any more in the ground state.
+
+483
+00:34:50,350 --> 00:34:53,900
+Even though it was in the ground
+state of the first Hamiltonian,
+
+484
+00:34:53,900 --> 00:34:57,490
+it's not anymore in the ground
+state of the second Hamiltonian
+
+485
+00:34:57,490 --> 00:35:00,620
+as soon as the thing
+gets turned on.
+
+486
+00:35:00,620 --> 00:35:06,250
+So for t greater than 0,
+this Hamilton is there.
+
+487
+00:35:06,250 --> 00:35:12,410
+So actually, the wave
+function does not change, so
+
+488
+00:35:12,410 --> 00:35:17,660
+let me write delta x, and I'll
+write it the following way,
+
+489
+00:35:17,660 --> 00:35:22,160
+h bar over 2 m2 omega 1.
+
+490
+00:35:22,160 --> 00:35:24,600
+But you say, no,
+delta x didn't change.
+
+491
+00:35:24,600 --> 00:35:25,450
+Correct.
+
+492
+00:35:25,450 --> 00:35:35,560
+So I'll put the factor
+m2 w2 over m1 w1,
+
+493
+00:35:35,560 --> 00:35:37,515
+and now it's the same delta x.
+
+494
+00:35:40,200 --> 00:35:45,810
+Similarly, for delta
+p, I will write
+
+495
+00:35:45,810 --> 00:35:53,270
+that this is square root
+of h bar m2 omega 2 over 2,
+
+496
+00:35:53,270 --> 00:35:58,750
+and put the factor m1
+omega 1 over m2 omega
+
+497
+00:35:58,750 --> 00:36:01,280
+2 in front in such
+a way that it is
+
+498
+00:36:01,280 --> 00:36:05,430
+the same delta x and
+the same delta p.
+
+499
+00:36:08,140 --> 00:36:14,240
+Now, delta x times delta p
+multiply to be h bar over 2,
+
+500
+00:36:14,240 --> 00:36:16,560
+and they still
+multiply to that number
+
+501
+00:36:16,560 --> 00:36:18,860
+because I didn't change them.
+
+502
+00:36:18,860 --> 00:36:28,091
+But this is equal-- I'll call
+this number e to the minus
+
+503
+00:36:28,091 --> 00:36:28,590
+gamma.
+
+504
+00:36:34,460 --> 00:36:36,590
+I'll go to another blackboard.
+
+505
+00:36:36,590 --> 00:36:44,020
+Delta x is e to the minus
+gamma times square root
+
+506
+00:36:44,020 --> 00:36:50,380
+of h bar over 2 m2 omega 2.
+
+507
+00:36:50,380 --> 00:36:54,790
+And delta p is e to
+the gamma, because it's
+
+508
+00:36:54,790 --> 00:36:58,130
+the inverse factor
+on the one that we
+
+509
+00:36:58,130 --> 00:37:07,850
+call gamma, square root of
+h bar m2 omega 2 over 2,
+
+510
+00:37:07,850 --> 00:37:14,790
+where e to the gamma is
+the square root of m1 omega
+
+511
+00:37:14,790 --> 00:37:17,275
+1 over m2 omega 2.
+
+512
+00:37:20,480 --> 00:37:22,870
+Look, we've done
+very simple things.
+
+513
+00:37:22,870 --> 00:37:25,510
+We haven't done really much.
+
+514
+00:37:25,510 --> 00:37:29,560
+But already, we start
+to see what's happening.
+
+515
+00:37:29,560 --> 00:37:34,440
+From the viewpoint of
+the second Hamiltonian,
+
+516
+00:37:34,440 --> 00:37:38,210
+these uncertainties
+are not right.
+
+517
+00:37:38,210 --> 00:37:41,180
+They are not the uncertainties
+of the ground state,
+
+518
+00:37:41,180 --> 00:37:44,020
+because from the viewpoint
+of the second Hamiltonian,
+
+519
+00:37:44,020 --> 00:37:46,330
+the ground state
+uncertainty is this
+
+520
+00:37:46,330 --> 00:37:48,540
+and the ground state
+uncertainty is this.
+
+521
+00:37:48,540 --> 00:37:52,060
+And indeed, this particle
+was in the ground state,
+
+522
+00:37:52,060 --> 00:37:55,720
+it had some Gaussian,
+but that's not
+
+523
+00:37:55,720 --> 00:37:58,540
+the right Gaussian for
+the second Hamiltonian.
+
+524
+00:37:58,540 --> 00:38:01,420
+It's the right Gaussian
+for the first Hamiltonian.
+
+525
+00:38:01,420 --> 00:38:05,530
+So it's not in the ground state
+of the second Hamiltonian,
+
+526
+00:38:05,530 --> 00:38:13,465
+but it's in a particular state
+in which, if gamma is positive,
+
+527
+00:38:13,465 --> 00:38:19,020
+the uncertainty in x is squeezed
+from the lowest uncertainty
+
+528
+00:38:19,020 --> 00:38:22,660
+that you get in an
+energy eigenstate.
+
+529
+00:38:22,660 --> 00:38:24,160
+And the uncertainty
+and the momentum
+
+530
+00:38:24,160 --> 00:38:27,050
+will be stretched
+in that direction.
+
+531
+00:38:27,050 --> 00:38:32,910
+So you see, in the ground state
+of the harmonic oscillator,
+
+532
+00:38:32,910 --> 00:38:37,730
+you get that uncertainty, and
+that's a canonical uncertainty.
+
+533
+00:38:37,730 --> 00:38:40,690
+But this uncertainty is
+squeezed because it's
+
+534
+00:38:40,690 --> 00:38:43,370
+different from what it should
+be, and this is squeezed.
+
+535
+00:38:43,370 --> 00:38:48,420
+So from the viewpoint of
+the second Hamiltonian,
+
+536
+00:38:48,420 --> 00:38:52,290
+the ground state of
+the first Hamiltonian
+
+537
+00:38:52,290 --> 00:38:54,840
+is a squeezed state.
+
+538
+00:38:54,840 --> 00:38:57,790
+It's a staple
+whose uncertainties
+
+539
+00:38:57,790 --> 00:38:59,900
+have been squeezed.
+
+540
+00:38:59,900 --> 00:39:02,580
+And those states
+exist, and the purpose
+
+541
+00:39:02,580 --> 00:39:04,150
+of what we're going
+to do now is try
+
+542
+00:39:04,150 --> 00:39:07,610
+to determine them, find
+them, see what they are,
+
+543
+00:39:07,610 --> 00:39:08,290
+how they behave.
+
+544
+00:39:11,900 --> 00:39:12,615
+Any questions?
+
+545
+00:39:16,430 --> 00:39:18,154
+Yes, Nicholas?
+
+546
+00:39:18,154 --> 00:39:19,740
+AUDIENCE: I'm a
+little confused why
+
+547
+00:39:19,740 --> 00:39:25,216
+we can say that delta x
+[INAUDIBLE] these new ones are
+
+548
+00:39:25,216 --> 00:39:28,920
+just related to the old
+ones by this factor.
+
+549
+00:39:28,920 --> 00:39:30,040
+BARTON ZWIEBACH: OK.
+
+550
+00:39:30,040 --> 00:39:38,260
+You see, what I assumed is
+that before time equals 0,
+
+551
+00:39:38,260 --> 00:39:40,670
+you had a Gaussian.
+
+552
+00:39:40,670 --> 00:39:42,860
+That was the original Gaussian.
+
+553
+00:39:42,860 --> 00:39:44,770
+That was the original
+wave function,
+
+554
+00:39:44,770 --> 00:39:48,650
+and you had some delta
+x and some delta p that
+
+555
+00:39:48,650 --> 00:39:51,840
+were given by this
+one [INAUDIBLE].
+
+556
+00:39:51,840 --> 00:39:56,240
+Now, I didn't do anything except
+rewrite the same quantities
+
+557
+00:39:56,240 --> 00:39:59,100
+here, because what
+I said next was
+
+558
+00:39:59,100 --> 00:40:01,780
+that even though
+at time equals 0,
+
+559
+00:40:01,780 --> 00:40:05,360
+the Hamiltonian changes,
+at time equals 0,
+
+560
+00:40:05,360 --> 00:40:08,110
+the wave function
+doesn't change.
+
+561
+00:40:08,110 --> 00:40:09,840
+The wave function
+remains the same.
+
+562
+00:40:09,840 --> 00:40:11,960
+After that time,
+it's going to start
+
+563
+00:40:11,960 --> 00:40:14,780
+changing because the new
+Hamiltonian kicks in.
+
+564
+00:40:14,780 --> 00:40:18,230
+But this delta x's
+are the same as
+
+565
+00:40:18,230 --> 00:40:20,720
+that I wrote, and
+here are the same.
+
+566
+00:40:20,720 --> 00:40:26,070
+But here, you see clearly
+that this delta x with respect
+
+567
+00:40:26,070 --> 00:40:29,300
+to the second Hamiltonian
+is not the one
+
+568
+00:40:29,300 --> 00:40:31,270
+that it would be if
+it would be a ground
+
+569
+00:40:31,270 --> 00:40:34,680
+state, nor the delta p.
+
+570
+00:40:34,680 --> 00:40:35,836
+Yes?
+
+571
+00:40:35,836 --> 00:40:39,514
+AUDIENCE: Just at the instant
+you change the Hamiltonian,
+
+572
+00:40:39,514 --> 00:40:41,180
+because they might
+have all [INAUDIBLE],
+
+573
+00:40:41,180 --> 00:40:42,940
+the uncertainties would change.
+
+574
+00:40:42,940 --> 00:40:44,943
+BARTON ZWIEBACH: Sorry?
+
+575
+00:40:44,943 --> 00:40:47,058
+AUDIENCE: Is this just
+at the instant where
+
+576
+00:40:47,058 --> 00:40:49,182
+we change the Hamiltonian,
+because after some time,
+
+577
+00:40:49,182 --> 00:40:50,974
+the wave function might
+change [INAUDIBLE].
+
+578
+00:40:50,974 --> 00:40:52,223
+BARTON ZWIEBACH: That's right.
+
+579
+00:40:52,223 --> 00:40:54,530
+This is just after I
+change the Hamiltonian.
+
+580
+00:40:54,530 --> 00:40:57,180
+The time evolution of
+this state is something
+
+581
+00:40:57,180 --> 00:40:59,040
+that we have to
+figure out later.
+
+582
+00:40:59,040 --> 00:41:01,800
+But after I've changed
+the Hamiltonian,
+
+583
+00:41:01,800 --> 00:41:04,710
+the state looks squeezed.
+
+584
+00:41:04,710 --> 00:41:10,130
+So how can we calculate and
+understand these things?
+
+585
+00:41:10,130 --> 00:41:17,310
+So the way to think of
+this is the following.
+
+586
+00:41:17,310 --> 00:41:21,520
+You see, you have this
+system of two Hamiltonians.
+
+587
+00:41:21,520 --> 00:41:26,260
+There's an x and a p operator,
+and the second Hamiltonian
+
+588
+00:41:26,260 --> 00:41:28,510
+has an x and a p operator.
+
+589
+00:41:28,510 --> 00:41:31,960
+These are the properties
+of the particles.
+
+590
+00:41:31,960 --> 00:41:35,000
+Therefore, what that
+I'm going to think of
+
+591
+00:41:35,000 --> 00:41:38,230
+is that the x and
+the p operators
+
+592
+00:41:38,230 --> 00:41:42,700
+are the operators that
+describe the particle.
+
+593
+00:41:42,700 --> 00:41:48,210
+They are unchanged
+because we're talking
+
+594
+00:41:48,210 --> 00:41:52,020
+about this same
+object, same particle.
+
+595
+00:41:52,020 --> 00:42:01,895
+So if I have the x operator,
+which is equal to this formula,
+
+596
+00:42:01,895 --> 00:42:14,470
+h bar over 2 m1 omega 1 a1
+dagger plus a1 like this.
+
+597
+00:42:14,470 --> 00:42:18,700
+From the first
+Hamiltonian, the x's
+
+598
+00:42:18,700 --> 00:42:21,600
+are related to a1's
+and a1 daggers,
+
+599
+00:42:21,600 --> 00:42:25,780
+but this is the same x
+describing the same position
+
+600
+00:42:25,780 --> 00:42:28,650
+as you would do in the
+second Hamiltonian.
+
+601
+00:42:28,650 --> 00:42:39,810
+So m2 w2 a2 hat
+plus a2 hat dagger.
+
+602
+00:42:39,810 --> 00:42:43,400
+It's a very strong physical
+assumption I'm making here.
+
+603
+00:42:43,400 --> 00:42:46,700
+It's an assumption that's
+so strong that in many ways,
+
+604
+00:42:46,700 --> 00:42:48,860
+you could almost say,
+well, I'll buy it,
+
+605
+00:42:48,860 --> 00:42:52,560
+but we'll see if it gives
+something reasonable.
+
+606
+00:42:52,560 --> 00:42:58,030
+I'm saying the x operator
+is really the same thing,
+
+607
+00:42:58,030 --> 00:43:00,420
+and you could view
+it as constructed
+
+608
+00:43:00,420 --> 00:43:02,930
+from ingredients of
+the first Hamiltonian
+
+609
+00:43:02,930 --> 00:43:05,220
+or the second Hamiltonian.
+
+610
+00:43:05,220 --> 00:43:07,610
+So is the p operator.
+
+611
+00:43:07,610 --> 00:43:14,060
+p, which is-- well, I
+have a formula here--
+
+612
+00:43:14,060 --> 00:43:24,420
+minus i m1 omega 1 h bar
+over 2 a1 minus a1 dagger--
+
+613
+00:43:24,420 --> 00:43:30,460
+should be the same as
+minus i m2 omega 2 h bar
+
+614
+00:43:30,460 --> 00:43:34,000
+over 2 a2 minus a2 dagger.
+
+615
+00:43:42,150 --> 00:43:48,940
+So x and p are not changing.
+
+616
+00:43:48,940 --> 00:43:51,960
+We're not talking about
+two particles that
+
+617
+00:43:51,960 --> 00:43:55,500
+have an x1 and a p1, and
+the second particle, an x2
+
+618
+00:43:55,500 --> 00:43:56,710
+and a p2.
+
+619
+00:43:56,710 --> 00:44:00,920
+It's just one particle
+has an x and a p
+
+620
+00:44:00,920 --> 00:44:03,235
+is what you observe when
+you measure position
+
+621
+00:44:03,235 --> 00:44:06,020
+and you observe when
+you measure momentum.
+
+622
+00:44:06,020 --> 00:44:09,510
+Nevertheless, x and p
+are related in this way
+
+623
+00:44:09,510 --> 00:44:13,070
+to the creation and
+annihilation operators.
+
+624
+00:44:13,070 --> 00:44:18,450
+So we're going to find from
+this some very strange relation
+
+625
+00:44:18,450 --> 00:44:21,620
+between the creation
+operators, the annihilation
+
+626
+00:44:21,620 --> 00:44:25,310
+operators of the first
+system and the second system.
+
+627
+00:44:25,310 --> 00:44:27,020
+So what do we get, in fact?
+
+628
+00:44:27,020 --> 00:44:30,170
+Well, the constants disappear
+from the first equation
+
+629
+00:44:30,170 --> 00:44:35,500
+roughly, and you get a1
+dagger is equal to-- you
+
+630
+00:44:35,500 --> 00:44:40,100
+get the ratio of m1
+omega 1 over m2 omega 2,
+
+631
+00:44:40,100 --> 00:44:48,390
+so you get e to the gamma
+a1 a2 plus a2 dagger.
+
+632
+00:44:51,270 --> 00:44:58,590
+From the bottom one,
+a1 minus a1 dagger
+
+633
+00:44:58,590 --> 00:45:07,830
+is equal to e to the minus
+gamma a2 minus a2 dagger.
+
+634
+00:45:07,830 --> 00:45:09,650
+These two equations
+give you that.
+
+635
+00:45:09,650 --> 00:45:11,520
+It should be clear.
+
+636
+00:45:11,520 --> 00:45:14,190
+You just cancel the
+constants and remember
+
+637
+00:45:14,190 --> 00:45:16,050
+the definition of
+e to the gamma.
+
+638
+00:45:18,620 --> 00:45:25,550
+And now we can solve
+for a1 and a1 dagger
+
+639
+00:45:25,550 --> 00:45:28,860
+in terms of a2 and a2 dagger.
+
+640
+00:45:28,860 --> 00:45:31,790
+And what do we find?
+
+641
+00:45:31,790 --> 00:45:49,600
+a1 is equal to a2 cosh gamma
+plus a2 dagger sinch gamma,
+
+642
+00:45:49,600 --> 00:45:52,090
+and the dagger is what
+you would imagine.
+
+643
+00:45:52,090 --> 00:45:59,760
+So a1 dagger is equal
+to a2 dagger cosh
+
+644
+00:45:59,760 --> 00:46:04,675
+gamma plus a2 sinch gamma.
+
+645
+00:46:10,250 --> 00:46:15,920
+The second equation
+that you can calculate
+
+646
+00:46:15,920 --> 00:46:17,920
+is the dagger of the first.
+
+647
+00:46:17,920 --> 00:46:19,890
+It should be that.
+
+648
+00:46:19,890 --> 00:46:25,820
+And now you've
+found the scrambling
+
+649
+00:46:25,820 --> 00:46:28,935
+of the creation,
+annihilation operators.
+
+650
+00:46:34,030 --> 00:46:38,040
+The old annihilation
+operator is a mixture
+
+651
+00:46:38,040 --> 00:46:43,320
+of the new annihilation operator
+and a creation operator.
+
+652
+00:46:43,320 --> 00:46:44,820
+They're mixed.
+
+653
+00:46:44,820 --> 00:46:49,750
+It's a very strange
+thing that has happened,
+
+654
+00:46:49,750 --> 00:46:54,930
+a mixture between creation
+and annihilation operators.
+
+655
+00:46:54,930 --> 00:46:57,910
+This is so famous in
+physics, it has a name.
+
+656
+00:46:57,910 --> 00:47:02,470
+It's called the
+Bogoliubov transformation.
+
+657
+00:47:02,470 --> 00:47:07,610
+It appears in the analysis
+of black hole radiation.
+
+658
+00:47:07,610 --> 00:47:09,490
+There's a Bogoliubov
+transformation
+
+659
+00:47:09,490 --> 00:47:11,900
+between the fields far
+away of the black hole
+
+660
+00:47:11,900 --> 00:47:13,580
+and the fields near
+the black hole.
+
+661
+00:47:13,580 --> 00:47:14,890
+It appears everywhere.
+
+662
+00:47:17,590 --> 00:47:20,210
+And here it has
+appeared, so we're
+
+663
+00:47:20,210 --> 00:47:24,550
+going to try to understand
+what it does for us.
+
+664
+00:47:24,550 --> 00:47:29,540
+Similarly, you can
+find what a2 is
+
+665
+00:47:29,540 --> 00:47:35,390
+in terms of a1's by the
+symmetry of these equations.
+
+666
+00:47:35,390 --> 00:47:39,020
+This corresponds to
+actually letting gamma
+
+667
+00:47:39,020 --> 00:47:44,200
+go to minus gamma, because
+if you pass these gammas
+
+668
+00:47:44,200 --> 00:47:48,510
+to the other side, the
+equations are of the same form.
+
+669
+00:47:48,510 --> 00:47:52,350
+By letting 1 become 2,
+2 becomes 1 and gamma
+
+670
+00:47:52,350 --> 00:47:55,480
+goes to minus gamma.
+
+671
+00:47:55,480 --> 00:47:59,090
+So we don't need it right
+now, but in case you
+
+672
+00:47:59,090 --> 00:48:03,870
+want to find the other ones,
+the 2's in terms of the 1's, you
+
+673
+00:48:03,870 --> 00:48:10,830
+would just change the sign of
+gamma and it would work out.
+
+674
+00:48:10,830 --> 00:48:19,380
+So this relation is the key to
+allow you to calculate things.
+
+675
+00:48:19,380 --> 00:48:21,135
+So what do we want to calculate?
+
+676
+00:48:25,010 --> 00:48:32,710
+Well, here is what I
+would like to calculate.
+
+677
+00:48:32,710 --> 00:48:37,930
+The ground state of
+the first oscillator
+
+678
+00:48:37,930 --> 00:48:39,470
+is this thing we had.
+
+679
+00:48:39,470 --> 00:48:42,990
+It's the thing that
+has the wave function.
+
+680
+00:48:42,990 --> 00:48:48,190
+But I want to express it as
+a superposition of states
+
+681
+00:48:48,190 --> 00:48:52,320
+of the second oscillator
+because the second oscillator is
+
+682
+00:48:52,320 --> 00:48:54,300
+what gives you the
+new Hamiltonian
+
+683
+00:48:54,300 --> 00:48:57,250
+and what's going to tell
+you how the state is
+
+684
+00:48:57,250 --> 00:48:58,770
+going to evolve later.
+
+685
+00:48:58,770 --> 00:49:06,830
+So presumably, this state is
+some number times the ground
+
+686
+00:49:06,830 --> 00:49:13,980
+state of the second
+oscillator, plus maybe
+
+687
+00:49:13,980 --> 00:49:21,120
+some creation operator on
+the second vacuum as well
+
+688
+00:49:21,120 --> 00:49:23,660
+with a constant.
+
+689
+00:49:23,660 --> 00:49:34,630
+Now, this wave function of
+the ground state is even,
+
+690
+00:49:34,630 --> 00:49:39,005
+and I would expect that
+it's a superposition of even
+
+691
+00:49:39,005 --> 00:49:43,990
+eigenstates of the second
+oscillator as well.
+
+692
+00:49:43,990 --> 00:49:46,710
+And even eigenstates
+are things that
+
+693
+00:49:46,710 --> 00:49:48,530
+have even occupation numbers.
+
+694
+00:49:48,530 --> 00:49:51,030
+Those are the even
+Hermite polynomials.
+
+695
+00:49:51,030 --> 00:49:56,070
+So presumably, it goes
+like this and things
+
+696
+00:49:56,070 --> 00:49:58,510
+with four oscillators
+and things like that.
+
+697
+00:49:58,510 --> 00:50:02,970
+So what that after is
+this sort of expression
+
+698
+00:50:02,970 --> 00:50:08,670
+of the original state in terms
+of energy eigenstates in terms
+
+699
+00:50:08,670 --> 00:50:11,365
+of anything of the
+second oscillator.
+
+700
+00:50:14,230 --> 00:50:16,610
+So how can we do that?
+
+701
+00:50:16,610 --> 00:50:20,270
+Well, one thing we
+know about this state
+
+702
+00:50:20,270 --> 00:50:30,415
+is that a1 [? on it ?]
+is equal to 0.
+
+703
+00:50:35,040 --> 00:50:44,910
+It's killed by a1, but that
+a1 is an interesting thing.
+
+704
+00:50:44,910 --> 00:50:54,240
+It's a2 cosh gamma plus
+a2 dagger sinch gamma,
+
+705
+00:50:54,240 --> 00:50:57,055
+and that thing must
+kill that state.
+
+706
+00:51:00,590 --> 00:51:08,430
+So I could at least, if I had
+infinite time, put a few terms
+
+707
+00:51:08,430 --> 00:51:11,860
+and try to calculate more
+or less what kind of state
+
+708
+00:51:11,860 --> 00:51:16,590
+is killed by this strange
+combination of creation
+
+709
+00:51:16,590 --> 00:51:19,180
+and annihilation operators.
+
+710
+00:51:19,180 --> 00:51:23,700
+You see, we know
+a ground state is
+
+711
+00:51:23,700 --> 00:51:26,450
+killed by the normal
+annihilation operator.
+
+712
+00:51:26,450 --> 00:51:28,700
+That's what this is.
+
+713
+00:51:28,700 --> 00:51:31,680
+But this operator,
+now we know it's
+
+714
+00:51:31,680 --> 00:51:34,610
+given by this
+formula over there,
+
+715
+00:51:34,610 --> 00:51:38,940
+and then it must kill all that.
+
+716
+00:51:38,940 --> 00:51:43,360
+So we're faced with a problem
+that is in principle fairly
+
+717
+00:51:43,360 --> 00:51:49,350
+difficult, and you could not
+hope for an except solution
+
+718
+00:51:49,350 --> 00:51:52,810
+unless there's something
+very nice going on.
+
+719
+00:51:52,810 --> 00:51:55,830
+Happily, squeezed states
+are still very nice
+
+720
+00:51:55,830 --> 00:52:03,550
+and tractable states, so
+let's see what we can do.
+
+721
+00:52:03,550 --> 00:52:06,660
+Well, what I'm going to
+do is to put an ansatz
+
+722
+00:52:06,660 --> 00:52:12,580
+for this state based on this
+expansion that I had there.
+
+723
+00:52:12,580 --> 00:52:21,290
+I would say, look, there's going
+to be a normalization constant,
+
+724
+00:52:21,290 --> 00:52:25,000
+but at the end of the
+day, we have things acting
+
+725
+00:52:25,000 --> 00:52:27,980
+on the vacuum, so there's
+going to be something very
+
+726
+00:52:27,980 --> 00:52:31,560
+messy acting on the vacuum of 2.
+
+727
+00:52:36,099 --> 00:52:39,960
+And what is that going to be?
+
+728
+00:52:39,960 --> 00:52:42,310
+Well, we've learned about
+coherent states that
+
+729
+00:52:42,310 --> 00:52:46,540
+are exponentials of
+oscillators, exponentials
+
+730
+00:52:46,540 --> 00:52:50,640
+of a's and a daggers added.
+
+731
+00:52:50,640 --> 00:52:52,950
+So here, we're going
+to attempt something
+
+732
+00:52:52,950 --> 00:52:55,040
+a little more general.
+
+733
+00:52:55,040 --> 00:53:04,620
+I'll put an exponential minus
+1/2, and what should I put?
+
+734
+00:53:04,620 --> 00:53:09,700
+Well, let's try to be
+simple minded still.
+
+735
+00:53:09,700 --> 00:53:14,690
+It seems to go in even power,
+so if we're very lucky,
+
+736
+00:53:14,690 --> 00:53:20,170
+maybe we can put just an
+a2 dagger a2 dagger here,
+
+737
+00:53:20,170 --> 00:53:23,510
+an exponential something
+quadratic in oscillators.
+
+738
+00:53:26,160 --> 00:53:28,745
+And I don't know what the
+coefficient is in front,
+
+739
+00:53:28,745 --> 00:53:31,810
+and it may depend
+on gamma because I
+
+740
+00:53:31,810 --> 00:53:33,550
+have to solve an
+equation with gamma.
+
+741
+00:53:33,550 --> 00:53:41,370
+So I'll put minus 1/2
+f of gamma times that.
+
+742
+00:53:43,880 --> 00:53:49,870
+And we'll see if
+we can solve this.
+
+743
+00:53:49,870 --> 00:53:52,000
+So what does it
+mean to solve it?
+
+744
+00:53:52,000 --> 00:53:57,960
+Well, it means that it must be
+annihilated by this operator.
+
+745
+00:53:57,960 --> 00:54:01,485
+So our computations with the
+creation and annihilation
+
+746
+00:54:01,485 --> 00:54:03,845
+operators are becoming
+more and more complicated.
+
+747
+00:54:06,920 --> 00:54:08,960
+They look more and
+more complicated.
+
+748
+00:54:08,960 --> 00:54:11,580
+They're really not harder.
+
+749
+00:54:11,580 --> 00:54:12,850
+Let's see what happens.
+
+750
+00:54:12,850 --> 00:54:23,260
+So I need now that a2 cosh
+gamma plus a2 dagger sinch gamma
+
+751
+00:54:23,260 --> 00:54:26,030
+kill this state.
+
+752
+00:54:26,030 --> 00:54:28,470
+So the N is going to go outside.
+
+753
+00:54:28,470 --> 00:54:29,210
+It's a number.
+
+754
+00:54:29,210 --> 00:54:35,190
+So acting on e to the
+minus 1/2 f of gamma a2
+
+755
+00:54:35,190 --> 00:54:41,750
+dagger a2 dagger on the
+vacuum sub 2, that must be 0.
+
+756
+00:54:48,220 --> 00:54:49,805
+How does one solve this?
+
+757
+00:54:52,360 --> 00:54:56,830
+Well, let's see what we have.
+
+758
+00:54:56,830 --> 00:54:59,860
+Let's see this term.
+
+759
+00:54:59,860 --> 00:55:03,700
+a2 dagger, good.
+
+760
+00:55:03,700 --> 00:55:06,270
+a2 dagger commutes
+with a2 dagger,
+
+761
+00:55:06,270 --> 00:55:10,990
+so I can bring the a2 dagger
+all the way to the right
+
+762
+00:55:10,990 --> 00:55:16,450
+and it doesn't kill the vacuum,
+so I don't gain anything.
+
+763
+00:55:16,450 --> 00:55:19,080
+Can be to the right or
+to the left because it
+
+764
+00:55:19,080 --> 00:55:22,250
+commutes with this whole thing,
+so I haven't gained anything
+
+765
+00:55:22,250 --> 00:55:25,710
+if I move it, so false start.
+
+766
+00:55:25,710 --> 00:55:28,200
+I don't want to move that one.
+
+767
+00:55:28,200 --> 00:55:30,760
+This one, I want
+to leave it here,
+
+768
+00:55:30,760 --> 00:55:33,390
+and this one
+somehow must produce
+
+769
+00:55:33,390 --> 00:55:35,230
+something that cancels this one.
+
+770
+00:55:39,190 --> 00:55:43,340
+Now, a2, on the other
+hand, is the kind of thing
+
+771
+00:55:43,340 --> 00:55:46,860
+that always should be dealt with
+because this is an annihilator
+
+772
+00:55:46,860 --> 00:55:49,200
+and that does kill that.
+
+773
+00:55:49,200 --> 00:55:52,960
+So as it moves along,
+it encounters obstacles,
+
+774
+00:55:52,960 --> 00:55:58,420
+but obstacles are opportunities
+because an obstacle means
+
+775
+00:55:58,420 --> 00:56:03,530
+we're going to get something
+that maybe cancels that.
+
+776
+00:56:03,530 --> 00:56:06,360
+So if it also went through
+and killed the vacuum,
+
+777
+00:56:06,360 --> 00:56:07,090
+we're finished.
+
+778
+00:56:07,090 --> 00:56:09,020
+This doesn't kill the vacuum.
+
+779
+00:56:09,020 --> 00:56:11,300
+Happily, it gets stuck here.
+
+780
+00:56:11,300 --> 00:56:12,990
+Now the thing that
+we have to hope
+
+781
+00:56:12,990 --> 00:56:17,670
+is that we can disentangle
+that commutator.
+
+782
+00:56:17,670 --> 00:56:20,050
+Now, here is a universal thing.
+
+783
+00:56:25,000 --> 00:56:28,270
+How do I want to write this?
+
+784
+00:56:28,270 --> 00:56:31,910
+I'm going to write it like this.
+
+785
+00:56:31,910 --> 00:56:35,720
+I have an a2, a
+number, I don't care
+
+786
+00:56:35,720 --> 00:56:38,200
+about the number, and
+a complicated thing,
+
+787
+00:56:38,200 --> 00:56:39,640
+and a vacuum.
+
+788
+00:56:39,640 --> 00:56:45,640
+Whenever you have an a,
+any operator, and a vacuum,
+
+789
+00:56:45,640 --> 00:56:49,380
+this is equal to a
+commutator with the operator
+
+790
+00:56:49,380 --> 00:56:51,290
+on the vacuum.
+
+791
+00:56:51,290 --> 00:56:57,200
+That should be second
+nature because this is even
+
+792
+00:56:57,200 --> 00:57:02,980
+given to that minus oa, but
+oa, the a is near to the vacuum
+
+793
+00:57:02,980 --> 00:57:04,030
+and it kills it.
+
+794
+00:57:04,030 --> 00:57:08,020
+So whenever you
+have an a o vacuum,
+
+795
+00:57:08,020 --> 00:57:11,310
+you can put the commutator,
+so I'll do that here.
+
+796
+00:57:11,310 --> 00:57:19,980
+So I put a2, the cosh
+gamma, I take it out.
+
+797
+00:57:19,980 --> 00:57:25,110
+I put this whole thing minus
+1/2 f a dagger a dagger 2.
+
+798
+00:57:27,810 --> 00:57:33,830
+This whole thing and the vacuum.
+
+799
+00:57:33,830 --> 00:57:36,860
+That's the first term.
+
+800
+00:57:36,860 --> 00:57:40,970
+And the second term, I
+have to just copy it.
+
+801
+00:57:40,970 --> 00:57:49,270
+Sinch gamma a2 dagger
+e to the minus 1/2 fa
+
+802
+00:57:49,270 --> 00:57:52,800
+squared dagger on the vacuum.
+
+803
+00:57:52,800 --> 00:57:54,230
+All that should be 0.
+
+804
+00:57:59,580 --> 00:58:04,460
+So what do we get?
+
+805
+00:58:04,460 --> 00:58:07,273
+Is that commutator
+doable or undoable?
+
+806
+00:58:10,740 --> 00:58:13,410
+It's happily a
+simple commutator,
+
+807
+00:58:13,410 --> 00:58:16,990
+even if it doesn't look
+like it, because whenever
+
+808
+00:58:16,990 --> 00:58:22,270
+you see a commutator like
+that, you think A to the B,
+
+809
+00:58:22,270 --> 00:58:25,020
+and then you know
+if you're in luck,
+
+810
+00:58:25,020 --> 00:58:30,240
+this is just AB e to
+the B, and this is true
+
+811
+00:58:30,240 --> 00:58:37,800
+if AB commutes with
+B. So that's what
+
+812
+00:58:37,800 --> 00:58:42,350
+you must think whenever
+you see these things.
+
+813
+00:58:42,350 --> 00:58:46,800
+Do mind this lucky situation.
+
+814
+00:58:46,800 --> 00:58:53,140
+Yes, you are, because
+with this commutator,
+
+815
+00:58:53,140 --> 00:58:55,520
+one a will kill an
+a dagger, so you
+
+816
+00:58:55,520 --> 00:58:58,250
+will be left with an dagger.
+
+817
+00:58:58,250 --> 00:59:04,340
+But a dagger commutes with b,
+which is a dagger a dagger.
+
+818
+00:59:04,340 --> 00:59:12,360
+So AB, A with B is
+just add an a dagger up
+
+819
+00:59:12,360 --> 00:59:16,030
+to a function or a number, and
+then a dagger commutes with B
+
+820
+00:59:16,030 --> 00:59:17,830
+so you are in good shape.
+
+821
+00:59:17,830 --> 00:59:18,990
+This is true.
+
+822
+00:59:18,990 --> 00:59:20,570
+So what do we get here?
+
+823
+00:59:20,570 --> 00:59:25,600
+We get cosh gamma,
+and then we just
+
+824
+00:59:25,600 --> 00:59:32,465
+get the commutator
+of a2 with minus 1/2
+
+825
+00:59:32,465 --> 00:59:41,512
+f a2 dagger a2 dagger times
+the whole exponential--
+
+826
+00:59:41,512 --> 00:59:47,980
+I won't write it-- times
+the vacuum plus sinch times
+
+827
+00:59:47,980 --> 00:59:52,670
+a2 dagger times the whole
+exponential times the vacuum.
+
+828
+01:00:00,520 --> 01:00:04,210
+We have to do this commutator,
+but the f doesn't matter.
+
+829
+01:00:04,210 --> 01:00:05,220
+It's a constant.
+
+830
+01:00:05,220 --> 01:00:06,560
+It's a function.
+
+831
+01:00:06,560 --> 01:00:11,460
+No operator in there. a2
+with a2 daggers are 1.
+
+832
+01:00:11,460 --> 01:00:13,690
+There are two of
+them, so you get a 2,
+
+833
+01:00:13,690 --> 01:00:21,372
+and the 1/2 cancels this,
+so you get minus cosh gamma
+
+834
+01:00:21,372 --> 01:00:32,730
+f a2 dagger times
+the exponential plus,
+
+835
+01:00:32,730 --> 01:00:42,490
+from the other term, sinch gamma
+a2 dagger times the exponential
+
+836
+01:00:42,490 --> 01:00:46,070
+on the vacuum equals 0.
+
+837
+01:00:46,070 --> 01:00:49,570
+And, as promised, we were good.
+
+838
+01:00:49,570 --> 01:00:52,450
+We get an a2 dagger, a2 dagger.
+
+839
+01:00:52,450 --> 01:01:00,176
+These two terms cancel if f
+is equal to tan hyperbolic
+
+840
+01:01:00,176 --> 01:01:05,640
+of gamma, which is
+sine over cosine
+
+841
+01:01:05,640 --> 01:01:08,790
+so that these two things cancel.
+
+842
+01:01:08,790 --> 01:01:18,590
+I can write this, of course, as
+minus cosh gamma f plus sinch
+
+843
+01:01:18,590 --> 01:01:24,970
+gamma a2 dagger, the
+exponential, and the vacuum,
+
+844
+01:01:24,970 --> 01:01:25,820
+equals 0.
+
+845
+01:01:25,820 --> 01:01:30,580
+So it's just a simple
+relation, but there we go.
+
+846
+01:01:30,580 --> 01:01:34,060
+Tanh gamma is the thing.
+
+847
+01:01:34,060 --> 01:01:38,590
+Tanh gamma gives you
+the answer, and let
+
+848
+01:01:38,590 --> 01:01:43,210
+me write this state
+so that you enjoy it.
+
+849
+01:01:47,660 --> 01:01:49,540
+Let's see.
+
+850
+01:01:49,540 --> 01:01:55,410
+The state is just a
+fairly interesting thing,
+
+851
+01:01:55,410 --> 01:02:03,990
+this 01 expressed in the new
+Hilbert space of the second
+
+852
+01:02:03,990 --> 01:02:10,480
+oscillator is some n of gamma
+times the exponential of minus
+
+853
+01:02:10,480 --> 01:02:17,220
+1/2 tangent hyperbolic
+of gamma a2 dagger,
+
+854
+01:02:17,220 --> 01:02:21,965
+a2 dagger on the vacuum sub 2.
+
+855
+01:02:25,360 --> 01:02:40,580
+And you need the
+normalization, n of gamma,
+
+856
+01:02:40,580 --> 01:02:42,520
+and it will be done.
+
+857
+01:02:42,520 --> 01:02:44,990
+Now, the normalization,
+you may say well, look,
+
+858
+01:02:44,990 --> 01:02:47,560
+normalizations are good things.
+
+859
+01:02:47,560 --> 01:02:51,580
+Sometimes, you work without
+normalizations and you're OK,
+
+860
+01:02:51,580 --> 01:02:55,350
+but it turns out that these
+normalizations are pretty
+
+861
+01:02:55,350 --> 01:02:59,080
+useful, and unless you get
+them, some calculations
+
+862
+01:02:59,080 --> 01:03:03,150
+are kind of undoable.
+
+863
+01:03:03,150 --> 01:03:06,610
+So it's a little
+bit of a challenge
+
+864
+01:03:06,610 --> 01:03:09,480
+to get that normalization.
+
+865
+01:03:09,480 --> 01:03:12,220
+You can try in several ways.
+
+866
+01:03:12,220 --> 01:03:16,860
+The most naive way
+is to say, well, this
+
+867
+01:03:16,860 --> 01:03:21,040
+must have unit
+norms, so n squared,
+
+868
+01:03:21,040 --> 01:03:25,300
+and then I take the bra of
+this and the ket of that,
+
+869
+01:03:25,300 --> 01:03:29,430
+so it would be a vacuum,
+an exponential of minus 1/2
+
+870
+01:03:29,430 --> 01:03:34,430
+tangent a a, and an
+exponential of minus 1/2
+
+871
+01:03:34,430 --> 01:03:37,890
+tangent a dagger, a dagger.
+
+872
+01:03:37,890 --> 01:03:40,820
+Must be 1.
+
+873
+01:03:40,820 --> 01:03:43,260
+n squared times that.
+
+874
+01:03:43,260 --> 01:03:48,240
+The problem is that I've never
+been able to compute this.
+
+875
+01:03:48,240 --> 01:03:51,020
+At least it takes a
+long time and you get it
+
+876
+01:03:51,020 --> 01:03:54,870
+by indirect methods, but
+getting a number out of this
+
+877
+01:03:54,870 --> 01:03:57,170
+is painful.
+
+878
+01:03:57,170 --> 01:04:01,820
+So there's one way of getting
+the normalization here
+
+879
+01:04:01,820 --> 01:04:04,220
+that is not so bad.
+
+880
+01:04:04,220 --> 01:04:07,935
+It's a little
+surprising what you do.
+
+881
+01:04:07,935 --> 01:04:09,980
+You do the following.
+
+882
+01:04:09,980 --> 01:04:11,840
+You declare, I'm
+going to compute
+
+883
+01:04:11,840 --> 01:04:17,825
+the overlap of 2, the vacuum
+of 2, with the vacuum of 1.
+
+884
+01:04:26,930 --> 01:04:36,460
+And now, what is this,
+n gamma vacuum of 2
+
+885
+01:04:36,460 --> 01:04:45,270
+here, e to the minus 1/2 tanh
+gamma a2 dagger a2 dagger
+
+886
+01:04:45,270 --> 01:04:47,800
+vacuum of 2.
+
+887
+01:04:47,800 --> 01:04:53,690
+How difficult is it to
+compute this inner product?
+
+888
+01:04:53,690 --> 01:04:54,950
+AUDIENCE: [INAUDIBLE].
+
+889
+01:04:54,950 --> 01:04:56,270
+BARTON ZWIEBACH: Sorry?
+
+890
+01:04:56,270 --> 01:04:57,270
+AUDIENCE: Not difficult.
+
+891
+01:04:57,270 --> 01:04:58,561
+BARTON ZWIEBACH: Not difficult.
+
+892
+01:04:58,561 --> 01:05:00,534
+What is it?
+
+893
+01:05:00,534 --> 01:05:01,520
+AUDIENCE: [INAUDIBLE]?
+
+894
+01:05:01,520 --> 01:05:03,694
+BARTON ZWIEBACH:
+Yeah, that thing.
+
+895
+01:05:03,694 --> 01:05:06,283
+AUDIENCE: e to the
+negative 1/2 tanh gamma.
+
+896
+01:05:09,061 --> 01:05:10,450
+It's 1.
+
+897
+01:05:10,450 --> 01:05:11,923
+BARTON ZWIEBACH: Sorry?
+
+898
+01:05:11,923 --> 01:05:14,445
+AUDIENCE: I mean, you
+multiply the a2 dagger right
+
+899
+01:05:14,445 --> 01:05:17,126
+across to the left
+hand side of the ket.
+
+900
+01:05:17,126 --> 01:05:19,740
+BARTON ZWIEBACH: Yeah,
+you're saying it, indeed.
+
+901
+01:05:19,740 --> 01:05:23,240
+Look, this thing is
+as simple as can be.
+
+902
+01:05:23,240 --> 01:05:25,660
+This is just 1.
+
+903
+01:05:25,660 --> 01:05:27,580
+Why is that so?
+
+904
+01:05:27,580 --> 01:05:32,320
+You expand the exponential,
+and you have 1 plus things,
+
+905
+01:05:32,320 --> 01:05:34,580
+but all the things
+have a daggers.
+
+906
+01:05:34,580 --> 01:05:36,960
+Now, a daggers
+don't kill this 1,
+
+907
+01:05:36,960 --> 01:05:39,440
+but they killed the
+other 1 on the left,
+
+908
+01:05:39,440 --> 01:05:43,380
+and there's nothing obstructing
+them from reaching the left,
+
+909
+01:05:43,380 --> 01:05:46,810
+so this is 1.
+
+910
+01:05:46,810 --> 01:05:48,960
+It's completely
+different from this one
+
+911
+01:05:48,960 --> 01:05:52,790
+because if you expand this one,
+the a daggers kill the thing
+
+912
+01:05:52,790 --> 01:05:55,780
+but there's lots
+of a's to the left.
+
+913
+01:05:55,780 --> 01:05:57,770
+And the a's want to
+get here, but there's
+
+914
+01:05:57,770 --> 01:06:00,980
+lots of a daggers to the
+right, so this is hard,
+
+915
+01:06:00,980 --> 01:06:02,170
+but this is easy.
+
+916
+01:06:02,170 --> 01:06:12,880
+So n of gamma is 0 2 0 1.
+
+917
+01:06:12,880 --> 01:06:15,060
+But what is that?
+
+918
+01:06:15,060 --> 01:06:20,300
+If you introduce a complete
+set of position states, zx,
+
+919
+01:06:20,300 --> 01:06:29,040
+This is 0 2 x x 0 1.
+
+920
+01:06:29,040 --> 01:06:38,050
+This one is the ground
+state wave function
+
+921
+01:06:38,050 --> 01:06:41,980
+of the first
+Hamiltonian, and this
+
+922
+01:06:41,980 --> 01:06:44,330
+is the start of the
+ground state wave
+
+923
+01:06:44,330 --> 01:06:47,280
+function of the
+second Hamiltonian.
+
+924
+01:06:52,580 --> 01:06:56,082
+And those you know
+because you know m, omega.
+
+925
+01:06:56,082 --> 01:06:57,790
+You know the ground
+state wave functions,
+
+926
+01:06:57,790 --> 01:06:59,570
+so this integral can be done.
+
+927
+01:06:59,570 --> 01:07:04,510
+So this whole normalization
+is given by this integral,
+
+928
+01:07:04,510 --> 01:07:11,370
+and this integral gives you 1
+over square root of cosh gamma.
+
+929
+01:07:11,370 --> 01:07:13,900
+That interval takes
+a few lines to make,
+
+930
+01:07:13,900 --> 01:07:17,115
+but the end result is there.
+
+931
+01:07:19,670 --> 01:07:22,540
+So you got your coherent states.
+
+932
+01:07:28,480 --> 01:07:32,340
+You got now the squeezed
+state completely normalized,
+
+933
+01:07:32,340 --> 01:07:34,550
+so let's write it out.
+
+934
+01:07:34,550 --> 01:07:44,690
+0 1 is equal to 1 over square
+root of cosh gamma exponential
+
+935
+01:07:44,690 --> 01:07:55,710
+of minus 1/2 tanh gamma a2
+dagger a2 dagger on the vacuum
+
+936
+01:07:55,710 --> 01:07:56,400
+sub 2.
+
+937
+01:08:00,030 --> 01:08:00,730
+Wow.
+
+938
+01:08:00,730 --> 01:08:01,650
+That's it.
+
+939
+01:08:01,650 --> 01:08:07,300
+That's a squeeze state that
+has been squeezed in such a way
+
+940
+01:08:07,300 --> 01:08:10,570
+that the squeezing
+parameter appears here
+
+941
+01:08:10,570 --> 01:08:13,660
+in the exponential.
+
+942
+01:08:13,660 --> 01:08:15,710
+Now, this is the
+way we got to it,
+
+943
+01:08:15,710 --> 01:08:20,359
+but now I wanted to just think
+of it independently, just
+
+944
+01:08:20,359 --> 01:08:21,319
+from the beginning.
+
+945
+01:08:21,319 --> 01:08:29,120
+If you had a Hamiltonian,
+this is an interesting state
+
+946
+01:08:29,120 --> 01:08:33,910
+all in itself because
+it is a squeezed state.
+
+947
+01:08:33,910 --> 01:08:39,850
+It's a Gaussian, but of the
+wrong shape for this system.
+
+948
+01:08:39,850 --> 01:08:43,770
+This is a Gaussian of the
+right shape for system two.
+
+949
+01:08:43,770 --> 01:08:45,830
+But once you put all
+these oscillators,
+
+950
+01:08:45,830 --> 01:08:49,350
+it's not anymore a
+Gaussian of the right type.
+
+951
+01:08:49,350 --> 01:08:51,439
+It's a squeezed Gaussian.
+
+952
+01:08:51,439 --> 01:08:55,430
+So if we forget about
+this system one,
+
+953
+01:08:55,430 --> 01:09:00,229
+let me write this thing from
+the beginning and say like this.
+
+954
+01:09:00,229 --> 01:09:04,710
+We have a Hamiltonian,
+we have a ground state,
+
+955
+01:09:04,710 --> 01:09:12,240
+we have m and omega, and
+we have a and a dagger.
+
+956
+01:09:12,240 --> 01:09:19,380
+Let's just define what we call
+the squeezed vacuum, vacuum sub
+
+957
+01:09:19,380 --> 01:09:23,470
+gamma, to be
+precisely this thing.
+
+958
+01:09:23,470 --> 01:09:31,380
+1 over square root of cosh
+gamma exponential of minus 1/2
+
+959
+01:09:31,380 --> 01:09:39,620
+tanh gamma a dagger
+a dagger, not 2
+
+960
+01:09:39,620 --> 01:09:43,670
+anymore because we have
+just a single system.
+
+961
+01:09:43,670 --> 01:09:47,100
+A single system, the
+ground state, and now we've
+
+962
+01:09:47,100 --> 01:09:51,359
+defined this state, which
+is what we had there before,
+
+963
+01:09:51,359 --> 01:09:53,790
+but we don't think of
+it anymore as, oh, it
+
+964
+01:09:53,790 --> 01:09:55,770
+came from some
+other Hamiltonian,
+
+965
+01:09:55,770 --> 01:09:59,650
+but rather, this is
+a state on its own.
+
+966
+01:09:59,650 --> 01:10:03,060
+It's a squeezed vacuum state.
+
+967
+01:10:03,060 --> 01:10:08,220
+And from the computations
+that we did here,
+
+968
+01:10:08,220 --> 01:10:14,340
+the delta x for this state would
+be e to the minus gamma h bar m
+
+969
+01:10:14,340 --> 01:10:15,850
+omega.
+
+970
+01:10:15,850 --> 01:10:21,810
+and m omega over here.
+
+971
+01:10:21,810 --> 01:10:25,940
+So these are these,
+and you don't
+
+972
+01:10:25,940 --> 01:10:27,860
+need to know what gamma is.
+
+973
+01:10:27,860 --> 01:10:31,320
+That's a number that
+somebody chose for you.
+
+974
+01:10:31,320 --> 01:10:34,730
+Any number that
+you want is gamma,
+
+975
+01:10:34,730 --> 01:10:38,230
+and therefore, you use
+it to squeeze the state.
+
+976
+01:10:38,230 --> 01:10:40,280
+And that's what you've achieved.
+
+977
+01:10:40,280 --> 01:10:43,720
+So you have a Hamiltonian
+of a harmonic oscillator.
+
+978
+01:10:43,720 --> 01:10:45,690
+You can construct the vacuum.
+
+979
+01:10:45,690 --> 01:10:48,030
+You know how to
+construct coherent states
+
+980
+01:10:48,030 --> 01:10:49,740
+by acting on the vacuum.
+
+981
+01:10:49,740 --> 01:10:53,430
+Now you know how to construct
+squeezed states, states
+
+982
+01:10:53,430 --> 01:10:56,170
+in which the expectation
+values do those things.
+
+983
+01:11:01,350 --> 01:11:06,000
+We had a very nice formula
+where we began the lecture today
+
+984
+01:11:06,000 --> 01:11:14,110
+in which the coherent
+state was just
+
+985
+01:11:14,110 --> 01:11:18,080
+a unitary operator
+acting on the vacuum.
+
+986
+01:11:18,080 --> 01:11:21,340
+Now, we made sure
+to normalize this,
+
+987
+01:11:21,340 --> 01:11:24,760
+so we did check in
+this calculation
+
+988
+01:11:24,760 --> 01:11:30,450
+that o gamma 0
+gamma is equal to 1.
+
+989
+01:11:30,450 --> 01:11:35,830
+So this thing must
+come from the action
+
+990
+01:11:35,830 --> 01:11:41,080
+of some unitary operator
+acting on the vacuum.
+
+991
+01:11:41,080 --> 01:11:46,420
+Which is that unitary operator
+that acts on the vacuum
+
+992
+01:11:46,420 --> 01:11:49,250
+and gives you that?
+
+993
+01:11:49,250 --> 01:11:51,075
+Not so easy to find.
+
+994
+01:11:51,075 --> 01:11:53,470
+All the computations here
+are a little challenging,
+
+995
+01:11:53,470 --> 01:11:54,750
+as you've seen.
+
+996
+01:11:54,750 --> 01:11:58,570
+But here's the answer.
+
+997
+01:11:58,570 --> 01:12:09,300
+Cosh gamma e to the exponential
+of minus 1/2 tanh gamma
+
+998
+01:12:09,300 --> 01:12:14,380
+a dagger a dagger
+should be something
+
+999
+01:12:14,380 --> 01:12:19,820
+like an e to the what?
+
+1000
+01:12:19,820 --> 01:12:23,630
+Should be something
+like e to the a dagger
+
+1001
+01:12:23,630 --> 01:12:30,290
+a dagger minus aa
+acting on the vacuum.
+
+1002
+01:12:30,290 --> 01:12:31,260
+Why?
+
+1003
+01:12:31,260 --> 01:12:36,280
+Because certainly, the aa's
+are going to disappear,
+
+1004
+01:12:36,280 --> 01:12:41,820
+and you're going to get
+products of this one squared.
+
+1005
+01:12:41,820 --> 01:12:48,010
+And this is anti-Hermitian,
+so that operator is unitary,
+
+1006
+01:12:48,010 --> 01:12:52,510
+but I now must put the
+gamma somewhere there.
+
+1007
+01:12:52,510 --> 01:12:58,635
+So what should I put here in
+order to get that to work?
+
+1008
+01:13:06,710 --> 01:13:11,790
+Well, it's maybe
+something you can
+
+1009
+01:13:11,790 --> 01:13:17,700
+try by assuming gamma is very
+small and expanding both sides,
+
+1010
+01:13:17,700 --> 01:13:21,270
+or finding a differential
+equation, or doing things,
+
+1011
+01:13:21,270 --> 01:13:25,930
+but the answer is
+incredibly simple.
+
+1012
+01:13:25,930 --> 01:13:32,026
+It's e to the minus
+just gamma over 2.
+
+1013
+01:13:32,026 --> 01:13:33,360
+That's it.
+
+1014
+01:13:33,360 --> 01:13:37,220
+Gamma appears here,
+and by the time
+
+1015
+01:13:37,220 --> 01:13:41,730
+you reorder this
+quadratic form--
+
+1016
+01:13:41,730 --> 01:13:46,090
+you see, what you have
+to do here is expand,
+
+1017
+01:13:46,090 --> 01:13:47,830
+and then you have
+powers of these,
+
+1018
+01:13:47,830 --> 01:13:51,300
+and then you have to bring all
+the annihilators to the right
+
+1019
+01:13:51,300 --> 01:13:52,370
+and kill them.
+
+1020
+01:13:52,370 --> 01:13:56,330
+And then you have a power
+series in squares of this thing.
+
+1021
+01:13:56,330 --> 01:13:59,780
+That will reassemble
+into this exponential.
+
+1022
+01:13:59,780 --> 01:14:01,540
+It's almost a miracle
+that something
+
+1023
+01:14:01,540 --> 01:14:07,120
+like that could happen,
+but it does happen.
+
+1024
+01:14:07,120 --> 01:14:10,110
+And it's a very interesting
+calculation, actually,
+
+1025
+01:14:10,110 --> 01:14:10,740
+to do that.
+
+1026
+01:14:10,740 --> 01:14:13,340
+We don't do it in the course.
+
+1027
+01:14:13,340 --> 01:14:16,770
+I may post some pages that
+I did once this computation.
+
+1028
+01:14:20,260 --> 01:14:26,350
+And that is a nice operator.
+
+1029
+01:14:26,350 --> 01:14:29,056
+We call it the
+squeezing operator.
+
+1030
+01:14:33,980 --> 01:14:40,120
+So s of gamma is a unitary
+operator, s of gamma.
+
+1031
+01:14:40,120 --> 01:14:44,600
+The squeezed state of
+0 gamma is equal to s
+
+1032
+01:14:44,600 --> 01:14:49,510
+of gamma on the vacuum
+where s of gamma
+
+1033
+01:14:49,510 --> 01:14:54,560
+is equal to e to the minus
+gamma over 2 a dagger a dagger
+
+1034
+01:14:54,560 --> 01:14:58,370
+minus aa, that operator.
+
+1035
+01:14:58,370 --> 01:15:02,585
+It's a unitary operator
+and it does the squeezing.
+
+1036
+01:15:05,590 --> 01:15:14,660
+Actually, once you have squeezed
+states, you can do more things,
+
+1037
+01:15:14,660 --> 01:15:18,330
+and you can squeeze
+and then translate.
+
+1038
+01:15:18,330 --> 01:15:20,280
+Those are the most
+general states
+
+1039
+01:15:20,280 --> 01:15:24,280
+that people use
+in quantum optics.
+
+1040
+01:15:24,280 --> 01:15:31,830
+So you take a vacuum, you
+squeeze it with s of gamma,
+
+1041
+01:15:31,830 --> 01:15:36,920
+and then you translate
+it with v of alpha.
+
+1042
+01:15:36,920 --> 01:15:43,540
+And this is the state,
+alpha gamma, squeeze factor,
+
+1043
+01:15:43,540 --> 01:15:46,090
+translation factor.
+
+1044
+01:15:46,090 --> 01:15:50,490
+One picture of that
+is in our alpha plane.
+
+1045
+01:15:50,490 --> 01:15:54,680
+You take the vacuum that
+is some spherical ball here
+
+1046
+01:15:54,680 --> 01:15:59,860
+in the x expectation
+value, p expectation value.
+
+1047
+01:15:59,860 --> 01:16:00,980
+You squeeze it.
+
+1048
+01:16:00,980 --> 01:16:06,130
+You might decide, I don't
+want to have too much delta x,
+
+1049
+01:16:06,130 --> 01:16:08,950
+so you squeeze it and you
+produce something like this.
+
+1050
+01:16:13,530 --> 01:16:17,630
+That's a squeezed vacuum
+by the time you apply this.
+
+1051
+01:16:17,630 --> 01:16:22,910
+And then you do the alpha,
+and you translate it out,
+
+1052
+01:16:22,910 --> 01:16:25,140
+and this state is now
+going to start rotating
+
+1053
+01:16:25,140 --> 01:16:28,781
+and doing all kinds of motion.
+
+1054
+01:16:28,781 --> 01:16:31,410
+It's pretty practical stuff.
+
+1055
+01:16:31,410 --> 01:16:37,050
+Actually, some of you
+are taking junior lab,
+
+1056
+01:16:37,050 --> 01:16:40,320
+and the person that works
+a lot there in junior lab
+
+1057
+01:16:40,320 --> 01:16:45,060
+is Nergis Mavalvala, and she
+does gravity wave detection,
+
+1058
+01:16:45,060 --> 01:16:47,850
+and squeezed states has
+been exactly what she's
+
+1059
+01:16:47,850 --> 01:16:49,350
+been working.
+
+1060
+01:16:49,350 --> 01:16:51,890
+In order to minimize
+displacements
+
+1061
+01:16:51,890 --> 01:16:54,960
+in the gravity wave
+detectors, they
+
+1062
+01:16:54,960 --> 01:16:59,200
+have a squeeze vacuum state
+injected into the detector
+
+1063
+01:16:59,200 --> 01:17:02,950
+to make the harmonic
+oscillator that
+
+1064
+01:17:02,950 --> 01:17:07,320
+represents the mirror stabilize
+its uncertainty in position
+
+1065
+01:17:07,320 --> 01:17:09,400
+to the maximum possible.
+
+1066
+01:17:09,400 --> 01:17:11,570
+There's a whole
+fabulous technique
+
+1067
+01:17:11,570 --> 01:17:14,770
+that people use with
+the squeezed states.
+
+1068
+01:17:14,770 --> 01:17:16,350
+Now, the squeezed
+states allow you
+
+1069
+01:17:16,350 --> 01:17:22,350
+to construct some states that
+seemed to us that they were
+
+1070
+01:17:22,350 --> 01:17:27,710
+pretty strange and that we never
+had good formulas for them.
+
+1071
+01:17:27,710 --> 01:17:30,040
+So that's how I want to
+conclude the lecture.
+
+1072
+01:17:30,040 --> 01:17:34,290
+I will leave photon
+states for next time,
+
+1073
+01:17:34,290 --> 01:17:37,470
+but I want to discuss
+one more application
+
+1074
+01:17:37,470 --> 01:17:43,080
+of the squeezed states,
+and this comes from limits.
+
+1075
+01:17:47,410 --> 01:17:54,740
+So here is your squeezed
+state, e to the minus gamma.
+
+1076
+01:17:54,740 --> 01:17:59,110
+So let's squeeze the
+state to the end.
+
+1077
+01:17:59,110 --> 01:18:01,066
+Take gamma to go to infinity.
+
+1078
+01:18:04,690 --> 01:18:06,730
+What happens to
+the squeezed state?
+
+1079
+01:18:06,730 --> 01:18:11,420
+So you're narrowing out the
+ground state in position space
+
+1080
+01:18:11,420 --> 01:18:13,310
+to the maximum possible.
+
+1081
+01:18:13,310 --> 01:18:15,420
+What happens to the state?
+
+1082
+01:18:15,420 --> 01:18:18,725
+Well, it goes a little singular,
+but not terribly singular.
+
+1083
+01:18:23,960 --> 01:18:27,170
+Gamma is going to
+infinity, so cosh
+
+1084
+01:18:27,170 --> 01:18:30,150
+is going to infinity as well.
+
+1085
+01:18:30,150 --> 01:18:36,230
+So the state is going kind
+of to 0, but 0 sub infinity.
+
+1086
+01:18:36,230 --> 01:18:39,690
+It's proportional, but
+the exponential is good.
+
+1087
+01:18:39,690 --> 01:18:45,480
+Exponential of minus
+1/2 tangent of gamma
+
+1088
+01:18:45,480 --> 01:18:49,850
+as gamma goes to
+infinity is just 1.
+
+1089
+01:18:49,850 --> 01:18:58,540
+And this is a dagger a
+dagger on the vacuum.
+
+1090
+01:18:58,540 --> 01:19:04,135
+This state is in almost
+terrible danger to be infinite.
+
+1091
+01:19:04,135 --> 01:19:07,260
+If you try to find
+its wave function,
+
+1092
+01:19:07,260 --> 01:19:09,560
+you're not going to be
+able to normalize it.
+
+1093
+01:19:09,560 --> 01:19:11,890
+You've reached the
+end of the road
+
+1094
+01:19:11,890 --> 01:19:15,340
+kind of thing because of this.
+
+1095
+01:19:15,340 --> 01:19:16,900
+Gamma goes to infinity.
+
+1096
+01:19:16,900 --> 01:19:19,440
+This is going to
+be infinite here
+
+1097
+01:19:19,440 --> 01:19:21,270
+because this state,
+if you compute
+
+1098
+01:19:21,270 --> 01:19:24,650
+its overlap with
+itself, is blowing up.
+
+1099
+01:19:24,650 --> 01:19:26,670
+And here, you see
+the niceness of this.
+
+1100
+01:19:26,670 --> 01:19:30,000
+It also suggests that gamma
+can go from plus infinity
+
+1101
+01:19:30,000 --> 01:19:33,310
+to minus infinity, and
+that's a natural thing.
+
+1102
+01:19:33,310 --> 01:19:37,630
+Nevertheless, here, it goes
+from plus 1 to minus 1.
+
+1103
+01:19:37,630 --> 01:19:40,900
+If you had a number 3
+here, this is a state
+
+1104
+01:19:40,900 --> 01:19:43,600
+that blows much worse
+than the worst delta
+
+1105
+01:19:43,600 --> 01:19:47,570
+function or derivative or
+square that you've ever had.
+
+1106
+01:19:47,570 --> 01:19:51,290
+It's just unbelievably
+divergent because it just
+
+1107
+01:19:51,290 --> 01:19:53,160
+can't exist, this state.
+
+1108
+01:19:53,160 --> 01:19:58,100
+You're going beyond infinity
+here to go behind this thing.
+
+1109
+01:19:58,100 --> 01:20:00,430
+So it's just pretty
+much impossible.
+
+1110
+01:20:00,430 --> 01:20:03,250
+So the limit is
+states are reasonable
+
+1111
+01:20:03,250 --> 01:20:07,400
+as long as this quadratic
+form goes from minus 1 to 1.
+
+1112
+01:20:07,400 --> 01:20:11,660
+And when you go to 1, you get
+this, and what should this be?
+
+1113
+01:20:11,660 --> 01:20:14,940
+This should be the
+wave function I
+
+1114
+01:20:14,940 --> 01:20:17,240
+associated to a delta function.
+
+1115
+01:20:17,240 --> 01:20:24,490
+This would be the position
+state, x equals 0.
+
+1116
+01:20:24,490 --> 01:20:27,250
+Roughly, it's a delta function.
+
+1117
+01:20:27,250 --> 01:20:31,040
+And indeed, if you
+act with x on it,
+
+1118
+01:20:31,040 --> 01:20:33,620
+x, remember, is a plus a dagger.
+
+1119
+01:20:37,640 --> 01:20:38,750
+Act on this exponential.
+
+1120
+01:20:42,330 --> 01:20:45,180
+Now, do you remember
+how to do that?
+
+1121
+01:20:45,180 --> 01:20:50,330
+This a dagger doesn't do
+anything but the a goes here,
+
+1122
+01:20:50,330 --> 01:20:52,060
+and it's a trivial commutator.
+
+1123
+01:20:52,060 --> 01:20:55,400
+You get minus a dagger.
+
+1124
+01:20:55,400 --> 01:20:58,800
+So it actually kills
+this and gives you 0.
+
+1125
+01:20:58,800 --> 01:21:03,455
+So in fact, the exposition
+operator acting on here
+
+1126
+01:21:03,455 --> 01:21:06,690
+gives you 0.
+
+1127
+01:21:06,690 --> 01:21:11,590
+It looks like it is really
+the state x equals 0.
+
+1128
+01:21:11,590 --> 01:21:17,210
+If you go the other way
+around, and you take gamma
+
+1129
+01:21:17,210 --> 01:21:23,380
+to be minus infinity, the
+only thing that changes here
+
+1130
+01:21:23,380 --> 01:21:24,110
+is the sign.
+
+1131
+01:21:24,110 --> 01:21:32,430
+So this is like the delta of
+x, or the x equals 0 state.
+
+1132
+01:21:32,430 --> 01:21:40,410
+And if you take 0 minus
+infinity, goes like x minus 1/2
+
+1133
+01:21:40,410 --> 01:21:47,510
+plus 1/2 a dagger a
+dagger on the vacuum.
+
+1134
+01:21:47,510 --> 01:21:51,430
+And this state is a delta
+function in momentum.
+
+1135
+01:21:51,430 --> 01:21:55,950
+It's the momentum
+state p equals 0.
+
+1136
+01:21:55,950 --> 01:21:57,210
+Why?
+
+1137
+01:21:57,210 --> 01:22:01,560
+Because gamma is going
+to minus infinity.
+
+1138
+01:22:01,560 --> 01:22:05,380
+The uncertainty of
+momentum is going to 0.
+
+1139
+01:22:05,380 --> 01:22:09,220
+And therefore, indeed, if
+you act with the momentum
+
+1140
+01:22:09,220 --> 01:22:11,570
+operator on this
+state, it's like acting
+
+1141
+01:22:11,570 --> 01:22:15,130
+with a minus a
+dagger, and you've
+
+1142
+01:22:15,130 --> 01:22:18,160
+changed the sign of this, but
+you've changed the sign here,
+
+1143
+01:22:18,160 --> 01:22:20,950
+so it also kills this state.
+
+1144
+01:22:20,950 --> 01:22:26,240
+So it looks like we can really
+construct position and momentum
+
+1145
+01:22:26,240 --> 01:22:29,000
+eigenstates now with
+squeezed states,
+
+1146
+01:22:29,000 --> 01:22:31,200
+and that's what they
+are supposed to be.
+
+1147
+01:22:31,200 --> 01:22:34,690
+A squeezed state is something
+that has been squeezed enough
+
+1148
+01:22:34,690 --> 01:22:37,060
+that you can get
+a delta function.
+
+1149
+01:22:37,060 --> 01:22:39,490
+So how do you finish
+that construction?
+
+1150
+01:22:39,490 --> 01:22:40,240
+Here is the claim.
+
+1151
+01:22:43,860 --> 01:22:53,390
+Square root of 2 m omega over
+h bar x a dagger minus 1/2
+
+1152
+01:22:53,390 --> 01:22:59,240
+a dagger a dagger
+acting on the vacuum.
+
+1153
+01:22:59,240 --> 01:23:03,770
+This is the claim, that this
+is the x position state.
+
+1154
+01:23:03,770 --> 01:23:08,150
+So basically, you have
+to squeeze first and then
+
+1155
+01:23:08,150 --> 01:23:13,420
+translate this thing
+to the exposition.
+
+1156
+01:23:13,420 --> 01:23:16,180
+So how do you check this?
+
+1157
+01:23:16,180 --> 01:23:19,320
+Well, you should check
+that the x operator, which
+
+1158
+01:23:19,320 --> 01:23:27,440
+is something times a plus a
+dagger acting on this thing
+
+1159
+01:23:27,440 --> 01:23:29,420
+gives you little x.
+
+1160
+01:23:29,420 --> 01:23:32,670
+So you should have that
+x operator on this thing
+
+1161
+01:23:32,670 --> 01:23:35,910
+gives you x x.
+
+1162
+01:23:35,910 --> 01:23:39,720
+And that is going to work out
+because the a dagger is going
+
+1163
+01:23:39,720 --> 01:23:42,616
+to sit here and it's going
+to get canceled with the a
+
+1164
+01:23:42,616 --> 01:23:46,700
+with this, but the
+a with this part
+
+1165
+01:23:46,700 --> 01:23:49,810
+is just going to bring down
+an x with the right factor.
+
+1166
+01:23:49,810 --> 01:23:54,180
+So this state, which is a
+squeezed state and a little bit
+
+1167
+01:23:54,180 --> 01:24:00,110
+of a coherent state as well,
+is producing the position
+
+1168
+01:24:00,110 --> 01:24:01,830
+eigenstate.
+
+1169
+01:24:01,830 --> 01:24:04,100
+In the harmonic
+oscillator, you can really
+
+1170
+01:24:04,100 --> 01:24:05,900
+construct the
+position eigenstate
+
+1171
+01:24:05,900 --> 01:24:08,900
+and you can calculate
+the normalization.
+
+1172
+01:24:08,900 --> 01:24:13,290
+The normalization comes out
+to be a rather simple thing.
+
+1173
+01:24:13,290 --> 01:24:17,190
+So at the end of the day,
+the position eigenstate
+
+1174
+01:24:17,190 --> 01:24:27,720
+is m omega over pi h bar to the
+1/4 e to the minus m omega x
+
+1175
+01:24:27,720 --> 01:24:30,580
+squared over 2h bar.
+
+1176
+01:24:30,580 --> 01:24:33,570
+And this whole
+exponential, square root
+
+1177
+01:24:33,570 --> 01:24:41,150
+of 2 m omega over h bar,
+x a dagger minus 1/2
+
+1178
+01:24:41,150 --> 01:24:45,050
+a dagger a dagger
+acting on the vacuum.
+
+1179
+01:24:50,850 --> 01:24:55,610
+So your basis of creation
+and annihilation operators
+
+1180
+01:24:55,610 --> 01:24:58,930
+on the harmonic oscillator
+is flexible enough
+
+1181
+01:24:58,930 --> 01:25:02,320
+to allow for a concrete
+description of your position
+
+1182
+01:25:02,320 --> 01:25:06,470
+eigenstates, and a
+tractable one as well.
+
+1183
+01:25:06,470 --> 01:25:16,320
+And that's the extreme
+limit of squeezing, together
+
+1184
+01:25:16,320 --> 01:25:21,090
+with some little bit of
+coherent displacement.
+
+1185
+01:25:21,090 --> 01:25:23,210
+Next time, we'll do
+our photon states
+
+1186
+01:25:23,210 --> 01:25:25,790
+and we'll illustrate the
+ideas of both coherent
+
+1187
+01:25:25,790 --> 01:25:28,620
+and squeezed states
+at the same time.

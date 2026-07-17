@@ -1,0 +1,24 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/environment/1.0.0"
+title: QWM Environment
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  environment_kind:
+    enum: [laboratory, vacuum, cryogenic, idealized, other]
+  conditions:
+    type: object
+    minProperties: 1
+    additionalProperties:
+      $ref: "common.schema.yaml#/definitions/conditionValue"
+  notes:
+    type: [string, "null"]
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, environment_kind, conditions, evidence]
+unevaluatedProperties: false

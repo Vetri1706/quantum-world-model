@@ -1,0 +1,12 @@
+# Structure only — no values filled in.
+
+id:                  # unique string
+name:                # string
+category:            # string
+definition:          # string, plain-language explanation
+
+explained_by:        # list of strings, references quantum/equations/
+used_in:             # list of strings, references quantum/experiments/
+related_concepts:    # list of strings, references quantum/concepts/
+misconceptions:      # list of strings, references quantum/misconceptions/
+references:          # list of strings, references quantum/references/

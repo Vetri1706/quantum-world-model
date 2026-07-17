@@ -1,0 +1,42 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/review-issue/1.0.0"
+title: QWM Review Issue
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  subject:
+    $ref: "common.schema.yaml#/definitions/entityId"
+    x-foreign-key:
+      entity_type: any
+  field_path:
+    type: string
+    pattern: "^/(?:[^/~]|~[01])*$"
+  issue_type:
+    enum: [missing-evidence, source-conflict, unknown-value, schema-ambiguity, invalid-reference]
+  description:
+    type: string
+    minLength: 1
+  issue_status:
+    enum: [open, resolved, wont-fix]
+  candidate_sources:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: source
+  related_sources:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: source
+  resolution:
+    type: [string, "null"]
+required: [subject, field_path, issue_type, description, issue_status]
+unevaluatedProperties: false

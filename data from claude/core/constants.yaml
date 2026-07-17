@@ -1,0 +1,19 @@
+planck_constant:
+  value: 6.62607015e-34
+  unit: "J*s"
+
+speed_of_light:
+  value: 299792458
+  unit: "m/s"
+
+electron_mass:
+  value: 9.1093837015e-31
+  unit: kg
+
+electron_charge:
+  value: 1.602176634e-19
+  unit: C
+
+boltzmann_constant:
+  value: 1.380649e-23
+  unit: "J/K"

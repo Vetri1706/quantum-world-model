@@ -1,0 +1,57 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/simulation-model/1.0.0"
+title: QWM Simulation Model
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  model_kind:
+    type: string
+    minLength: 1
+  engine:
+    type: string
+    minLength: 1
+  entry_point:
+    type: string
+    pattern: "^[a-zA-Z0-9_./-]+$"
+  inputs:
+    type: array
+    items:
+      $ref: "common.schema.yaml#/definitions/modelPort"
+  outputs:
+    type: array
+    minItems: 1
+    items:
+      $ref: "common.schema.yaml#/definitions/modelPort"
+  equations:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: equation
+  renderer_mode:
+    type: [string, "null"]
+  supported_components:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: component
+  limitations:
+    type: array
+    items:
+      type: string
+      minLength: 1
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, model_kind, engine, entry_point, inputs, outputs, equations]
+unevaluatedProperties: false

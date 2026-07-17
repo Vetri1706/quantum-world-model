@@ -1,0 +1,12 @@
+id: electron
+name: Electron
+category: Particle
+definition: null
+
+explained_by: []
+used_in:
+  - quantum_tunneling
+related_concepts:
+  - wave_function
+misconceptions: []
+references: []

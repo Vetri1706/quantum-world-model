@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problem Sets on MIT OpenCourseWare</title>
+    <link>/resources/problem-sets/</link>
+    <description>Recent content in Problem Sets on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/problem-sets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment 1</title>
+      <link>/resources/assignment-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-1/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 1.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 10</title>
+      <link>/resources/assignment-10/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-10/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 10.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 11</title>
+      <link>/resources/assignment-11/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-11/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 11.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 2</title>
+      <link>/resources/assignment-2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-2/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 3</title>
+      <link>/resources/assignment-3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-3/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 4</title>
+      <link>/resources/assignment-4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-4/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 4.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 5</title>
+      <link>/resources/assignment-5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-5/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 5.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 6</title>
+      <link>/resources/assignment-6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-6/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 6.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 7</title>
+      <link>/resources/assignment-7/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-7/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 7.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 8</title>
+      <link>/resources/assignment-8/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-8/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 8.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assignment 9</title>
+      <link>/resources/assignment-9/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/assignment-9/data.json</guid>
+      <description>&lt;p&gt;This resource file contains information regarding quantum physics II, assignment 9.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

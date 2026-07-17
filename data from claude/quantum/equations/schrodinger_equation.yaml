@@ -1,0 +1,8 @@
+id: schrodinger_equation
+name: Time-Independent Schrodinger Equation
+domain: Quantum Mechanics
+variables: ["psi (wave function)", "x (position)", "V (potential energy)", "E (total energy)", "m (mass)", "hbar (reduced Planck constant)"]
+solver: "Numerical - Finite Difference"
+used_in:
+  - quantum_tunneling
+  - superposition

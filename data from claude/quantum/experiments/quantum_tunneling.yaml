@@ -1,0 +1,74 @@
+id: QEXP001
+name: Quantum Tunneling
+category: Quantum Mechanics
+difficulty: Beginner
+interactive: true
+
+scientific_question: How can a particle cross a barrier it classically shouldn't have enough energy to cross?
+goal: Understand that a particle's wave nature gives it a nonzero probability of appearing beyond a barrier.
+
+history:
+  scientist: "George Gamow; independently Ronald Gurney and Edward Condon"
+  year: 1928
+  significance: >
+    First used to explain alpha decay in radioactive nuclei - why alpha particles escape
+    a nucleus despite not having enough energy to classically overcome the nuclear binding
+    force. One of the earliest triumphs of quantum mechanics explaining a real,
+    previously mysterious experimental result.
+
+environment: vacuum_chamber
+
+required_equipment:
+  - electron_source
+  - detector
+
+required_elements:
+  - electron
+  - potential_barrier
+  - wave_packet
+
+variables:
+  barrier_height: { min: 0, max: 10, default: 5.0, unit: eV }
+  barrier_width: { min: 0.1, max: 5, default: 1.0, unit: nm }
+  particle_energy: { min: 0.1, max: 10, default: 3.0, unit: eV }
+  particle_mass: { min: 0.1, max: 5, default: 1.0, unit: "electron masses" }
+
+procedure:
+  - Place the potential barrier
+  - Spawn the electron as a wave packet with an initial energy
+  - Enable the probability density plot
+  - Run the simulation and observe the transmitted vs. reflected wave amplitude
+
+expected_observation: >
+  Part of the wave packet is reflected by the barrier and part continues through to the
+  other side with reduced amplitude, even when the particle's energy is less than the
+  barrier height. Transmission probability drops off exponentially as barrier width or
+  barrier height increases, and increases as particle energy approaches or exceeds the
+  barrier height.
+
+common_mistakes:
+  - particle_gains_energy_misconception
+  - particle_partially_exists_misconception
+
+related_concepts:
+  - electron
+  - wave_function
+  - potential_barrier
+  - probability_density
+
+equations:
+  - schrodinger_equation
+  - tunneling_transmission_coefficient
+
+references:
+  - hyperphysics_quantum_tunneling
+  - griffiths_intro_qm
+
+metadata:
+  education_level: Undergraduate
+  estimated_time: "15 min"
+  requires_math: true
+  math_level: "Differential Equations"
+  simulation_type: 2D
+  render_mode: wave
+  engine: tunneling_transmission_coefficient

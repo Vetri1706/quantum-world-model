@@ -1,0 +1,21 @@
+{
+  "content": "",
+  "content_type": "resource",
+  "description": "",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/653b326897250844da1d83d0d1582636_MIT5_73F18_Lec31.pdf",
+  "file_size": 1295579,
+  "file_type": "application/pdf",
+  "iscjklanguage": false,
+  "learning_resource_types": [
+    "Lecture Notes"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWFile",
+  "parent_title": "Lecture Notes",
+  "parent_type": "CourseSection",
+  "parent_uid": "f44d9054-5342-af93-4e73-aaa4964ca565",
+  "resourcetype": "Document",
+  "title": "5.73 F2018 Lecture 31: Matrix Elements of One-Electron",
+  "uid": "653b3268-9725-0844-da1d-83d0d1582636"
+}

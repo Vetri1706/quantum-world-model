@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings on MIT OpenCourseWare</title>
+    <link>/resources/readings/</link>
+    <description>Recent content in Readings on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/readings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readings</title>
+      <link>/pages/readings/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/readings/data.json</guid>
+      <description>&lt;p&gt;The readings assigned for selected lectures are listed below. Readings were mostly assigned from the course textbook, unless indicated otherwise.&lt;/p&gt;&#xA;&lt;p&gt;[C-T,D,L-1] = Cohen-Tannoudji, C., B. Diu, and F. Laloë. &lt;em&gt;Quantum Mechanics&lt;/em&gt;. Vol. 1 (pp.1-891). Wiley-VCH, 1st edition, 1992. ISBN: 9780471569527.&lt;/p&gt;&#xA;&lt;p&gt;[C-T,D,L-2] = Cohen-Tannoudji, C., B. Diu, and F. Laloë. &lt;em&gt;Quantum Mechanics&lt;/em&gt;. Vol. 2. (pp.901-1517). Wiley-VCH, 1st edition, 1991. ISBN: 9780471164357.&lt;/p&gt;&#xA;&lt;p&gt;&lt;table&gt;&#xA;&#xA;&lt;thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;Ses #&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;topics&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;readings&#xA;&lt;/th&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;p&gt;&lt;/thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td colspan=&#34;3&#34;&gt;&#xA;&#xA;&lt;strong&gt;1-9: One-Dimensional Problems&lt;/strong&gt;&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;2&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;Infinite Box, \(\delta(x)\) Well, \(\delta(x)\) Barrier&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;[C-T,D,L-1] pp. 21–24, 28–31.&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

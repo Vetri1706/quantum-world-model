@@ -1,0 +1,43 @@
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/concept/1.0.0"
+title: QWM Concept
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  domain:
+    type: string
+    minLength: 1
+  definition:
+    type: string
+    minLength: 1
+  aliases:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
+      minLength: 1
+  related_concepts:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: concept
+  equations:
+    type: array
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: equation
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, domain, definition, evidence]
+unevaluatedProperties: false

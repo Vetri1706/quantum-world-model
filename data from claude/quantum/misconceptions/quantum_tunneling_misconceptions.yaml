@@ -1,0 +1,9 @@
+- id: particle_gains_energy_misconception
+  misconception: The particle gains extra energy to get over or through the barrier.
+  correction: The particle's energy stays constant throughout. What changes is the probability amplitude of finding it beyond the barrier - it doesn't borrow or gain energy to cross.
+  concept: quantum_tunneling
+
+- id: particle_partially_exists_misconception
+  misconception: Part of the particle physically passes through while another part reflects, like the particle is split.
+  correction: The particle is not split. The wave function (which encodes probability) is partly transmitted and partly reflected; upon measurement, the whole particle is found on one side or the other, never split between both.
+  concept: quantum_tunneling

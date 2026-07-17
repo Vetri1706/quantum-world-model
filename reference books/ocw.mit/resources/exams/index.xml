@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exams on MIT OpenCourseWare</title>
+    <link>/resources/exams/</link>
+    <description>Recent content in Exams on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/exams/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.73 F2018 Exam 1</title>
+      <link>/resources/mit5_73f18_exam1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_exam1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Final Exam</title>
+      <link>/resources/mit5_73f18_final_exam/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_final_exam/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 1</title>
+      <link>/resources/mit5_73f18_quiz1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 10</title>
+      <link>/resources/mit5_73f18_quiz10/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz10/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 11</title>
+      <link>/resources/mit5_73f18_quiz11/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz11/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 12</title>
+      <link>/resources/mit5_73f18_quiz12/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz12/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 13</title>
+      <link>/resources/mit5_73f18_quiz13/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz13/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 14</title>
+      <link>/resources/mit5_73f18_quiz14/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz14/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 15</title>
+      <link>/resources/mit5_73f18_quiz15/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz15/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 16</title>
+      <link>/resources/mit5_73f18_quiz16/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz16/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 17</title>
+      <link>/resources/mit5_73f18_quiz17/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz17/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 18</title>
+      <link>/resources/mit5_73f18_quiz18/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz18/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 19</title>
+      <link>/resources/mit5_73f18_quiz19/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz19/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 2</title>
+      <link>/resources/mit5_73f18_quiz2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz2/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 21</title>
+      <link>/resources/mit5_73f18_quiz21/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz21/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 22</title>
+      <link>/resources/mit5_73f18_quiz22/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz22/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 23</title>
+      <link>/resources/mit5_73f18_quiz23/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz23/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 24</title>
+      <link>/resources/mit5_73f18_quiz24/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz24/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 25</title>
+      <link>/resources/mit5_73f18_quiz25/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz25/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 26</title>
+      <link>/resources/mit5_73f18_quiz26/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz26/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 27</title>
+      <link>/resources/mit5_73f18_quiz27/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz27/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 28</title>
+      <link>/resources/mit5_73f18_quiz28/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz28/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 29</title>
+      <link>/resources/mit5_73f18_quiz29/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz29/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 3</title>
+      <link>/resources/mit5_73f18_quiz3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz3/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 30</title>
+      <link>/resources/mit5_73f18_quiz30/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz30/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 31</title>
+      <link>/resources/mit5_73f18_quiz31/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz31/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 32</title>
+      <link>/resources/mit5_73f18_quiz32/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz32/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 33</title>
+      <link>/resources/mit5_73f18_quiz33/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz33/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 34</title>
+      <link>/resources/mit5_73f18_quiz34/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz34/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 35</title>
+      <link>/resources/mit5_73f18_quiz35/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz35/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 36</title>
+      <link>/resources/mit5_73f18_quiz36/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz36/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 4</title>
+      <link>/resources/mit5_73f18_quiz4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz4/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 5</title>
+      <link>/resources/mit5_73f18_quiz5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz5/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 6</title>
+      <link>/resources/mit5_73f18_quiz6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz6/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 7</title>
+      <link>/resources/mit5_73f18_quiz7/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz7/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 8</title>
+      <link>/resources/mit5_73f18_quiz8/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz8/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Quiz 9</title>
+      <link>/resources/mit5_73f18_quiz9/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz9/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 1</title>
+      <link>/resources/mit5_73f18_quiz1_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz1_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 10</title>
+      <link>/resources/mit5_73f18_quiz10_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz10_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 11</title>
+      <link>/resources/mit5_73f18_quiz11_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz11_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 12</title>
+      <link>/resources/mit5_73f18_quiz12_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz12_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 13</title>
+      <link>/resources/mit5_73f18_quiz13_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz13_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 14</title>
+      <link>/resources/mit5_73f18_quiz14_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz14_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 16</title>
+      <link>/resources/mit5_73f18_quiz16_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz16_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 17</title>
+      <link>/resources/mit5_73f18_quiz17_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz17_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 18</title>
+      <link>/resources/mit5_73f18_quiz18_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz18_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 19</title>
+      <link>/resources/mit5_73f18_quiz19_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz19_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 2</title>
+      <link>/resources/mit5_73f18_quiz2_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz2_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 20</title>
+      <link>/resources/mit5_73f18_quiz20_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz20_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 21</title>
+      <link>/resources/mit5_73f18_quiz21_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz21_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 22</title>
+      <link>/resources/mit5_73f18_quiz22_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz22_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 23</title>
+      <link>/resources/mit5_73f18_quiz23_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz23_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 24</title>
+      <link>/resources/mit5_73f18_quiz24_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz24_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 25</title>
+      <link>/resources/mit5_73f18_quiz25_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz25_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 26</title>
+      <link>/resources/mit5_73f18_quiz26_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz26_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 27</title>
+      <link>/resources/mit5_73f18_quiz27_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz27_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 28</title>
+      <link>/resources/mit5_73f18_quiz28_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz28_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 29</title>
+      <link>/resources/mit5_73f18_quiz29_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz29_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 3</title>
+      <link>/resources/mit5_73f18_quiz3_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz3_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 30</title>
+      <link>/resources/mit5_73f18_quiz30_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz30_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 31</title>
+      <link>/resources/mit5_73f18_quiz31_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz31_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 32</title>
+      <link>/resources/mit5_73f18_quiz32_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz32_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 33</title>
+      <link>/resources/mit5_73f18_quiz33_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz33_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 34</title>
+      <link>/resources/mit5_73f18_quiz34_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz34_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 35</title>
+      <link>/resources/mit5_73f18_quiz35_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz35_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 36</title>
+      <link>/resources/mit5_73f18_quiz36_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz36_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 4</title>
+      <link>/resources/mit5_73f18_quiz4_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz4_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 5</title>
+      <link>/resources/mit5_73f18_quiz5_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz5_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 6</title>
+      <link>/resources/mit5_73f18_quiz6_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz6_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 7</title>
+      <link>/resources/mit5_73f18_quiz7_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz7_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 8</title>
+      <link>/resources/mit5_73f18_quiz8_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz8_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Solutions of Quiz 9</title>
+      <link>/resources/mit5_73f18_quiz9_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_quiz9_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exams &amp; Quizzes</title>
+      <link>/pages/quizzes/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/quizzes/data.json</guid>
+      <description>&lt;h3 id=&#34;exams&#34;&gt;Exams&lt;/h3&gt;&#xA;&#xA;&lt;p&gt;The Mid-Term Exam (open-book, take-home) is worth 30% of the total grade for the course, and the Final Exam (open-book, take-home) is worth 40% of the grade.&lt;/p&gt;&#xA;&lt;p&gt;&lt;table&gt;&#xA;&#xA;&lt;thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;Exams&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;Due Dates&#xA;&lt;/th&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;p&gt;&lt;/thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_exam1/index.html&#34;&gt;Mid-Term Exam (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;Session # 21&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_final_exam/index.html&#34;&gt;Final Exam (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;End of Final Exams Period&#xA;&lt;/td&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;/table&gt;&#xA;&#xA;&#xA;    &lt;h3 id=&#34;quizzes&#34;&gt;Quizzes&lt;/h3&gt;&#xA;&#xA;&lt;p&gt;These 5-minute quizzes are distributed near the end of each lecture.  They are not graded, but offer the students the challenge to unwrap a piece of the lecture and use it to help them remember and use it before the next lecture.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

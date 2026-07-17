@@ -1,0 +1,19 @@
+id: superposition
+name: Superposition
+category: Concept
+definition: >
+  The principle that a quantum system can exist in a combination of multiple states at
+  once, with the combined wave function only resolving to a single outcome upon
+  measurement.
+
+explained_by:
+  - schrodinger_equation
+used_in:
+  - double_slit
+  - quantum_tunneling
+related_concepts:
+  - wave_function
+  - wave_particle_duality
+misconceptions: []
+references:
+  - griffiths_intro_qm

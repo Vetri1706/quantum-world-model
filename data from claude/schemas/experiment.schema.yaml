@@ -1,0 +1,45 @@
+# Structure only — no values filled in. See quantum/experiments/quantum_tunneling.yaml for a populated example.
+
+id:                    # unique string, e.g. QEXP001
+name:                  # string
+category:              # string, e.g. "Quantum Mechanics"
+difficulty:            # Beginner | Intermediate | Advanced
+interactive:           # true if this has a built renderer, false if reference-only (RAG layer)
+
+scientific_question:   # the question this experiment answers
+goal:                  # what the user should come to understand
+
+history:
+  scientist:           # string
+  year:                # integer
+  significance:        # string
+
+environment:           # string, references core/environments.yaml or quantum/environments/
+
+required_equipment:    # list of strings, references quantum/equipment/
+optional_equipment:    # list of strings
+
+required_elements:     # list of strings, references quantum/elements/ — the playground objects
+
+variables:             # map of variable name -> { min, max, default, unit }
+
+procedure:             # ordered list of steps, or a reference to quantum/procedures/
+
+expected_observation:  # string
+
+common_mistakes:       # list of strings, references quantum/misconceptions/
+
+related_concepts:      # list of strings, references quantum/concepts/
+
+equations:             # list of strings, references quantum/equations/
+
+references:            # list of strings, references quantum/references/
+
+metadata:
+  education_level:     # string
+  estimated_time:      # string, e.g. "15 min"
+  requires_math:       # boolean
+  math_level:          # string
+  simulation_type:      # 2D | 3D
+  render_mode:          # string, e.g. "wave", "particle"
+  engine:               # string, name of the physics module that runs it

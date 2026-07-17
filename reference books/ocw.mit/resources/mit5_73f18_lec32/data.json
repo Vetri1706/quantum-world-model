@@ -1,0 +1,21 @@
+{
+  "content": "",
+  "content_type": "resource",
+  "description": "",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/f42cd4de88275d3224986ee442139bb2_MIT5_73F18_Lec32.pdf",
+  "file_size": 1460071,
+  "file_type": "application/pdf",
+  "iscjklanguage": false,
+  "learning_resource_types": [
+    "Lecture Notes"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWFile",
+  "parent_title": "Lecture Notes",
+  "parent_type": "CourseSection",
+  "parent_uid": "f44d9054-5342-af93-4e73-aaa4964ca565",
+  "resourcetype": "Document",
+  "title": "5.73 F2018 Lecture 32: Configurations and Resultant L–S–J “Terms” (States)",
+  "uid": "f42cd4de-8827-5d32-2498-6ee442139bb2"
+}

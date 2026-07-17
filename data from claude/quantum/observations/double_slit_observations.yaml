@@ -1,0 +1,23 @@
+- id: slit_separation_down_fringe_spacing_up
+  condition: slit_separation decreases
+  observation: Fringe spacing on the screen increases (fringes spread further apart)
+  reason: Fringe spacing is inversely proportional to slit separation (fringe_spacing = wavelength * screen_distance / slit_separation).
+  experiment: double_slit
+
+- id: wavelength_up_fringe_spacing_up
+  condition: wavelength increases
+  observation: Fringe spacing increases
+  reason: Fringe spacing is directly proportional to wavelength.
+  experiment: double_slit
+
+- id: screen_distance_up_fringe_spacing_up
+  condition: screen_distance increases
+  observation: Fringe spacing increases
+  reason: Fringe spacing is directly proportional to the distance between the slits and the screen.
+  experiment: double_slit
+
+- id: single_particle_still_interferes
+  condition: particles sent through one at a time
+  observation: The interference pattern still builds up over many individual detections
+  reason: Each particle's own wave function passes through both slits and interferes with itself; interference is not caused by particles interacting with each other.
+  experiment: double_slit

@@ -1,33 +1,126 @@
-id:
-
-name:
-
-category:
-
-difficulty:
-
-goal:
-
-scientific_question:
-
-history:
-
-environment:
-
-required_equipment:
-
-optional_equipment:
-
-required_elements:
-
-variables:
-
-procedure:
-
-expected_observation:
-
-equations:
-
-common_mistakes:
-
-references:
+---
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "qwm://schemas/experiment/1.0.0"
+title: QWM Experiment
+type: object
+allOf:
+  - $ref: "common.schema.yaml#/definitions/entityBase"
+properties:
+  name:
+    type: string
+    minLength: 1
+  domain:
+    type: string
+    minLength: 1
+  scientific_question:
+    type: string
+    minLength: 1
+  goal:
+    type: string
+    minLength: 1
+  difficulty:
+    enum: [beginner, intermediate, advanced]
+  configuration:
+    type: object
+    properties:
+      environment:
+        allOf:
+          - $ref: "common.schema.yaml#/definitions/entityId"
+          - x-foreign-key:
+              entity_type: environment
+      components:
+        type: array
+        minItems: 1
+        items:
+          type: object
+          properties:
+            component:
+              allOf:
+                - $ref: "common.schema.yaml#/definitions/entityId"
+                - x-foreign-key:
+                    entity_type: component
+            role:
+              type: string
+              pattern: "^[a-z][a-z0-9-]{2,63}$"
+            required:
+              type: boolean
+          required: [component, role, required]
+          additionalProperties: false
+      parameters:
+        type: array
+        items:
+          $ref: "common.schema.yaml#/definitions/parameterDefinition"
+    required: [environment, components, parameters]
+    additionalProperties: false
+  procedure:
+    allOf:
+      - $ref: "common.schema.yaml#/definitions/entityId"
+      - x-foreign-key:
+          entity_type: procedure
+  observation_rules:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: observation-rule
+  concepts:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: concept
+  equations:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: equation
+  sources:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      allOf:
+        - $ref: "common.schema.yaml#/definitions/entityId"
+        - x-foreign-key:
+            entity_type: source
+  simulation_model:
+    allOf:
+      - $ref: "common.schema.yaml#/definitions/entityId"
+      - x-foreign-key:
+          entity_type: simulation-model
+  renderer:
+    type: object
+    properties:
+      mode:
+        type: string
+        minLength: 1
+      component_roles:
+        type: array
+        uniqueItems: true
+        items:
+          type: string
+          pattern: "^[a-z][a-z0-9-]{2,63}$"
+      parameter_ids:
+        type: array
+        uniqueItems: true
+        items:
+          type: string
+          pattern: "^[a-z][a-z0-9-]{2,63}$"
+    required: [mode]
+    additionalProperties: false
+  educational_notes:
+    type: [string, "null"]
+  evidence:
+    $ref: "common.schema.yaml#/definitions/evidenceMap"
+required: [name, domain, scientific_question, goal, configuration, procedure, observation_rules, concepts, equations, sources, evidence]
+unevaluatedProperties: false

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lecture Notes on MIT OpenCourseWare</title>
+    <link>/resources/lecture-notes/</link>
+    <description>Recent content in Lecture Notes on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/lecture-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.73 F2018 Lecture 1: Course Outline. Free Particle. Motion?</title>
+      <link>/resources/mit5_73f18_lec1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 13: End of Matrix Solution of H-O</title>
+      <link>/resources/mit5_73f18_lec13/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec13/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 2: Infinite Box</title>
+      <link>/resources/mit5_73f18_lec2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec2/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 22: 3-D Central Force Problems II. Levi-Civita.</title>
+      <link>/resources/mit5_73f18_lec22/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec22/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 25: HSO &#43; HZeeman: Coupled vs. Uncoupled Basis Sets</title>
+      <link>/resources/mit5_73f18_lec25/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec25/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 26: HSO &#43; HZeeman in ⎜JLSMJ and ⎜LMLMS by Ladders plus Orthogonality</title>
+      <link>/resources/mit5_73f18_lec26/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec26/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 27 Supplement 1: Angular Momentum Eigenvalues</title>
+      <link>/resources/mit5_73f18_lec27s1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec27s1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 27 Supplement 3: A User’s Guide to Angular Momentum Theory</title>
+      <link>/resources/mit5_73f18_lec27s3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec27s3/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 27: Wigner-Eckart Theorem</title>
+      <link>/resources/mit5_73f18_lec27/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec27/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 3: Motion, Position, Spreading, Gaussian Wavepacket</title>
+      <link>/resources/mit5_73f18_lec3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec3/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 31: Matrix Elements of One-Electron</title>
+      <link>/resources/mit5_73f18_lec31/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec31/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 32: Configurations and Resultant L–S–J “Terms” (States)</title>
+      <link>/resources/mit5_73f18_lec32/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec32/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 34: Slater Sum Rule Method</title>
+      <link>/resources/mit5_73f18_lec34/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec34/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 35: Spin Orbit</title>
+      <link>/resources/mit5_73f18_lec35/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec35/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 36: Zeeman Effect</title>
+      <link>/resources/mit5_73f18_lec36/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec36/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 37: Infinite 1-D Lattice I</title>
+      <link>/resources/mit5_73f18_lec37/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec37/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 37: Infinite 1-D Lattice II</title>
+      <link>/resources/mit5_73f18_lec38/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec38/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 6: Linear V(x). JWKB Approximation and Quantization</title>
+      <link>/resources/mit5_73f18_lec6/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec6/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 8: Rydberg-Klein-Rees</title>
+      <link>/resources/mit5_73f18_lec8/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec8/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5.73 F2018 Lecture 9: Numerov-Cooley Method: 1-D Schrodinger Equation</title>
+      <link>/resources/mit5_73f18_lec9/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec9/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lecture Notes</title>
+      <link>/pages/lecture-notes/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/lecture-notes/data.json</guid>
+      <description>&lt;p&gt;&lt;table&gt;&#xA;&lt;thead&gt;&#xA;&lt;tr&gt;&#xA;&lt;th&gt;&#xA;&#xA;ses #&#xA;&lt;/th&gt;&#xA;&lt;th&gt;&#xA;&#xA;topics&#xA;&lt;/th&gt;&#xA;&lt;th&gt;&#xA;&#xA; &#xA;&lt;/th&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/thead&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&#xA;&lt;td colspan=&#34;3&#34;&gt;&#xA;&#xA;&lt;strong&gt;1–9: One-Dimensional Problems&lt;/strong&gt;&#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;1&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec1/index.html&#34;&gt;Course Outline; Free Particle; Motion (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;2&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec2/index.html&#34;&gt;Infinite Box,&lt;/a&gt; \(\delta(x)\) &lt;a href=&#34;../../resources/mit5_73f18_lec2/index.html&#34;&gt; Well,&lt;/a&gt; \(\delta(x)\) &lt;a href=&#34;../../resources/mit5_73f18_lec2/index.html&#34;&gt; Barrier (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;3&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec3/index.html&#34;&gt;Probability Density: Motion, Position, Spreading, Gaussian Wavepacket (PDF - 1.6MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;4&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec4/index.html&#34;&gt;Stationary Phase and Gaussian Wavepackets (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;5&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec5/index.html&#34;&gt;Continuum Normalization (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;6&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec6/index.html&#34;&gt;Linear Potential; JWKB Approximation and Quantization (PDF - 1.4MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;7&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec7/index.html&#34;&gt;JWKB Quantization Condition (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;8&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec8/index.html&#34;&gt;Rydberg-Klein-Rees:&lt;/a&gt; \(V(x)\) &lt;a href=&#34;../../resources/mit5_73f18_lec8/index.html&#34;&gt; from&lt;/a&gt; \(E_{vJ}\)&lt;a href=&#34;../../resources/mit5_73f18_lec8/index.html&#34;&gt;(PDF - 1.4MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;9&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec9/index.html&#34;&gt;Numerov-Cooley Method: 1-D Schrödinger Equation (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td colspan=&#34;3&#34;&gt;&#xA;&#xA;&lt;strong&gt;10–19: Matrix Mechanics&lt;/strong&gt;&#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;10&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec10/index.html&#34;&gt;Matrix Mechanics (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;11&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec11/index.html&#34;&gt;Eigenvalues, Eigenvectors, and Discrete Variable Representation (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;12&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec12/index.html&#34;&gt;Matrix Solution of Harmonic Oscillator I (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;13&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec13/index.html&#34;&gt;Matrix Solution of Harmonic Oscillator II (PDF - 1.3MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;14&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec14/index.html&#34;&gt;Perturbation Theory I (PDF - 1.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;15&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec15/index.html&#34;&gt;Perturbation Theory II (PDF - 1.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;16&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec16/index.html&#34;&gt;Perturbation Theory III (PDF - 1.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;17&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec17/index.html&#34;&gt;Perturbation Theory IV (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;18&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec18/index.html&#34;&gt;Variational Method (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;19&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec19/index.html&#34;&gt;Density Matrices I (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td colspan=&#34;3&#34;&gt;&#xA;&#xA;&lt;strong&gt;20–29: Central Forces and Angular Momentum&lt;/strong&gt;&#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;20&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec20/index.html&#34;&gt;Density Matrices II (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;21&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec21/index.html&#34;&gt;3-D Central Force Problems I (PDF - 1.5MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;22&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec22/index.html&#34;&gt;3-D Central Force Problems II (PDF - 1.6MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;23&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec23/index.html&#34;&gt;Angular Momentum Matrix Elements from Commutation Rules (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;24&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec24/index.html&#34;&gt;J-Matrices (PDF - 1.3MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;25&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec25/index.html&#34;&gt;H&lt;sup&gt;SO&lt;/sup&gt; + H&lt;sup&gt;Zeeman&lt;/sup&gt;: Coupled vs. Uncoupled Basis Sets (PDF - 1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;26&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec26/index.html&#34;&gt;H&lt;sup&gt;SO&lt;/sup&gt; + H&lt;sup&gt;Zeeman&lt;/sup&gt; in ⎜JLSM&lt;sub&gt;J&lt;/sub&gt;&lt;/a&gt;\(\rangle\) &lt;a href=&#34;../../resources/mit5_73f18_lec26/index.html&#34;&gt; and ⎜LM&lt;sub&gt;L&lt;/sub&gt;M&lt;sub&gt;S&lt;/sub&gt;&lt;/a&gt;\(\rangle\) &lt;a href=&#34;../../resources/mit5_73f18_lec26/index.html&#34;&gt; by Ladders plus Orthogonality (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;27&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec27/index.html&#34;&gt;Wigner-Eckart Theorem (PDF - 1.2MB)&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec27s1/index.html&#34;&gt;Lecture 27 Supplement 1: Angular Momentum Eigenvalues (PDF)&lt;/a&gt; (Courtesy of Dudley Herschbach. Used with permission.) &lt;br&gt;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec27s2/index.html&#34;&gt;Lecture 27 Supplement 2: Simplification of hyperfine H&lt;sup&gt;hf&lt;/sup&gt; by Wigner-Eckart Theorem (PDF)&lt;/a&gt; &lt;br&gt;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec27s3/index.html&#34;&gt;Lecture 27 Supplement 3: A User’s Guide to Angular Momentum Theory (PDF - 2.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;28&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec28/index.html&#34;&gt;Hydrogen Radial Wavefunctions (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;29&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec29/index.html&#34;&gt;Begin Many-Electron Atoms: Quantum Defect Theory (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td colspan=&#34;3&#34;&gt;&#xA;&#xA;&lt;strong&gt;30–39: Many Particle Systems: Atoms, Coupled Oscillators, Periodic Lattice&lt;/strong&gt;&#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;30&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec30/index.html&#34;&gt;Matrix Elements of Many-Electron Wavefunctions (PDF - 1.3MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;31&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec31/index.html&#34;&gt;Matrix Elements of One-Electron,&lt;/a&gt; \(F(i)\)&lt;a href=&#34;../../resources/mit5_73f18_lec31/index.html&#34;&gt;, and Two-Electron,&lt;/a&gt; \(G(i,j)\) &lt;a href=&#34;../../resources/mit5_73f18_lec31/index.html&#34;&gt; Operators (PDF - 1.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;32&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec32/index.html&#34;&gt;Configurations and Resultant L–S–J States (PDF - 1.4MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;33&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec33/index.html&#34;&gt;L-S Terms via L&lt;sup&gt;2&lt;/sup&gt;, S&lt;sup&gt;2&lt;/sup&gt; and Projection (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;34&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;\(e^2/r_{ij}\) &lt;a href=&#34;../../resources/mit5_73f18_lec34/index.html&#34;&gt; and Slater Sum Rule Method (PDF - 1.3MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;35&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec35/index.html&#34;&gt;Spin Orbit: Many Electron ζ(N,L,S)↔Single Orbital ζ&lt;/a&gt;\(_{nl}\) &lt;a href=&#34;../../resources/mit5_73f18_lec35/index.html&#34;&gt; Coupling Constants (PDF - 1.2MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;36&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec36/index.html&#34;&gt;Holes; Hund&amp;rsquo;s Third Rule; Landé g-Factor via W-E Theorem (PDF)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;37&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec37/index.html&#34;&gt;Infinite 1-D Lattice I (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;38&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec38/index.html&#34;&gt;Infinite 1-D Lattice II (PDF - 1.1MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;&#xA;&#xA;39&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA;&lt;a href=&#34;../../resources/mit5_73f18_lec39/index.html&#34;&gt;One-Dimensional Lattice: Weak-Coupling Limit (PDF - 1.0MB)&lt;/a&gt;&#xA;&lt;/td&gt;&#xA;&lt;td&gt;&#xA;&#xA; &#xA;&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MIT5_73F18_Lec28.pdf</title>
+      <link>/resources/mit5_73f18_lec28/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit5_73f18_lec28/data.json</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,8 @@
+# Structure only — no values filled in.
+
+id:                  # unique string
+name:                # string
+category:            # string, e.g. "Light Source", "Detector"
+belongs_to:          # string, references core/environments.yaml or quantum/environments/
+properties:          # map of property name -> value/unit
+compatible_experiments: # list of strings, references quantum/experiments/

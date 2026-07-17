@@ -1,0 +1,21 @@
+{
+  "content": "",
+  "content_type": "resource",
+  "description": "",
+  "draft": false,
+  "file": "/courses/5-73-quantum-mechanics-i-fall-2018/e786d0225b4cf17aef64e5691d4905e7_MIT5_73F18_Lec37.pdf",
+  "file_size": 1052746,
+  "file_type": "application/pdf",
+  "iscjklanguage": false,
+  "learning_resource_types": [
+    "Lecture Notes"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "ocw_type": "OCWFile",
+  "parent_title": "Lecture Notes",
+  "parent_type": "CourseSection",
+  "parent_uid": "f44d9054-5342-af93-4e73-aaa4964ca565",
+  "resourcetype": "Document",
+  "title": "5.73 F2018 Lecture 37: Infinite 1-D Lattice I",
+  "uid": "e786d022-5b4c-f17a-ef64-e5691d4905e7"
+}

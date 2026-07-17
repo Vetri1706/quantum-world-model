@@ -1,0 +1,15 @@
+vacuum_chamber:
+  pressure: { value: 0, unit: Pa }
+  gravity: { value: 9.81, unit: "m/s^2" }
+  temperature: { value: 298, unit: K }
+  atmosphere: null
+  allows: [electron_beam, ion_beam, quantum_experiments]
+  blocks: [combustion]
+
+earth_laboratory:
+  pressure: { value: 101325, unit: Pa }
+  gravity: { value: 9.81, unit: "m/s^2" }
+  temperature: { value: 298, unit: K }
+  atmosphere: air
+  allows: [combustion, optics, mechanics]
+  blocks: []
