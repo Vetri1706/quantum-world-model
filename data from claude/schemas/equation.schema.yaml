@@ -1,8 +1,0 @@
-# Structure only — no values filled in.
-
-id:          # unique string
-name:        # string, e.g. "Schrodinger Equation"
-domain:      # string, e.g. "Quantum Mechanics"
-variables:   # list of symbols used
-solver:      # string, e.g. "Numerical - Finite Difference"
-used_in:     # list of strings, references quantum/experiments/

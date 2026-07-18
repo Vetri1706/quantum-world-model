@@ -1,7 +1,0 @@
-id: wave_equation
-name: Wave Superposition Equation
-domain: Optics / Wave Mechanics
-variables: ["amplitude", "frequency", "phase", "wavelength"]
-solver: "Analytical (sum of sinusoids)"
-used_in:
-  - double_slit

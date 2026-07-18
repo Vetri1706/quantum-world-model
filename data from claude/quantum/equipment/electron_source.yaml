@@ -1,7 +1,0 @@
-id: electron_source
-name: Electron Source
-category: Emitter
-belongs_to: vacuum_chamber
-properties: {}
-compatible_experiments:
-  - quantum_tunneling

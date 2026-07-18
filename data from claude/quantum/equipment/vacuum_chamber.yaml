@@ -1,8 +1,0 @@
-id: vacuum_chamber
-name: Vacuum Chamber
-category: Environment
-belongs_to: null
-properties:
-  pressure: { value: 0, unit: Pa }
-compatible_experiments:
-  - quantum_tunneling

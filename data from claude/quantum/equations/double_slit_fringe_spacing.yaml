@@ -1,7 +1,0 @@
-id: double_slit_fringe_spacing
-name: Double Slit Fringe Spacing
-domain: Optics
-variables: ["fringe_spacing", "wavelength", "screen_distance", "slit_separation"]
-solver: "Analytical: fringe_spacing = wavelength * screen_distance / slit_separation"
-used_in:
-  - double_slit

@@ -1,7 +1,0 @@
-id: detector
-name: Detector
-category: Sensor
-belongs_to: vacuum_chamber
-properties: {}
-compatible_experiments:
-  - quantum_tunneling

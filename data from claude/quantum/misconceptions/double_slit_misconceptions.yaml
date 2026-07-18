@@ -1,9 +1,0 @@
-- id: photon_goes_through_one_slit_misconception
-  misconception: Each photon or electron simply goes through one slit or the other, like a tiny ball.
-  correction: When both slits are open and unobserved, each particle's own wave function passes through both slits simultaneously and interferes with itself - this is what produces the fringe pattern. If a detector is added to determine which slit the particle went through, the interference pattern disappears.
-  concept: wave_particle_duality
-
-- id: fringes_are_just_shadows_misconception
-  misconception: The pattern on the screen is just two bright bands (shadows of the slits) rather than many alternating fringes.
-  correction: The pattern is a series of many alternating bright and dark fringes caused by constructive and destructive interference, not a simple two-band shadow - this is the signature that distinguishes wave behavior from simple particle behavior.
-  concept: interference

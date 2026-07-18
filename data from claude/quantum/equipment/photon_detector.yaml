@@ -1,8 +1,0 @@
-id: photon_detector
-name: Photon Detector
-category: Sensor
-belongs_to: earth_laboratory
-properties:
-  detects_single_photons: true
-compatible_experiments:
-  - double_slit
