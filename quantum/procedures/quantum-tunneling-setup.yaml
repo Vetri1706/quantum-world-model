@@ -1,0 +1,18 @@
+---
+id: quantum-tunneling-setup
+schema_version: 1.0.0
+status: draft
+name: Quantum tunneling setup
+steps:
+  - id: prepare-source
+    action: Place an electron source to the left of the potential barrier.
+    component: electron-source
+  - id: place-barrier
+    action: Place the potential barrier between the source and detector.
+    component: potential-barrier
+  - id: place-detector
+    action: Place the detector to the right of the barrier.
+    component: detector
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /steps: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]

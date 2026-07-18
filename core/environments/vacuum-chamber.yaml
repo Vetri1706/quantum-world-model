@@ -1,0 +1,29 @@
+---
+id: vacuum-chamber
+schema_version: 1.0.0
+status: draft
+name: Vacuum chamber
+environment_kind: vacuum
+conditions:
+  pressure:
+    value: 0.000001
+    unit: Pa
+  medium: vacuum
+notes: A low-pressure chamber used to reduce scattering with residual gas.
+evidence:
+  /name:
+    - source: hyperphysics-quantum-tunneling
+      locator: "Quantum mechanics overview"
+      claim_type: classification
+  /environment_kind:
+    - source: hyperphysics-quantum-tunneling
+      locator: "Quantum mechanics overview"
+      claim_type: classification
+  /conditions:
+    - source: hyperphysics-quantum-tunneling
+      locator: "Quantum mechanics overview"
+      claim_type: parameter
+  /notes:
+    - source: hyperphysics-quantum-tunneling
+      locator: "Quantum mechanics overview"
+      claim_type: procedure

@@ -1,0 +1,17 @@
+---
+id: wave-function
+schema_version: 1.0.0
+status: draft
+name: Wave function
+domain: quantum-mechanics
+definition: A complex amplitude whose squared magnitude gives a measurement probability density.
+aliases: [state-vector]
+related_concepts: [probability-density, potential-barrier-concept]
+equations: [schrodinger-equation]
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: definition}]
+  /domain: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /definition: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: definition}]
+  /aliases: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /related_concepts: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /equations: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]

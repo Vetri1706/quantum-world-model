@@ -1,0 +1,15 @@
+---
+id: probability-density
+schema_version: 1.0.0
+status: draft
+name: Probability density
+domain: quantum-mechanics
+definition: The quantity obtained from the squared magnitude of a wave function, used to predict position-measurement outcomes.
+related_concepts: [wave-function, potential-barrier-concept]
+equations: [schrodinger-equation]
+evidence:
+  /name: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: definition}]
+  /domain: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /definition: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: definition}]
+  /related_concepts: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /equations: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: equation}]

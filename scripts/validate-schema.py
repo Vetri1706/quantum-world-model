@@ -10,10 +10,18 @@ from validation_common import DependencyError, Report, SCHEMA_DIR, load_entities
 def run() -> Report:
     report = Report("Schema validation")
     try:
-        from jsonschema import Draft202012Validator, RefResolver
+        from jsonschema import Draft202012Validator
         from jsonschema.exceptions import SchemaError
+        from referencing import Registry, Resource
         from validation_common import load_yaml
         schemas = {path.name: load_yaml(path) for path in SCHEMA_DIR.glob("*.schema.yaml")}
+        schema_registry = Registry()
+        for name, schema in schemas.items():
+            resource = Resource.from_contents(schema)
+            schema_registry = schema_registry.with_resource(name, resource)
+            schema_registry = schema_registry.with_resource((SCHEMA_DIR / name).as_uri(), resource)
+            if isinstance(schema.get("$id"), str):
+                schema_registry = schema_registry.with_resource(schema["$id"], resource)
     except DependencyError as exc:
         report.error("requirements.txt", str(exc))
         return report
@@ -42,8 +50,7 @@ def run() -> Report:
         if schema is None:
             report.error(path, f"missing schema {schema_name}")
             continue
-        resolver = RefResolver(base_uri=(SCHEMA_DIR.as_uri() + "/"), referrer=schema)
-        validator = Draft202012Validator(schema, resolver=resolver)
+        validator = Draft202012Validator(schema, registry=schema_registry)
         for error in sorted(validator.iter_errors(entity), key=lambda item: list(item.path)):
             location = "/".join(str(part) for part in error.path) or "<root>"
             report.error(path, f"{location}: {error.message}")

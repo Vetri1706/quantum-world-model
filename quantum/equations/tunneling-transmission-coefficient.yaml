@@ -1,0 +1,22 @@
+---
+id: tunneling-transmission-coefficient
+schema_version: 1.0.0
+status: draft
+name: Rectangular-barrier transmission coefficient
+domain: quantum-mechanics
+expression: "T \\approx e^{-2\\kappa a}, \\quad \\kappa = \\sqrt{2m(V_0-E)}/\\hbar"
+notation: latex
+symbols:
+  T: {description: "Transmission probability"}
+  kappa: {description: "Barrier attenuation constant"}
+  a: {description: "Barrier width"}
+assumptions: ["Rectangular barrier", "Incident energy is below barrier height"]
+related_concepts: [potential-barrier-concept, probability-density]
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /domain: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /expression: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /notation: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /symbols: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: definition}]
+  /assumptions: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /related_concepts: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]

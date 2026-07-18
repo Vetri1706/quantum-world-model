@@ -1,0 +1,19 @@
+---
+id: potential-barrier
+schema_version: 1.0.0
+status: draft
+name: Potential barrier
+component_kind: material
+category: potential-energy-region
+properties:
+  potential-profile: rectangular
+  interaction: tunneling
+compatible_with: [electron, electron-source, detector, wave-packet]
+renderer_asset: potential-barrier
+evidence:
+  /name: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: definition}]
+  /component_kind: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]
+  /category: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]
+  /properties: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: parameter}]
+  /compatible_with: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: procedure}]
+  /renderer_asset: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]

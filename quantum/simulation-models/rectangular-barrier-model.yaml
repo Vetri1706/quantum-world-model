@@ -1,0 +1,29 @@
+---
+id: rectangular-barrier-model
+schema_version: 1.0.0
+status: draft
+name: Rectangular potential barrier model
+model_kind: analytic-quantum-simulation
+engine: qwm-canvas-runtime
+entry_point: simulations/rectangular-barrier.ts
+inputs:
+  - {id: incident-energy, quantity: energy, unit: eV}
+  - {id: barrier-height, quantity: energy, unit: eV}
+  - {id: barrier-width, quantity: length, unit: nm}
+outputs:
+  - {id: transmission-probability, quantity: probability, unit: dimensionless}
+equations: [schrodinger-equation, tunneling-transmission-coefficient]
+renderer_mode: canvas-2d
+supported_components: [electron-source, electron, potential-barrier, detector, wave-packet]
+limitations: ["Models a one-dimensional rectangular barrier.", "Does not simulate decoherence."]
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /model_kind: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /engine: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /entry_point: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /inputs: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: parameter}]
+  /outputs: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: observation}]
+  /equations: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /renderer_mode: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /supported_components: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /limitations: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]

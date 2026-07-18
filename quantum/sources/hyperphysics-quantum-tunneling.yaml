@@ -1,0 +1,15 @@
+---
+id: hyperphysics-quantum-tunneling
+schema_version: 1.0.0
+status: draft
+title: Quantum Tunneling
+publisher: Georgia State University HyperPhysics
+source_kind: institutional-reference
+authority_tier: 5
+canonical_locator: "http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/barr.html"
+authors: [R. Nave]
+publication_year: 2026
+edition: web-reference
+retrieved_on: "2026-07-18"
+license: educational-reference
+notes: Online reference used for introductory tunneling concepts.

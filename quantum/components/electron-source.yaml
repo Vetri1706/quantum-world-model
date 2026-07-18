@@ -1,0 +1,37 @@
+---
+id: electron-source
+schema_version: 1.0.0
+status: draft
+name: Electron source
+component_kind: source
+category: particle-preparation
+properties:
+  emitted-particle: electron
+  emission-mode: monoenergetic
+compatible_with: [electron, detector, potential-barrier]
+renderer_asset: electron-source
+evidence:
+  /name:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: definition
+  /component_kind:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: classification
+  /category:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: classification
+  /properties:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: parameter
+  /compatible_with:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: procedure
+  /renderer_asset:
+    - source: griffiths-intro-qm
+      locator: "Chapter 2"
+      claim_type: classification

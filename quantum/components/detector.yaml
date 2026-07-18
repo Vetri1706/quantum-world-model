@@ -1,0 +1,19 @@
+---
+id: detector
+schema_version: 1.0.0
+status: draft
+name: Particle detector
+component_kind: detector
+category: measurement
+properties:
+  measures: particle-arrival
+  readout: count
+compatible_with: [electron]
+renderer_asset: detector
+evidence:
+  /name: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: definition}]
+  /component_kind: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /category: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /properties: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: parameter}]
+  /compatible_with: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: procedure}]
+  /renderer_asset: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]

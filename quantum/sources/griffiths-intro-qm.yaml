@@ -1,0 +1,14 @@
+---
+id: griffiths-intro-qm
+schema_version: 1.0.0
+status: draft
+title: Introduction to Quantum Mechanics
+publisher: Cambridge University Press
+source_kind: textbook
+authority_tier: 8
+canonical_locator: "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/"
+authors: [David J. Griffiths, Darrell F. Schroeter]
+publication_year: 2018
+edition: "3rd"
+license: copyrighted-textbook
+notes: Textbook reference for one-dimensional quantum mechanics.

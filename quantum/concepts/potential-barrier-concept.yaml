@@ -1,0 +1,15 @@
+---
+id: potential-barrier-concept
+schema_version: 1.0.0
+status: draft
+name: Potential barrier
+domain: quantum-mechanics
+definition: A region in which a particle has higher potential energy than in adjacent regions.
+related_concepts: [wave-function, probability-density]
+equations: [schrodinger-equation, tunneling-transmission-coefficient]
+evidence:
+  /name: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: definition}]
+  /domain: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]
+  /definition: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: definition}]
+  /related_concepts: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]
+  /equations: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: equation}]

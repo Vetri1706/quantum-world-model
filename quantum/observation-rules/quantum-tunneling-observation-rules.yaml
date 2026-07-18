@@ -1,0 +1,18 @@
+---
+id: quantum-tunneling-observation-rules
+schema_version: 1.0.0
+status: draft
+name: Wider barrier reduces transmission
+condition: {subject: barrier-width, operator: increases}
+outcome: {subject: transmission-probability, operator: decreases}
+equation: tunneling-transmission-coefficient
+applicability:
+  - {entity_type: component, id: potential-barrier}
+explanation: For fixed particle energy and barrier height, a wider rectangular barrier lowers the tunneling transmission probability.
+evidence:
+  /name: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: observation}]
+  /condition: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: observation}]
+  /outcome: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: observation}]
+  /equation: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: equation}]
+  /applicability: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: classification}]
+  /explanation: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: observation}]

@@ -1,0 +1,19 @@
+---
+id: electron
+schema_version: 1.0.0
+status: draft
+name: Electron
+component_kind: element
+category: fundamental-particle
+properties:
+  charge: negative
+  rest-mass: electron-mass
+compatible_with: [electron-source, detector, potential-barrier]
+renderer_asset: electron
+evidence:
+  /name: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: definition}]
+  /component_kind: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /category: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]
+  /properties: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: parameter}]
+  /compatible_with: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: procedure}]
+  /renderer_asset: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: classification}]

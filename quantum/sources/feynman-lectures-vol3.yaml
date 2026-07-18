@@ -1,0 +1,14 @@
+---
+id: feynman-lectures-vol3
+schema_version: 1.0.0
+status: draft
+title: The Feynman Lectures on Physics, Volume III
+publisher: California Institute of Technology
+source_kind: textbook
+authority_tier: 8
+canonical_locator: "https://www.feynmanlectures.caltech.edu/III_toc.html"
+authors: [Richard P. Feynman, Robert B. Leighton, Matthew Sands]
+publication_year: 1965
+edition: web-edition
+license: educational-reference
+notes: Introductory conceptual quantum mechanics reference.

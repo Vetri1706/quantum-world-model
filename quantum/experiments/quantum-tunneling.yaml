@@ -1,0 +1,45 @@
+---
+id: quantum-tunneling
+schema_version: 1.0.0
+status: draft
+name: Quantum tunneling through a rectangular barrier
+domain: quantum-mechanics
+scientific_question: How do barrier width and particle energy affect the chance that an electron crosses a higher potential-energy region?
+goal: Explore quantum tunneling by varying a rectangular barrier and observing the transmission probability.
+difficulty: intermediate
+configuration:
+  environment: vacuum-chamber
+  components:
+    - {component: electron-source, role: source, required: true}
+    - {component: potential-barrier, role: barrier, required: true}
+    - {component: detector, role: detector, required: true}
+  parameters:
+    - {id: incident-energy, label: Incident energy, quantity: energy, unit: eV, default: 1.0, minimum: 0.1, maximum: 10.0}
+    - {id: barrier-height, label: Barrier height, quantity: energy, unit: eV, default: 5.0, minimum: 0.1, maximum: 20.0}
+    - {id: barrier-width, label: Barrier width, quantity: length, unit: nm, default: 1.0, minimum: 0.1, maximum: 10.0}
+procedure: quantum-tunneling-setup
+observation_rules: [quantum-tunneling-observation-rules]
+concepts: [wave-function, potential-barrier-concept, probability-density]
+equations: [schrodinger-equation, tunneling-transmission-coefficient]
+sources: [hyperphysics-quantum-tunneling, griffiths-intro-qm, feynman-lectures-vol3]
+simulation_model: rectangular-barrier-model
+renderer:
+  mode: canvas-2d
+  component_roles: [source, barrier, detector]
+  parameter_ids: [incident-energy, barrier-height, barrier-width]
+educational_notes: The simulation represents a probability distribution, not a classical particle drilling through a wall.
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /domain: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /scientific_question: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: observation}]
+  /goal: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /difficulty: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /configuration: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /procedure: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /observation_rules: [{source: hyperphysics-quantum-tunneling, locator: "Quantum tunneling", claim_type: observation}]
+  /concepts: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: definition}]
+  /equations: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /sources: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /simulation_model: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /renderer: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /educational_notes: [{source: feynman-lectures-vol3, locator: "Chapter 1", claim_type: observation}]

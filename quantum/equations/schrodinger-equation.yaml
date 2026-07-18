@@ -1,0 +1,23 @@
+---
+id: schrodinger-equation
+schema_version: 1.0.0
+status: draft
+name: Time-independent Schrödinger equation
+domain: quantum-mechanics
+expression: "-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi"
+notation: latex
+symbols:
+  psi: {description: "Wave function"}
+  V: {description: "Potential energy"}
+  E: {description: "Energy eigenvalue"}
+  m: {description: "Particle mass"}
+assumptions: ["One spatial dimension", "Time-independent potential"]
+related_concepts: [wave-function, potential-barrier-concept]
+evidence:
+  /name: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /domain: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /expression: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: equation}]
+  /notation: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]
+  /symbols: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: definition}]
+  /assumptions: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: procedure}]
+  /related_concepts: [{source: griffiths-intro-qm, locator: "Chapter 2", claim_type: classification}]

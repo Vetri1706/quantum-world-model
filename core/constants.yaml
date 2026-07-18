@@ -1,9 +1,13 @@
-Planck Constant
-
-Speed of Light
-
-Electron Mass
-
-Electron Charge
-
-Boltzmann Constant
+---
+planck-constant:
+  value: 6.62607015e-34
+  unit: J s
+speed-of-light:
+  value: 299792458
+  unit: m s^-1
+electron-mass:
+  value: 9.1093837139e-31
+  unit: kg
+electron-charge:
+  value: -1.602176634e-19
+  unit: C

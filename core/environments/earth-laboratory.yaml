@@ -1,0 +1,29 @@
+---
+id: earth-laboratory
+schema_version: 1.0.0
+status: draft
+name: Earth laboratory
+environment_kind: laboratory
+conditions:
+  gravity: earth-standard
+  temperature:
+    value: 293
+    unit: K
+notes: General terrestrial laboratory conditions.
+evidence:
+  /name:
+    - source: feynman-lectures-vol3
+      locator: "Chapter 1"
+      claim_type: classification
+  /environment_kind:
+    - source: feynman-lectures-vol3
+      locator: "Chapter 1"
+      claim_type: classification
+  /conditions:
+    - source: feynman-lectures-vol3
+      locator: "Chapter 1"
+      claim_type: parameter
+  /notes:
+    - source: feynman-lectures-vol3
+      locator: "Chapter 1"
+      claim_type: procedure
