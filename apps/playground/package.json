@@ -1,0 +1,27 @@
+{
+  "name": "@quantum-playground/app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "generate:model": "tsx scripts/generate-model.ts"
+  },
+  "dependencies": {
+    "@quantum-playground/playground-model": "file:../../packages/playground-model",
+    "@quantum-playground/runtime": "file:../../packages/runtime",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@types/node": "^24.3.0",
+    "@vitejs/plugin-react": "^5.0.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}

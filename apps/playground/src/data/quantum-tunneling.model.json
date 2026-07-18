@@ -1,0 +1,87 @@
+{
+  "experimentId": "quantum-tunneling",
+  "rendererMode": "canvas-2d",
+  "components": [
+    {
+      "id": "electron-source",
+      "role": "source",
+      "kind": "source",
+      "asset": "electron-source",
+      "editable": false,
+      "position": {
+        "x": 160,
+        "y": 260
+      }
+    },
+    {
+      "id": "potential-barrier",
+      "role": "barrier",
+      "kind": "material",
+      "asset": "potential-barrier",
+      "editable": false,
+      "position": {
+        "x": 400,
+        "y": 260
+      }
+    },
+    {
+      "id": "detector",
+      "role": "detector",
+      "kind": "detector",
+      "asset": "detector",
+      "editable": false,
+      "position": {
+        "x": 640,
+        "y": 260
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "electron-source-to-potential-barrier",
+      "from": "electron-source",
+      "to": "potential-barrier",
+      "kind": "flow"
+    },
+    {
+      "id": "potential-barrier-to-detector",
+      "from": "potential-barrier",
+      "to": "detector",
+      "kind": "measurement"
+    }
+  ],
+  "controls": [
+    {
+      "id": "incident-energy",
+      "label": "Incident energy",
+      "quantity": "energy",
+      "unit": "eV",
+      "value": 1,
+      "minimum": 0.1,
+      "maximum": 10
+    },
+    {
+      "id": "barrier-height",
+      "label": "Barrier height",
+      "quantity": "energy",
+      "unit": "eV",
+      "value": 5,
+      "minimum": 0.1,
+      "maximum": 20
+    },
+    {
+      "id": "barrier-width",
+      "label": "Barrier width",
+      "quantity": "length",
+      "unit": "nm",
+      "value": 1,
+      "minimum": 0.1,
+      "maximum": 10
+    }
+  ],
+  "viewport": {
+    "width": 960,
+    "height": 560,
+    "background": "#0b1020"
+  }
+}
