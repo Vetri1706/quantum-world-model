@@ -1,0 +1,13 @@
+{
+  "name": "quantum-world-model-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --prefix apps/playground run dev",
+    "build": "npm --prefix apps/playground run build",
+    "preview": "npm --prefix apps/playground run preview"
+  }
+}

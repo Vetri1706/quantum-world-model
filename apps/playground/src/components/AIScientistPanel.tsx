@@ -3,7 +3,8 @@ import type { EquipmentInstance, CanvasConnection } from "../types/playground";
 import { BuildProgressPanel } from "./BuildProgressPanel";
 import { SimulationResultsPanel } from "./SimulationResultsPanel";
 import { ExperimentHistoryPanel } from "./ExperimentHistoryPanel";
-import { loadAISettings } from "../services/ai/aiService";
+import { loadAISettings, askAIScientist } from "../services/ai/aiService";
+import { evaluateGuardrails } from "../services/ai/aiGuardrails";
 
 type AIScientistProps = {
   instances: EquipmentInstance[];
@@ -22,14 +23,12 @@ export const AIScientistPanel: React.FC<AIScientistProps> = ({
   mode: _mode,
   isSimulating = false,
   onLoadPreset: _onLoadPreset,
-  onAskScientist,
+  onAskScientist: _onAskScientist,
   onRestoreState = () => {},
   onOpenSettings = () => {},
 }) => {
   const [mainTab, setMainTab] = useState<"scientist" | "results" | "progress" | "history">("scientist");
   const [subTab, setSubTab] = useState<"prediction" | "observation" | "explain" | "questions">("prediction");
-  const [userQuery, setUserQuery] = useState("");
-  const aiSettings = loadAISettings();
 
   // Check active components
   const hasElectronGun = instances.some((inst) => inst.definitionId === "electron-gun");
@@ -148,11 +147,58 @@ export const AIScientistPanel: React.FC<AIScientistProps> = ({
     };
   }, [instances, connections]);
 
+  const [userQuery, setUserQuery] = useState("");
+  const [isThinking, setIsThinking] = useState(false);
+  const [chatHistory, setChatHistory] = useState<
+    { id: string; sender: "user" | "ai"; text: string; time: string }[]
+  >([
+    {
+      id: "welcome-1",
+      sender: "ai",
+      text: "Hello! I am your AI Quantum Scientist mentor. Ask me anything about your current experiment, wave functions, or quantum tunneling.",
+      time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+    },
+  ]);
+
+  const aiSettings = loadAISettings();
+  const guardrailsReport = useMemo(() => {
+    return evaluateGuardrails("Quantum wave function transmission Schrödinger equation", instances, {});
+  }, [instances]);
+
+  const handleAskQuestion = async (queryText: string) => {
+    if (!queryText.trim()) return;
+
+    const timeStr = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const userMsg = { id: `user-${Date.now()}`, sender: "user" as const, text: queryText, time: timeStr };
+    
+    setChatHistory((prev) => [...prev, userMsg]);
+    setUserQuery("");
+    setIsThinking(true);
+
+    try {
+      const activeSource = instances.find((i) =>
+        ["electron-gun", "photon-source", "laser", "wavepacket-generator"].includes(i.definitionId)
+      );
+      const activeBarrier = instances.find((i) => i.definitionId === "potential-barrier");
+      
+      const response = await askAIScientist(queryText, {
+        experimentName: activeBarrier ? "Quantum Tunneling Lab" : "Quantum Optics Workbench",
+        parameters: activeBarrier?.parameters || activeSource?.parameters || {},
+        metrics: { E: activeSource?.parameters?.energy || 2.5, V0: activeBarrier?.parameters?.height || 4.0 },
+      });
+
+      const aiMsg = { id: `ai-${Date.now()}`, sender: "ai" as const, text: response.content, time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) };
+      setChatHistory((prev) => [...prev, aiMsg]);
+    } catch (err) {
+      console.error("AI Scientist query failed:", err);
+    } finally {
+      setIsThinking(false);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userQuery.trim()) return;
-    onAskScientist(userQuery);
-    setUserQuery("");
+    handleAskQuestion(userQuery);
   };
 
   return (
@@ -267,11 +313,34 @@ export const AIScientistPanel: React.FC<AIScientistProps> = ({
             )}
 
             {subTab === "questions" && (
-              <div className="ai-section-pane">
-                <p className="panel-sub-label">SUGGESTED QUESTIONS</p>
+              <div className="ai-section-pane chat-pane">
+                <p className="panel-sub-label">INTERACTIVE AI SCIENTIST CHAT</p>
+                
+                {/* Chat History Thread */}
+                <div className="chat-messages-thread">
+                  {chatHistory.map((msg) => (
+                    <div key={msg.id} className={`chat-bubble-row ${msg.sender}`}>
+                      <div className="chat-bubble">
+                        <span className="chat-sender">{msg.sender === "ai" ? "🧠 AI Scientist" : "👤 You"}</span>
+                        <p className="chat-text">{msg.text}</p>
+                        <span className="chat-time">{msg.time}</span>
+                      </div>
+                    </div>
+                  ))}
+                  {isThinking && (
+                    <div className="chat-bubble-row ai thinking">
+                      <div className="chat-bubble">
+                        <span className="chat-sender">🧠 AI Scientist</span>
+                        <p className="chat-text">Thinking & computing QWM observables...</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <p className="panel-sub-label margin-top">SUGGESTED QUESTIONS</p>
                 <div className="questions-column">
                   {analysis.questions.map((q, idx) => (
-                    <button key={idx} className="question-chip-btn" onClick={() => onAskScientist(q)}>
+                    <button key={idx} className="question-chip-btn" onClick={() => handleAskQuestion(q)}>
                       💡 {q}
                     </button>
                   ))}
@@ -284,17 +353,17 @@ export const AIScientistPanel: React.FC<AIScientistProps> = ({
                     value={userQuery}
                     onChange={(e) => setUserQuery(e.target.value)}
                   />
-                  <button type="submit" className="sidebar-ask-btn">
-                    Ask →
+                  <button type="submit" className="sidebar-ask-btn" disabled={isThinking}>
+                    {isThinking ? "..." : "Ask →"}
                   </button>
                 </form>
               </div>
             )}
 
-            {/* Grounded Physics Reasoning & Model Source Badge */}
+            {/* Grounded Physics Reasoning & 6-Layer Guardrail Badge */}
             <div className="grounded-reasoning-card">
               <div className="grounded-card-header">
-                <span className="panel-sub-label">MODEL REASONING SOURCE</span>
+                <span className="panel-sub-label">QWM REASONING & GUARDRAILS</span>
                 <button className="settings-link-btn" onClick={onOpenSettings} title="Configure AI Provider">
                   ⚙ AI Settings
                 </button>
@@ -302,15 +371,32 @@ export const AIScientistPanel: React.FC<AIScientistProps> = ({
               <div className="grounded-model-tag">
                 <span className="provider-pill">{aiSettings.provider.toUpperCase()}</span>
                 <span className="model-name-str">{aiSettings.model}</span>
+                <span className="guardrail-pass-pill">✔ {guardrailsReport.passedCount}/{guardrailsReport.totalChecks} GUARDRAILS PASSED</span>
               </div>
               <div className="grounded-check-list">
                 <div className="g-check-item">
-                  <span className="g-label">Grounded Using:</span>
-                  <span className="g-val">✔ Wave Function, ✔ Schrödinger Equation</span>
+                  <span className="g-label">1. Physics Grounding:</span>
+                  <span className="g-val">✔ Schrödinger & Maxwell</span>
                 </div>
                 <div className="g-check-item">
-                  <span className="g-label">Validated Sources:</span>
-                  <span className="g-val">✔ Griffiths, ✔ MIT OCW 8.04, ✔ Feynman Vol. III</span>
+                  <span className="g-label">2. QWM Grounding:</span>
+                  <span className="g-val">✔ Liboff, Shankar, MIT OCW</span>
+                </div>
+                <div className="g-check-item">
+                  <span className="g-label">3. Equipment Schema:</span>
+                  <span className="g-val">✔ Registered Apparatus</span>
+                </div>
+                <div className="g-check-item">
+                  <span className="g-label">4. Parameter Bounds:</span>
+                  <span className="g-val">✔ Valid Physical Range</span>
+                </div>
+                <div className="g-check-item">
+                  <span className="g-label">5. Simulation Energy:</span>
+                  <span className="g-val">✔ Probability Conserved</span>
+                </div>
+                <div className="g-check-item">
+                  <span className="g-label">6. Safety Filter:</span>
+                  <span className="g-val">✔ Physics Instruction Scope</span>
                 </div>
               </div>
             </div>

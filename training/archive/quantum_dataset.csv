@@ -1,0 +1,11 @@
+Technology,Category,TRL,Feasibility_Score,Timeline_Years,Application_Domain
+Superconducting Qubits,Hardware,6,0.8,5,"Cryptography, Optimization"
+Trapped Ions,Hardware,5,0.75,7,Material Simulation
+Quantum Annealing,Hardware,4,0.65,8,Optimization
+Topological Qubits,Hardware,3,0.5,10,Cryptography
+Shor Algorithm,Algorithm,4,0.7,6,Cryptography
+Grover Algorithm,Algorithm,5,0.8,5,Optimization
+Variational Algorithms,Algorithm,6,0.85,4,Material Simulation
+Surface Codes,Error Correction,5,0.75,6,All
+Quantum Error Mitigation,Error Correction,4,0.7,7,All
+Hybrid Systems,Hybrid,6,0.9,3,All
