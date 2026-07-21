@@ -221,6 +221,96 @@ export const Screen1AskQuestion: React.FC = () => {
                 </p>
               </div>
             </button>
+
+            <button
+              onClick={() => selectExperiment("quantum-tunneling")}
+              className="group flex flex-col justify-between p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all text-left"
+            >
+              <div className="p-3 w-fit rounded-xl bg-cyan-500/10 text-cyan-400 mb-3">
+                <Orbit className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors">
+                  Quantum Ring (3D GLB)
+                </h3>
+                <p className="text-xs text-slate-400 mt-1">
+                  Aharonov-Bohm magnetic phase & 3D ring electron interference
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {/* Historical Evolution of Atomic Models Showcase */}
+        <div className="pt-16 pb-8 border-t border-slate-800/80 text-left max-w-5xl mx-auto space-y-6">
+          <div className="text-center space-y-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+              <Atom className="w-3.5 h-3.5" />
+              <span>Historical Timeline</span>
+            </div>
+            <h2 className="text-3xl font-extrabold text-slate-100">
+              Historical Evolution of Atomic Models (1803 – 1926)
+            </h2>
+            <p className="text-slate-400 text-sm max-w-2xl mx-auto">
+              Explore how humanity's understanding of matter progressed from Dalton's solid billiard ball to Schrödinger's 3D quantum orbital probability clouds.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 pt-4">
+            <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/40 transition-all flex flex-col justify-between">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider font-mono">1803</span>
+              <h3 className="text-base font-bold text-slate-100 mt-1">John Dalton</h3>
+              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <strong>Solid Sphere Model</strong>: Atoms are indivisible, neutral hard spheres.
+              </p>
+              <div className="mt-3 pt-2 border-t border-slate-800/60 text-[10px] text-slate-500 font-mono">
+                Billiards Ball
+              </div>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-purple-500/40 transition-all flex flex-col justify-between">
+              <span className="text-[10px] font-bold text-purple-400 uppercase tracking-wider font-mono">1904</span>
+              <h3 className="text-base font-bold text-slate-100 mt-1">J.J. Thomson</h3>
+              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <strong>Plum Pudding Model</strong>: Negative corpuscles embedded in positive sphere.
+              </p>
+              <div className="mt-3 pt-2 border-t border-slate-800/60 text-[10px] text-slate-500 font-mono">
+                Subatomic Charge
+              </div>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-pink-500/40 transition-all flex flex-col justify-between">
+              <span className="text-[10px] font-bold text-pink-400 uppercase tracking-wider font-mono">1911</span>
+              <h3 className="text-base font-bold text-slate-100 mt-1">E. Rutherford</h3>
+              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <strong>Nuclear Model</strong>: Gold foil experiment proved a dense positive nucleus.
+              </p>
+              <div className="mt-3 pt-2 border-t border-slate-800/60 text-[10px] text-slate-500 font-mono">
+                Planetary Orbits
+              </div>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between">
+              <span className="text-[10px] font-bold text-amber-400 uppercase tracking-wider font-mono">1913</span>
+              <h3 className="text-base font-bold text-slate-100 mt-1">Niels Bohr</h3>
+              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <strong>Quantized Shells</strong>: Discrete orbits with E = -13.6/n² eV quanta transitions.
+              </p>
+              <div className="mt-3 pt-2 border-t border-slate-800/60 text-[10px] text-slate-500 font-mono">
+                Energy Quanta
+              </div>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between">
+              <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider font-mono">1926</span>
+              <h3 className="text-base font-bold text-slate-100 mt-1">E. Schrödinger</h3>
+              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <strong>Quantum Cloud Model</strong>: 3D probability density wavefunctions |Ψ(x,y,z)|².
+              </p>
+              <div className="mt-3 pt-2 border-t border-slate-800/60 text-[10px] text-slate-500 font-mono">
+                Wave Orbitals
+              </div>
+            </div>
           </div>
         </div>
       </div>

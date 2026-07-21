@@ -42,15 +42,24 @@ export const AISettingsModal: React.FC<AISettingsModalProps> = ({ isOpen, onClos
     let baseUrl = settings.baseUrl;
     let model = settings.model;
 
-    if (provider === "openai") {
+    if (provider === "groq") {
+      baseUrl = "https://api.groq.com/openai/v1";
+      model = "llama-3.3-70b-versatile";
+    } else if (provider === "gemini") {
+      baseUrl = "https://generativelanguage.googleapis.com/v1beta/openai/";
+      model = "gemini-2.5-flash";
+    } else if (provider === "openai") {
       baseUrl = "https://api.openai.com/v1";
       model = "gpt-4o";
+    } else if (provider === "anthropic") {
+      baseUrl = "https://api.anthropic.com/v1";
+      model = "claude-3-5-sonnet-20241022";
     } else if (provider === "ollama") {
       baseUrl = "http://localhost:11434";
       loadModels(baseUrl);
     } else if (provider === "lmstudio") {
       baseUrl = "http://localhost:1234/v1";
-      model = "qwen3-32b";
+      model = "qwen2.5-coder:7b";
     } else if (provider === "generic") {
       baseUrl = "https://openrouter.ai/api/v1";
       model = "deepseek/deepseek-r1";
@@ -85,61 +94,29 @@ export const AISettingsModal: React.FC<AISettingsModalProps> = ({ isOpen, onClos
     <div className="modal-backdrop" onClick={onClose}>
       <div className="ai-settings-modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
-          <h3>⚙ AI Provider Settings</h3>
+          <h3>⚙ AI Provider & Model Settings</h3>
           <button className="close-btn" onClick={onClose}>
             ✕
           </button>
         </div>
 
         <div className="modal-body">
-          {/* PROVIDER SELECTION */}
+          {/* PROVIDER SELECTION DROPDOWN */}
           <div className="setting-group">
-            <label className="setting-label">AI PROVIDER</label>
-            <div className="provider-options-grid">
-              <label className={`provider-card ${settings.provider === "openai" ? "active" : ""}`}>
-                <input
-                  type="radio"
-                  name="provider"
-                  checked={settings.provider === "openai"}
-                  onChange={() => handleProviderChange("openai")}
-                />
-                <span className="p-title">OpenAI (ChatGPT)</span>
-                <span className="p-desc">Account / GPT-4o</span>
-              </label>
-
-              <label className={`provider-card ${settings.provider === "ollama" ? "active" : ""}`}>
-                <input
-                  type="radio"
-                  name="provider"
-                  checked={settings.provider === "ollama"}
-                  onChange={() => handleProviderChange("ollama")}
-                />
-                <span className="p-title">Ollama (Local)</span>
-                <span className="p-desc">Auto-detected models</span>
-              </label>
-
-              <label className={`provider-card ${settings.provider === "lmstudio" ? "active" : ""}`}>
-                <input
-                  type="radio"
-                  name="provider"
-                  checked={settings.provider === "lmstudio"}
-                  onChange={() => handleProviderChange("lmstudio")}
-                />
-                <span className="p-title">LM Studio (Local)</span>
-                <span className="p-desc">localhost:1234/v1</span>
-              </label>
-
-              <label className={`provider-card ${settings.provider === "generic" ? "active" : ""}`}>
-                <input
-                  type="radio"
-                  name="provider"
-                  checked={settings.provider === "generic"}
-                  onChange={() => handleProviderChange("generic")}
-                />
-                <span className="p-title">Custom API</span>
-                <span className="p-desc">OpenRouter, Groq, vLLM</span>
-              </label>
-            </div>
+            <label className="setting-label">SELECT AI PROVIDER</label>
+            <select
+              value={settings.provider}
+              onChange={(e) => handleProviderChange(e.target.value as AIProviderType)}
+              className="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 text-sm font-semibold focus:outline-none focus:border-cyan-500"
+            >
+              <option value="groq">⚡ Groq Cloud (Ultra-Fast Llama-3.3 70B & DeepSeek-R1)</option>
+              <option value="gemini">✨ Google Gemini (Gemini 2.5 Flash / Pro)</option>
+              <option value="openai">🤖 OpenAI (GPT-4o, GPT-4o-mini)</option>
+              <option value="anthropic">🧠 Anthropic (Claude 3.5 Sonnet)</option>
+              <option value="ollama">🏠 Ollama Local (Auto-detected models)</option>
+              <option value="lmstudio">💻 LM Studio Local (localhost:1234)</option>
+              <option value="generic">🌐 Custom API (OpenRouter, vLLM, DeepSeek)</option>
+            </select>
           </div>
 
           {/* OPENAI AUTH MODE */}

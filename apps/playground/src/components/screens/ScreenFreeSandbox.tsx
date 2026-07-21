@@ -13,13 +13,14 @@ import {
   FlaskConical,
   Move,
   Sparkles,
+  BarChart3,
 } from "lucide-react";
 import { useQuantumLabStore } from "../../store/useQuantumLabStore";
 import { QuantumLabCanvas } from "../canvas/QuantumLabCanvas";
+import { SimulationResultsPanel } from "../SimulationResultsPanel";
 
 export const ScreenFreeSandbox: React.FC = () => {
   const activeExperiment = useQuantumLabStore((state) => state.activeExperiment);
-  const selectExperiment = useQuantumLabStore((state) => state.selectExperiment);
   const installedEquipment = useQuantumLabStore((state) => state.installedEquipment);
   const toggleEquipment = useQuantumLabStore((state) => state.toggleEquipment);
   const physicsState = useQuantumLabStore((state) => state.physicsState);
@@ -29,26 +30,31 @@ export const ScreenFreeSandbox: React.FC = () => {
   const setSelectedEquipment = useQuantumLabStore((state) => state.setSelectedEquipment);
 
   const [activeCategory, setActiveCategory] = useState<"quantum" | "classical" | "chemistry">("quantum");
+  const [showResultsPanel, setShowResultsPanel] = useState(true);
 
-  // Real GLB & Scientific Elements Palette
+  // Real GLB & Scientific Elements Palette (No Nuclear Reactor)
   const quantumElements = [
-    { id: "atomic-source", name: "Atomic Model Source (GLB)", role: "source", color: "border-cyan-500/40 text-cyan-400" },
-    { id: "crystal-capsule", name: "Crystal Capsule Chamber (GLB)", role: "chamber", color: "border-purple-500/40 text-purple-400" },
-    { id: "nuclear-reactor", name: "PWR Nuclear Reactor (GLB)", role: "chamber", color: "border-emerald-500/40 text-emerald-400" },
-    { id: "riemann-sphere", name: "Qubit Riemann Sphere (GLB)", role: "analyzer", color: "border-cyan-400/40 text-cyan-300" },
-    { id: "solenoid-magnet", name: "Solenoid Electromagnet (GLB)", role: "em", color: "border-pink-500/40 text-pink-400" },
-    { id: "potential-barrier", name: "Potential Barrier Wall", role: "barrier", color: "border-purple-500/40 text-purple-400" },
-    { id: "detector", name: "Particle Detector", role: "detector", color: "border-green-500/40 text-green-400" },
+    { id: "quantum-ring", name: "Quantum Ring Resonator (GLB)", role: "ring phase interference", color: "border-slate-300 text-slate-900" },
+    { id: "crystal-capsule", name: "Crystal Capsule Chamber (GLB)", role: "lattice confinement", color: "border-slate-300 text-slate-900" },
+    { id: "riemann-sphere", name: "Qubit Riemann Sphere (GLB)", role: "state analyzer", color: "border-slate-300 text-slate-900" },
+    { id: "solenoid-magnet", name: "Solenoid Electromagnet (GLB)", role: "em field", color: "border-slate-300 text-slate-900" },
+    { id: "mach-zehnder", name: "Mach-Zehnder Interferometer", role: "phase splitter", color: "border-slate-300 text-slate-900" },
+    { id: "double-slit-mask", name: "Young's Double-Slit Plate", role: "interference mask", color: "border-slate-300 text-slate-900" },
+    { id: "potential-barrier", name: "Potential Barrier Wall", role: "tunneling barrier", color: "border-slate-300 text-slate-900" },
+    { id: "detector", name: "Particle & Wave Detector", role: "quantum collector", color: "border-slate-300 text-slate-900" },
   ];
 
   const classicalElements = [
-    { id: "newtons-cradle", name: "Newton's Cradle Apparatus (GLB)", role: "momentum", color: "border-amber-500/40 text-amber-400" },
-    { id: "solenoid-magnet", name: "Solenoid Magnetic Coil (GLB)", role: "em", color: "border-pink-500/40 text-pink-400" },
+    { id: "newtons-cradle", name: "Newton's Cradle Apparatus (GLB)", role: "elastic momentum", color: "border-slate-300 text-slate-900" },
+    { id: "solenoid-magnet", name: "Solenoid Magnetic Coil (GLB)", role: "lorentz b-field", color: "border-slate-300 text-slate-900" },
+    { id: "foucault-pendulum", name: "Foucault Precession Pendulum", role: "harmonic oscillator", color: "border-slate-300 text-slate-900" },
+    { id: "prism-refraction", name: "Glass Triangular Prism", role: "snell dispersion", color: "border-slate-300 text-slate-900" },
   ];
 
   const chemistryElements = [
-    { id: "bunsen-burner", name: "Chemistry Bunsen Burner (GLB)", role: "thermal", color: "border-orange-500/40 text-orange-400" },
-    { id: "beaker", name: "Glass Beaker Vessel", role: "vessel", color: "border-cyan-400/40 text-cyan-300" },
+    { id: "bunsen-burner", name: "Chemistry Bunsen Burner (GLB)", role: "thermal excitation", color: "border-slate-300 text-slate-900" },
+    { id: "beaker", name: "Glass Beaker & Solution Vessel", role: "reaction vessel", color: "border-slate-300 text-slate-900" },
+    { id: "molecular-lattice", name: "NaCl Crystal Unit Lattice", role: "ionic bonding", color: "border-slate-300 text-slate-900" },
   ];
 
   const handleResetStage = () => {
@@ -71,118 +77,50 @@ export const ScreenFreeSandbox: React.FC = () => {
         onClick={() => toggleEquipment(item.id)}
         className={`w-full flex items-center justify-between p-3 rounded-xl border text-left transition-all ${
           isInstalled
-            ? `${item.color} bg-slate-800/80 shadow-md`
-            : "border-slate-800 bg-slate-950/40 text-slate-400 hover:border-slate-700"
+            ? "border-white bg-white text-slate-950 shadow-md font-semibold"
+            : "border-slate-800 bg-slate-900/60 text-slate-200 hover:border-slate-700 hover:bg-slate-800"
         }`}
       >
         <div>
-          <h4 className="font-semibold text-sm">{item.name}</h4>
-          <span className="text-[10px] uppercase tracking-wider text-slate-500 font-bold">
+          <h4 className="font-bold text-xs">{item.name}</h4>
+          <span className={`text-[10px] uppercase tracking-wider font-mono ${isInstalled ? "text-slate-700" : "text-slate-400"}`}>
             Role: {item.role}
           </span>
         </div>
         <div
           className={`p-1.5 rounded-lg ${
-            isInstalled ? "bg-cyan-500/20 text-cyan-400" : "bg-slate-800 text-slate-500"
+            isInstalled ? "bg-slate-205 text-slate-950 border border-slate-300" : "bg-slate-950 text-slate-400"
           }`}
         >
-          {isInstalled ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+          {isInstalled ? <Check className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
         </div>
       </button>
     );
   };
 
   return (
-    <div className="h-[calc(100vh-64px)] w-full grid grid-cols-12 bg-slate-950 text-slate-100 overflow-hidden">
+    <div className="h-[calc(100vh-64px)] w-full grid grid-cols-12 bg-slate-900 text-slate-100 overflow-hidden">
       {/* Left Panel: Scientific Elements Shelf (Col 1-3) */}
-      <div className="col-span-3 border-r border-slate-800/80 bg-slate-900/60 p-4 flex flex-col justify-between backdrop-blur-xl">
+      <div className="col-span-3 border-r border-slate-800 bg-slate-950/60 p-4 flex flex-col justify-between backdrop-blur-xl">
         <div className="space-y-4">
           <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm">
-              <Layers className="w-4 h-4 text-cyan-400" />
-              <span>SCIENTIFIC ELEMENTS SHELF</span>
+            <div className="flex items-center gap-2 text-white font-bold text-xs tracking-wider">
+              <Layers className="w-4 h-4 text-white" />
+              <span>SCIENTIFIC SHELF</span>
             </div>
-            <span className="text-[10px] bg-cyan-950 text-cyan-400 border border-cyan-500/30 px-2 py-0.5 rounded-full font-mono">
-              3D GLB LOADED
+            <span className="text-[10px] bg-white text-slate-950 px-2.5 py-0.5 rounded-full font-mono font-bold">
+              3D READY
             </span>
           </div>
 
-          {/* Experiment Switcher Header */}
-          <div className="grid grid-cols-2 gap-1.5 p-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-[11px] font-semibold">
-            <button
-              onClick={() => selectExperiment("quantum-tunneling")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "quantum-tunneling" ? "bg-cyan-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Tunneling
-            </button>
-            <button
-              onClick={() => selectExperiment("wave-interference")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "wave-interference" ? "bg-purple-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Interference
-            </button>
-            <button
-              onClick={() => selectExperiment("mach-zehnder")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "mach-zehnder" ? "bg-blue-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Mach-Zehnder
-            </button>
-            <button
-              onClick={() => selectExperiment("stern-gerlach")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "stern-gerlach" ? "bg-emerald-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Stern-Gerlach
-            </button>
-            <button
-              onClick={() => selectExperiment("photoelectric-effect")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "photoelectric-effect" ? "bg-yellow-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Photoelectric
-            </button>
-            <button
-              onClick={() => selectExperiment("newtons-cradle")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "newtons-cradle" ? "bg-amber-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Newton Cradle
-            </button>
-            <button
-              onClick={() => selectExperiment("crystal-capsule")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "crystal-capsule" ? "bg-pink-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Crystal Capsule
-            </button>
-            <button
-              onClick={() => selectExperiment("rutherford-scattering")}
-              className={`py-1.5 px-2 rounded-lg transition-all ${
-                activeExperiment.id === "rutherford-scattering" ? "bg-rose-500 text-slate-950 font-bold" : "text-slate-400"
-              }`}
-            >
-              Rutherford
-            </button>
-          </div>
-
           {/* Unified Domain Category Tabs */}
-          <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-950/80 border border-slate-800 text-[11px] font-semibold">
+          <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-slate-900 border border-slate-800 text-[11px] font-bold">
             <button
               onClick={() => setActiveCategory("quantum")}
               className={`py-2 rounded-lg flex items-center justify-center gap-1 transition-all ${
                 activeCategory === "quantum"
-                  ? "bg-cyan-500 text-slate-950 shadow-md font-bold"
-                  : "text-slate-400 hover:text-slate-200"
+                  ? "bg-white text-slate-950 shadow-xs"
+                  : "text-slate-400 hover:text-white"
               }`}
             >
               <Atom className="w-3.5 h-3.5" />
@@ -193,8 +131,8 @@ export const ScreenFreeSandbox: React.FC = () => {
               onClick={() => setActiveCategory("classical")}
               className={`py-2 rounded-lg flex items-center justify-center gap-1 transition-all ${
                 activeCategory === "classical"
-                  ? "bg-purple-500 text-slate-950 shadow-md font-bold"
-                  : "text-slate-400 hover:text-slate-200"
+                  ? "bg-white text-slate-950 shadow-xs"
+                  : "text-slate-400 hover:text-white"
               }`}
             >
               <Boxes className="w-3.5 h-3.5" />
@@ -205,8 +143,8 @@ export const ScreenFreeSandbox: React.FC = () => {
               onClick={() => setActiveCategory("chemistry")}
               className={`py-2 rounded-lg flex items-center justify-center gap-1 transition-all ${
                 activeCategory === "chemistry"
-                  ? "bg-emerald-500 text-slate-950 shadow-md font-bold"
-                  : "text-slate-400 hover:text-slate-200"
+                  ? "bg-white text-slate-950 shadow-xs"
+                  : "text-slate-400 hover:text-white"
               }`}
             >
               <FlaskConical className="w-3.5 h-3.5" />
@@ -215,11 +153,11 @@ export const ScreenFreeSandbox: React.FC = () => {
           </div>
 
           {/* Category List Render */}
-          <div className="h-[calc(100vh-320px)] overflow-y-auto space-y-2 pr-1">
+          <div className="h-[calc(100vh-220px)] overflow-y-auto space-y-2 pr-1">
             {activeCategory === "quantum" && (
               <>
-                <p className="text-[11px] text-slate-400 mb-2">
-                  Quantum GLB Models (Click to toggle on 3D stage):
+                <p className="text-[11px] text-slate-400 font-medium mb-2">
+                  Quantum Equipment (Click to toggle on stage):
                 </p>
                 {quantumElements.map(renderEquipmentButton)}
               </>
@@ -227,8 +165,8 @@ export const ScreenFreeSandbox: React.FC = () => {
 
             {activeCategory === "classical" && (
               <>
-                <p className="text-[11px] text-slate-400 mb-2">
-                  Classical Physics GLB Models:
+                <p className="text-[11px] text-slate-400 font-medium mb-2">
+                  Classical Physics Equipment:
                 </p>
                 {classicalElements.map(renderEquipmentButton)}
               </>
@@ -236,8 +174,8 @@ export const ScreenFreeSandbox: React.FC = () => {
 
             {activeCategory === "chemistry" && (
               <>
-                <p className="text-[11px] text-slate-400 mb-2">
-                  Chemistry GLB Models:
+                <p className="text-[11px] text-slate-400 font-medium mb-2">
+                  Chemistry Equipment:
                 </p>
                 {chemistryElements.map(renderEquipmentButton)}
               </>
@@ -249,47 +187,50 @@ export const ScreenFreeSandbox: React.FC = () => {
         <div className="pt-3 border-t border-slate-800">
           <button
             onClick={handleResetStage}
-            className="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold flex items-center justify-center gap-2 border border-slate-700 transition-all text-xs"
+            className="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold flex items-center justify-center gap-2 border border-slate-800 transition-all text-xs shadow-xs"
           >
-            <RotateCcw className="w-3.5 h-3.5 text-cyan-400" />
+            <RotateCcw className="w-3.5 h-3.5 text-white" />
             <span>Reset 3D Stage & Positions</span>
           </button>
         </div>
       </div>
 
-      {/* Center Panel: Pure 3D Canvas (Col 4-9) */}
-      <div className="col-span-6 relative h-full">
+      {/* Center Panel: Full Spacious 3D Canvas (Col 4-12) */}
+      <div className="col-span-9 relative h-full">
         <QuantumLabCanvas />
 
-        {/* Live Dragging Helper Overlay */}
-        <div className="absolute top-4 left-4 p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-xl shadow-xl flex items-center gap-3">
-          <Move className="w-5 h-5 text-cyan-400 animate-bounce" />
+        {/* Live Dragging Helper Overlay (Top Left) */}
+        <div className="absolute top-4 left-4 p-3 rounded-2xl bg-slate-900/90 border border-slate-800/90 backdrop-blur-xl shadow-md flex items-center gap-3 pointer-events-none text-white">
+          <Move className="w-4 h-4 text-white animate-bounce" />
           <div>
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-              3D GLB Drag & Drop Enabled
+              3D Drag & Drop Stage
             </span>
-            <span className="text-xs font-semibold text-slate-200">
-              Drag PivotControls gizmos to move real 3D models on stage
+            <span className="text-xs font-bold text-white">
+              Drag Gizmos to position equipment in 3D
             </span>
           </div>
         </div>
-      </div>
 
-      {/* Right Panel: Physics Parameter Controls (Col 10-12) */}
-      <div className="col-span-3 border-l border-slate-800/80 bg-slate-900/60 p-4 flex flex-col justify-between backdrop-blur-xl">
-        <div className="space-y-4">
-          <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm border-b border-slate-800 pb-3">
-            <SlidersHorizontal className="w-4 h-4 text-cyan-400" />
-            <span>PHYSICS PARAMETERS</span>
+        {/* Floating Compact Physics Parameters Panel (Top Right Overlay) */}
+        <div className="absolute top-12 right-4 w-80 p-4 rounded-2xl bg-slate-900/95 border border-slate-800/90 backdrop-blur-xl shadow-lg space-y-3 z-10 text-white">
+          <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+            <div className="flex items-center gap-2 text-white font-bold text-xs">
+              <SlidersHorizontal className="w-4 h-4 text-white" />
+              <span>REAL-TIME PARAMETERS</span>
+            </div>
+            <span className="text-[10px] text-slate-300 font-mono uppercase bg-slate-950 px-2 py-0.5 rounded-md border border-slate-800 font-bold">
+              {activeExperiment.id}
+            </span>
           </div>
 
-          <div className="space-y-4 bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80">
+          <div className="space-y-3">
             {activeExperiment.id === "quantum-tunneling" && (
               <>
                 <div>
-                  <div className="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                  <div className="flex justify-between text-xs font-bold text-slate-300 mb-1">
                     <span>Barrier Height (V0)</span>
-                    <span className="text-cyan-400 font-mono">{physicsState.barrierHeight} eV</span>
+                    <span className="text-white font-mono">{physicsState.barrierHeight} eV</span>
                   </div>
                   <input
                     type="range"
@@ -298,13 +239,13 @@ export const ScreenFreeSandbox: React.FC = () => {
                     step="0.5"
                     value={physicsState.barrierHeight}
                     onChange={(e) => updatePhysicsParams({ barrierHeight: parseFloat(e.target.value) })}
-                    className="w-full accent-cyan-500 bg-slate-800 h-1.5 rounded-lg cursor-pointer"
+                    className="w-full accent-white bg-slate-800 h-1.5 rounded-lg cursor-pointer"
                   />
                 </div>
                 <div>
-                  <div className="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                  <div className="flex justify-between text-xs font-bold text-slate-300 mb-1">
                     <span>Barrier Width (L)</span>
-                    <span className="text-purple-400 font-mono">{physicsState.barrierWidth} nm</span>
+                    <span className="text-white font-mono">{physicsState.barrierWidth} nm</span>
                   </div>
                   <input
                     type="range"
@@ -313,7 +254,7 @@ export const ScreenFreeSandbox: React.FC = () => {
                     step="0.1"
                     value={physicsState.barrierWidth}
                     onChange={(e) => updatePhysicsParams({ barrierWidth: parseFloat(e.target.value) })}
-                    className="w-full accent-purple-500 bg-slate-800 h-1.5 rounded-lg cursor-pointer"
+                    className="w-full accent-white bg-slate-800 h-1.5 rounded-lg cursor-pointer"
                   />
                 </div>
               </>
@@ -322,9 +263,9 @@ export const ScreenFreeSandbox: React.FC = () => {
             {activeExperiment.id === "wave-interference" && (
               <>
                 <div>
-                  <div className="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                  <div className="flex justify-between text-xs font-bold text-slate-300 mb-1">
                     <span>Wavelength (λ)</span>
-                    <span className="text-cyan-400 font-mono">{physicsState.wavelength} nm</span>
+                    <span className="text-white font-mono">{physicsState.wavelength} nm</span>
                   </div>
                   <input
                     type="range"
@@ -333,38 +274,61 @@ export const ScreenFreeSandbox: React.FC = () => {
                     step="10"
                     value={physicsState.wavelength}
                     onChange={(e) => updatePhysicsParams({ wavelength: parseFloat(e.target.value) })}
-                    className="w-full accent-cyan-500 bg-slate-800 h-1.5 rounded-lg cursor-pointer"
+                    className="w-full accent-white bg-slate-800 h-1.5 rounded-lg cursor-pointer"
                   />
                 </div>
               </>
             )}
 
             {activeExperiment.id === "newtons-cradle" && (
-              <div className="p-3 bg-amber-950/40 border border-amber-500/20 rounded-xl text-amber-200 text-xs leading-relaxed">
-                <Sparkles className="w-4 h-4 mb-1 text-amber-400" />
+              <div className="p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs leading-relaxed">
+                <Sparkles className="w-3.5 h-3.5 mb-1 text-white" />
                 <p>
-                  <strong>Newton's Cradle Experiment</strong>: Demonstrates elastic collision and linear momentum transfer using real 3D GLB pendulum assets.
+                  <strong>Newton's Cradle</strong>: Demonstrates elastic collision and linear momentum transfer using real GLB pendulum assets.
                 </p>
               </div>
             )}
 
             {activeExperiment.id === "crystal-capsule" && (
-              <div className="p-3 bg-purple-950/40 border border-purple-500/20 rounded-xl text-purple-200 text-xs leading-relaxed">
-                <Sparkles className="w-4 h-4 mb-1 text-purple-400" />
+              <div className="p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs leading-relaxed">
+                <Sparkles className="w-3.5 h-3.5 mb-1 text-white" />
                 <p>
-                  <strong>Crystal Capsule Experiment</strong>: Demonstrates quantum wave packet confinement in periodic crystal lattices using real GLB geometry.
+                  <strong>Crystal Capsule</strong>: Demonstrates wave packet confinement in periodic crystal lattices.
                 </p>
               </div>
             )}
           </div>
         </div>
 
-        {/* Info Card */}
-        <div className="p-3.5 rounded-2xl bg-cyan-950/40 border border-cyan-500/20 text-cyan-200 text-xs leading-relaxed">
-          <p>
-            💡 <strong>Real 3D GLB Stage</strong>: Loaded GLB models for Newton's Cradle, Crystal Capsule, Bunsen Burner, Solenoid Magnet, and Nuclear Reactor!
-          </p>
+        {/* Toggle Quantitative Results Overlay Button */}
+        <div className="absolute bottom-4 right-4 z-10 flex gap-2">
+          <button
+            onClick={() => setShowResultsPanel(!showResultsPanel)}
+            className="px-3.5 py-2 rounded-xl bg-slate-900 text-white font-bold text-xs flex items-center gap-2 shadow-md hover:bg-slate-800 transition-all"
+          >
+            <BarChart3 className="w-4 h-4" />
+            <span>{showResultsPanel ? "Hide Live Results" : "Show Quantitative Results"}</span>
+          </button>
         </div>
+
+        {/* Floating Quantitative Experiment Results Panel (Bottom Right) */}
+        {showResultsPanel && (
+          <div className="absolute bottom-16 right-4 w-96 max-h-96 overflow-y-auto p-4 rounded-2xl bg-white/95 border border-slate-200 backdrop-blur-xl shadow-xl z-10">
+            <SimulationResultsPanel
+              instances={installedEquipment.map((id) => ({
+                id,
+                definitionId: id,
+                name: id,
+                position: { x: 0, y: 0 },
+                rotation: 0,
+                size: { width: 100, height: 100 },
+                parameters: {},
+              }))}
+              connections={[]}
+              isSimulating={true}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

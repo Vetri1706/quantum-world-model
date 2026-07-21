@@ -108,63 +108,68 @@ export const SimulationResultsPanel: React.FC<ResultsPanelProps> = ({ instances,
   }, [targetMetrics]);
 
   return (
-    <div className="results-panel-container">
-      <div className="results-panel-header">
-        <h4>⚡ Quantitative Results</h4>
-        <span className={`sim-status-pill ${isSimulating ? "active" : "idle"}`}>
-          {isSimulating ? "● CONVERGING..." : "STANDBY"}
+    <div className="space-y-3 text-slate-900 font-sans">
+      <div className="flex items-center justify-between border-b border-slate-200 pb-2">
+        <h4 className="font-extrabold text-xs tracking-wider uppercase flex items-center gap-1.5 text-slate-900">
+          <span>⚡ Live Quantitative Results</span>
+        </h4>
+        <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold ${isSimulating ? "bg-slate-900 text-white animate-pulse" : "bg-slate-100 text-slate-600"}`}>
+          {isSimulating ? "● REALTIME" : "STANDBY"}
         </span>
       </div>
 
       {/* Physics KPI Metrics Grid */}
-      <div className="results-kpi-grid">
-        <div className="kpi-card highlight-blue">
-          <span className="kpi-label">TRANSMISSION (T)</span>
-          <span className="kpi-value">{animatedT.toFixed(1)}%</span>
+      <div className="grid grid-cols-2 gap-2">
+        <div className="p-2.5 rounded-xl bg-slate-900 text-white">
+          <span className="text-[9px] font-mono font-bold uppercase tracking-wider block text-slate-400">TRANSMISSION (T)</span>
+          <span className="text-lg font-black font-mono text-white">{animatedT.toFixed(1)}%</span>
         </div>
-        <div className="kpi-card highlight-slate">
-          <span className="kpi-label">REFLECTION (R)</span>
-          <span className="kpi-value">{animatedR.toFixed(1)}%</span>
+        <div className="p-2.5 rounded-xl bg-slate-100 border border-slate-200">
+          <span className="text-[9px] font-mono font-bold uppercase tracking-wider block text-slate-500">REFLECTION (R)</span>
+          <span className="text-lg font-black font-mono text-slate-900">{animatedR.toFixed(1)}%</span>
         </div>
-        <div className="kpi-card">
-          <span className="kpi-label">PARTICLE ENERGY (E)</span>
-          <span className="kpi-value">{targetMetrics.E.toFixed(1)} eV</span>
+        <div className="p-2 rounded-xl bg-slate-50 border border-slate-200">
+          <span className="text-[9px] font-mono font-bold uppercase tracking-wider block text-slate-500">PARTICLE ENERGY (E)</span>
+          <span className="text-sm font-black font-mono text-slate-800">{targetMetrics.E.toFixed(1)} eV</span>
         </div>
-        <div className="kpi-card">
-          <span className="kpi-label">BARRIER WIDTH (L)</span>
-          <span className="kpi-value">{targetMetrics.width.toFixed(1)} nm</span>
+        <div className="p-2 rounded-xl bg-slate-50 border border-slate-200">
+          <span className="text-[9px] font-mono font-bold uppercase tracking-wider block text-slate-500">BARRIER WIDTH (L)</span>
+          <span className="text-sm font-black font-mono text-slate-800">{targetMetrics.width.toFixed(1)} nm</span>
         </div>
       </div>
 
       {/* Explain This Result Button */}
-      <button className="explain-result-btn" onClick={() => setShowExplanation(!showExplanation)}>
-        💡 {showExplanation ? "Hide Physics Explanation" : "Explain This Result"}
+      <button
+        className="w-full py-1.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs border border-slate-200 transition-all flex items-center justify-center gap-1"
+        onClick={() => setShowExplanation(!showExplanation)}
+      >
+        💡 {showExplanation ? "Hide Explanation" : "Explain Physics Result"}
       </button>
 
       {showExplanation && (
-        <div className="explanation-card-box">
-          <p className="panel-sub-label">QWM PHYSICS BREAKDOWN</p>
-          <p className="explanation-text-body">{explanationText}</p>
-          <pre className="equations-code">
+        <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+          <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500 font-mono">QWM PHYSICS BREAKDOWN</p>
+          <p className="text-xs text-slate-700 leading-relaxed font-medium">{explanationText}</p>
+          <pre className="p-2 rounded-lg bg-slate-900 text-white text-[10px] font-mono leading-tight overflow-x-auto">
             {"T ≈ 16(E/V₀)(1 - E/V₀) e^(-2κL)\nκ = √[2m(V₀ - E)] / ℏ"}
           </pre>
         </div>
       )}
 
       {/* Real-time Wave Function |\Psi(x)|^2 Graph Plot */}
-      <div className="wave-graph-container">
-        <div className="graph-header-row">
-          <span className="panel-sub-label">WAVE FUNCTION PROBABILITY DENSITY |Ψ(x)|²</span>
-          <span className="elapsed-badge">{isSimulating ? "4.2 ps" : "Idle"}</span>
+      <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+        <div className="flex justify-between items-center text-[10px] font-bold text-slate-600 font-mono">
+          <span>PROBABILITY DENSITY |Ψ(x)|²</span>
+          <span className="bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded-md">{isSimulating ? "4.2 ps" : "Idle"}</span>
         </div>
-        <div className="svg-graph-wrapper">
-          <svg viewBox="0 0 260 80" className="wave-graph-svg">
-            <rect x="100" y="5" width="60" height="70" fill="rgba(234, 88, 12, 0.08)" stroke="rgba(234, 88, 12, 0.3)" strokeDasharray="3 3" />
-            <text x="130" y="20" fill="#ea580c" fontSize="9" fontWeight="800" textAnchor="middle">
+        <div className="w-full bg-white rounded-lg border border-slate-200 p-1">
+          <svg viewBox="0 0 260 80" className="w-full h-16">
+            <rect x="100" y="5" width="60" height="70" fill="rgba(15, 23, 42, 0.08)" stroke="#0f172a" strokeDasharray="3 3" />
+            <text x="130" y="20" fill="#0f172a" fontSize="9" fontWeight="800" textAnchor="middle">
               V₀ = {targetMetrics.V0.toFixed(1)} eV
             </text>
             <line x1="0" y1="40" x2="260" y2="40" stroke="#cbd5e1" strokeDasharray="2 2" />
-            <polyline fill="none" stroke="#2563eb" strokeWidth="2.2" strokeLinecap="round" points={graphPoints} />
+            <polyline fill="none" stroke="#0f172a" strokeWidth="2.2" strokeLinecap="round" points={graphPoints} />
           </svg>
         </div>
       </div>

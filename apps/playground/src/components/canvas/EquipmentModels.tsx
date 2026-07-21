@@ -1,16 +1,104 @@
 // 3D Equipment Components with Automatic Scale Normalization & Clean 3D Typography (Uncluttered)
 
-import React, { Suspense, useEffect, useMemo, useRef } from "react";
+import React, { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { Text, PivotControls, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import * as SkeletonUtils from "three/examples/jsm/utils/SkeletonUtils.js";
 import { useQuantumLabStore } from "../../store/useQuantumLabStore";
 
 type EquipmentProps = {
   id: string;
   isInstalled: boolean;
   defaultPos?: [number, number, number];
+};
+
+export class EquipmentErrorBoundary extends React.Component<
+  { fallback: React.ReactNode; children: React.ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error: any) {
+    console.warn("3D Equipment GLB load issue, falling back to 3D procedural rendering:", error);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
+}
+
+const SHARED_OUTLINE_MATERIAL = new THREE.MeshBasicMaterial({
+  color: "#f97316",
+  wireframe: true,
+  transparent: true,
+  opacity: 0.85,
+  depthTest: true,
+});
+
+const ModelGeometryOutline: React.FC<{ targetGroupRef: React.RefObject<THREE.Group | null> }> = ({ targetGroupRef }) => {
+  const [wireframeGroup, setWireframeGroup] = useState<THREE.Group | null>(null);
+
+  useEffect(() => {
+    if (!targetGroupRef.current) return;
+    const originalGroup = targetGroupRef.current;
+
+    const createOutlineGroup = () => {
+      const container = new THREE.Group();
+
+      originalGroup.traverse((child) => {
+        if ((child as THREE.Mesh).isMesh) {
+          const mesh = child as THREE.Mesh;
+          // Filter out Text labels and gizmo meshes to prevent floating label boxes
+          if (
+            mesh.geometry &&
+            mesh.type !== "Text" &&
+            !mesh.name?.includes("Text") &&
+            !mesh.name?.includes("gizmo") &&
+            mesh.parent?.type !== "Text"
+          ) {
+            // Share geometry directly without cloning to preserve 60 FPS performance
+            const wireframeMesh = new THREE.Mesh(mesh.geometry, SHARED_OUTLINE_MATERIAL);
+
+            const worldPos = new THREE.Vector3();
+            const worldQuaternion = new THREE.Quaternion();
+            const worldScale = new THREE.Vector3();
+
+            mesh.getWorldPosition(worldPos);
+            mesh.getWorldQuaternion(worldQuaternion);
+            mesh.getWorldScale(worldScale);
+
+            wireframeMesh.position.copy(worldPos);
+            wireframeMesh.quaternion.copy(worldQuaternion);
+            wireframeMesh.scale.copy(worldScale).multiplyScalar(1.012);
+
+            originalGroup.worldToLocal(wireframeMesh.position);
+
+            container.add(wireframeMesh);
+          }
+        }
+      });
+
+      setWireframeGroup(container);
+    };
+
+    createOutlineGroup();
+    const timer = setTimeout(createOutlineGroup, 80);
+    return () => clearTimeout(timer);
+  }, [targetGroupRef]);
+
+  if (!wireframeGroup) return null;
+
+  return <primitive object={wireframeGroup} />;
 };
 
 export const DraggableEquipment: React.FC<{
@@ -23,6 +111,7 @@ export const DraggableEquipment: React.FC<{
   const selectedEquipmentId = useQuantumLabStore((state) => state.selectedEquipmentId);
   const setSelectedEquipment = useQuantumLabStore((state) => state.setSelectedEquipment);
 
+  const groupRef = useRef<THREE.Group | null>(null);
   const pos = equipmentPositions[id] || defaultPos;
   const isSelected = selectedEquipmentId === id;
 
@@ -42,6 +131,7 @@ export const DraggableEquipment: React.FC<{
       }}
     >
       <group
+        ref={groupRef}
         position={pos}
         onClick={(e) => {
           e.stopPropagation();
@@ -50,13 +140,8 @@ export const DraggableEquipment: React.FC<{
       >
         {children}
 
-        {/* Selection Indicator Ring on Floor */}
-        {isSelected && (
-          <mesh position={[0, 0.02, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-            <ringGeometry args={[0.9, 1.05, 32]} />
-            <meshStandardMaterial color="#38bdf8" emissive="#38bdf8" emissiveIntensity={3.0} />
-          </mesh>
-        )}
+        {/* Blender-Style Active Object Highlight on Actual Hierarchy Geometries */}
+        {isSelected && <ModelGeometryOutline targetGroupRef={groupRef} />}
       </group>
     </PivotControls>
   );
@@ -71,6 +156,29 @@ const GLTFModelNormalized: React.FC<{
 
   const clonedScene = useMemo(() => {
     const clone = scene.clone(true);
+
+    // Enhance glTF materials (boost emissive colors, fix opacity & black base colors)
+    clone.traverse((child) => {
+      if ((child as THREE.Mesh).isMesh) {
+        const mesh = child as THREE.Mesh;
+        if (mesh.material) {
+          const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+          materials.forEach((mat: any) => {
+            if (mat.emissive) {
+              mat.emissiveIntensity = Math.max(mat.emissiveIntensity || 1, 4.5);
+              if (mat.color && mat.color.r < 0.05 && mat.color.g < 0.05 && mat.color.b < 0.05) {
+                mat.color.copy(mat.emissive);
+              }
+            }
+            mat.transparent = true;
+            mat.opacity = Math.max(mat.opacity || 1, 0.85);
+            mat.side = THREE.DoubleSide;
+            mat.depthWrite = true;
+            mat.needsUpdate = true;
+          });
+        }
+      }
+    });
 
     const box = new THREE.Box3().setFromObject(clone);
     const size = new THREE.Vector3();
@@ -96,10 +204,87 @@ const AnimatedGLTFModelNormalized: React.FC<{
   targetSize?: number;
   animationNames?: string[];
   playbackSpeed?: number;
-}> = ({ path, targetSize = 1.4, animationNames, playbackSpeed = 1.5 }) => {
+}> = ({ path, targetSize = 1.4, animationNames, playbackSpeed = 1.0 }) => {
   const { scene, animations } = useGLTF(path);
-  const animatedScene = useMemo(() => {
-    const clone = SkeletonUtils.clone(scene);
+
+  const clonedScene = useMemo(() => {
+    const clone = scene.clone(true);
+
+    // Track mesh index for assigning gradient colors to unlit black models
+    let meshIndex = 0;
+    const totalMeshes = { count: 0 };
+    clone.traverse((c) => { if ((c as THREE.Mesh).isMesh) totalMeshes.count++; });
+
+    // Enhance glTF materials (boost emissive colors, fix opacity & black base colors)
+    clone.traverse((child) => {
+      if ((child as THREE.Mesh).isMesh) {
+        const mesh = child as THREE.Mesh;
+        if (mesh.material) {
+          const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+          const newMaterials = materials.map((mat: any) => {
+            const isBlackBase = mat.color && mat.color.r < 0.05 && mat.color.g < 0.05 && mat.color.b < 0.05;
+            const isVeryTransparent = mat.opacity !== undefined && mat.opacity < 0.25;
+            const isMeshBasic = mat.isMeshBasicMaterial === true;
+
+            // KHR_materials_unlit creates MeshBasicMaterial — emissive data is LOST.
+            // Detect: black MeshBasicMaterial with near-zero opacity = broken unlit emissive.
+            // Also detect MeshStandardMaterial with emissive (non-unlit models).
+            const hasEmissive = mat.emissive && (mat.emissive.r > 0.01 || mat.emissive.g > 0.01 || mat.emissive.b > 0.01);
+
+            if (hasEmissive && isBlackBase) {
+              // MeshStandardMaterial with emissive — use emissive as base color
+              const emColor = mat.emissive.clone();
+              const boostedAlpha = Math.max(mat.opacity || 1, 0.4);
+              meshIndex++;
+              return new THREE.MeshBasicMaterial({
+                color: emColor,
+                transparent: true,
+                opacity: boostedAlpha,
+                side: THREE.DoubleSide,
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+              });
+            }
+
+            if (isMeshBasic && isBlackBase && (isVeryTransparent || mat.opacity < 0.5)) {
+              // KHR_materials_unlit with black base + low alpha = emissive data was lost.
+              // Assign bright neon rainbow color based on mesh index in the model.
+              const t = totalMeshes.count > 1 ? meshIndex / (totalMeshes.count - 1) : 0.5;
+              const hue = t * 0.85; // 0 = red/pink → 0.85 = violet, full rainbow sweep
+              const neonColor = new THREE.Color().setHSL(hue, 1.0, 0.55);
+              const boostedAlpha = Math.max(mat.opacity, 0.3) + 0.25;
+              meshIndex++;
+              return new THREE.MeshBasicMaterial({
+                color: neonColor,
+                transparent: true,
+                opacity: Math.min(boostedAlpha, 0.8),
+                side: THREE.DoubleSide,
+                depthWrite: false,
+                blending: THREE.AdditiveBlending,
+              });
+            }
+
+            meshIndex++;
+
+            // Standard material enhancement for other models
+            if (mat.emissive) {
+              mat.emissiveIntensity = Math.max(mat.emissiveIntensity || 1, 4.5);
+              if (isBlackBase) {
+                mat.color.copy(mat.emissive);
+              }
+            }
+            mat.transparent = true;
+            mat.opacity = Math.max(mat.opacity || 1, 0.85);
+            mat.side = THREE.DoubleSide;
+            mat.depthWrite = true;
+            mat.needsUpdate = true;
+            return mat;
+          });
+          mesh.material = newMaterials.length === 1 ? newMaterials[0] : newMaterials;
+        }
+      }
+    });
+
     const box = new THREE.Box3().setFromObject(clone);
     const size = new THREE.Vector3();
     box.getSize(size);
@@ -118,31 +303,36 @@ const AnimatedGLTFModelNormalized: React.FC<{
   const mixerRef = useRef<THREE.AnimationMixer | null>(null);
 
   useEffect(() => {
-    mixerRef.current = new THREE.AnimationMixer(animatedScene);
-    const availableClips = animationNames?.length
+    if (!clonedScene || !animations || animations.length === 0) return;
+
+    const mixer = new THREE.AnimationMixer(clonedScene);
+    mixerRef.current = mixer;
+
+    const clipsToPlay = animationNames?.length
       ? animations.filter((clip) => animationNames.includes(clip.name))
       : animations;
 
-    const actions = availableClips.map((clip) => {
-      const action = mixerRef.current!.clipAction(clip);
-      action.reset().play();
+    clipsToPlay.forEach((clip) => {
+      const action = mixer.clipAction(clip);
+      action.reset();
       action.setLoop(THREE.LoopRepeat, Infinity);
+      action.play();
       action.timeScale = playbackSpeed;
-      return action;
     });
 
     return () => {
-      actions.forEach((action) => action.stop());
-      mixerRef.current?.stopAllAction();
+      mixer.stopAllAction();
       mixerRef.current = null;
     };
-  }, [animatedScene, animations, animationNames, playbackSpeed]);
+  }, [clonedScene, animations, animationNames, playbackSpeed]);
 
   useFrame((_, delta) => {
-    mixerRef.current?.update(delta);
+    if (mixerRef.current) {
+      mixerRef.current.update(delta);
+    }
   });
 
-  return <primitive object={animatedScene} />;
+  return <primitive object={clonedScene} />;
 };
 
 export const LaserSourceModel: React.FC<EquipmentProps> = ({ id, isInstalled, defaultPos = [-4.5, 0, 0] }) => {
@@ -386,7 +576,7 @@ export const PhysicsNewtonsCradle3D: React.FC = () => {
       {/* Center Impact Flash Ring */}
       <mesh ref={impactGlowRef} position={[0, pivotY - stringLen, 0]}>
         <sphereGeometry args={[0.15, 16, 16]} />
-        <meshStandardMaterial color="#f59e0b" emissive="#f59e0b" emissiveIntensity={3.0} transparent opacity={0.8} />
+        <meshStandardMaterial color="#f59e0b" emissive="#f59e0b" emissiveIntensity={0.5} transparent opacity={0.5} />
       </mesh>
 
       {/* 5 Pendulum Balls */}
@@ -477,12 +667,11 @@ export const NewtonsCradleGLBModel: React.FC<EquipmentProps> = ({ id, isInstalle
   if (!isInstalled) return null;
   return (
     <DraggableEquipment id={id} defaultPos={defaultPos}>
-      <Suspense fallback={
-        <PhysicsNewtonsCradle3D />
-      }>
-        <AnimatedGLTFModelNormalized path="/models/newtons_cradle.glb" targetSize={1.4} animationNames={["Pendel"]} playbackSpeed={1.5} />
-        <PhysicsNewtonsCradle3D />
-      </Suspense>
+      <EquipmentErrorBoundary fallback={<PhysicsNewtonsCradle3D />}>
+        <Suspense fallback={<PhysicsNewtonsCradle3D />}>
+          <AnimatedGLTFModelNormalized path="/models/newtons_cradle.glb" targetSize={1.4} playbackSpeed={1.0} />
+        </Suspense>
+      </EquipmentErrorBoundary>
       <Text position={[0, 1.6, 0]} fontSize={0.22} color="#f59e0b" anchorX="center" anchorY="bottom">
         Newton's Cradle (Animated)
       </Text>
@@ -494,14 +683,21 @@ export const CrystalCapsuleGLBModel: React.FC<EquipmentProps> = ({ id, isInstall
   if (!isInstalled) return null;
   return (
     <DraggableEquipment id={id} defaultPos={defaultPos}>
-      <Suspense fallback={
+      <EquipmentErrorBoundary fallback={
         <mesh position={[0, 0.7, 0]}>
           <cylinderGeometry args={[0.7, 0.7, 1.4, 32]} />
           <meshStandardMaterial color="#a855f7" wireframe />
         </mesh>
       }>
-        <GLTFModelNormalized path="/models/crystal_capsule.glb" targetSize={1.4} />
-      </Suspense>
+        <Suspense fallback={
+          <mesh position={[0, 0.7, 0]}>
+            <cylinderGeometry args={[0.7, 0.7, 1.4, 32]} />
+            <meshStandardMaterial color="#a855f7" wireframe />
+          </mesh>
+        }>
+          <GLTFModelNormalized path="/models/crystal_capsule.glb" targetSize={1.4} />
+        </Suspense>
+      </EquipmentErrorBoundary>
       <Text position={[0, 1.6, 0]} fontSize={0.22} color="#a855f7" anchorX="center" anchorY="bottom">
         Crystal Capsule
       </Text>
@@ -551,14 +747,21 @@ export const SolenoidMagnetGLBModel: React.FC<EquipmentProps> = ({ id, isInstall
   if (!isInstalled) return null;
   return (
     <DraggableEquipment id={id} defaultPos={defaultPos}>
-      <Suspense fallback={
+      <EquipmentErrorBoundary fallback={
         <mesh position={[0, 0.7, 0]}>
           <torusGeometry args={[0.6, 0.2, 16, 32]} />
           <meshStandardMaterial color="#ec4899" wireframe />
         </mesh>
       }>
-        <AnimatedGLTFModelNormalized path="/models/magnetic_field_of_solenoid_by_yuyalyj.glb" targetSize={1.4} animationNames={["Animation"]} playbackSpeed={1} />
-      </Suspense>
+        <Suspense fallback={
+          <mesh position={[0, 0.7, 0]}>
+            <torusGeometry args={[0.6, 0.2, 16, 32]} />
+            <meshStandardMaterial color="#ec4899" wireframe />
+          </mesh>
+        }>
+          <AnimatedGLTFModelNormalized path="/models/magnetic_field_of_solenoid_by_yuyalyj.glb" targetSize={1.4} playbackSpeed={1.0} />
+        </Suspense>
+      </EquipmentErrorBoundary>
       <Text position={[0, 1.6, 0]} fontSize={0.22} color="#ec4899" anchorX="center" anchorY="bottom">
         Solenoid Magnet
       </Text>
@@ -580,6 +783,32 @@ export const RiemannSphereGLBModel: React.FC<EquipmentProps> = ({ id, isInstalle
       </Suspense>
       <Text position={[0, 1.6, 0]} fontSize={0.22} color="#06b6d4" anchorX="center" anchorY="bottom">
         Riemann Sphere
+      </Text>
+    </DraggableEquipment>
+  );
+};
+
+export const QuantumRingGLBModel: React.FC<EquipmentProps> = ({ id, isInstalled, defaultPos = [0, 0, 1.5] }) => {
+  if (!isInstalled) return null;
+  return (
+    <DraggableEquipment id={id} defaultPos={defaultPos}>
+      <EquipmentErrorBoundary fallback={
+        <mesh position={[0, 0.7, 0]}>
+          <torusGeometry args={[0.7, 0.15, 16, 32]} />
+          <meshStandardMaterial color="#0f172a" wireframe />
+        </mesh>
+      }>
+        <Suspense fallback={
+          <mesh position={[0, 0.7, 0]}>
+            <torusGeometry args={[0.7, 0.15, 16, 32]} />
+            <meshStandardMaterial color="#0f172a" wireframe />
+          </mesh>
+        }>
+          <AnimatedGLTFModelNormalized path="/models/quantum_ring.glb" targetSize={1.5} playbackSpeed={1.0} />
+        </Suspense>
+      </EquipmentErrorBoundary>
+      <Text position={[0, 1.7, 0]} fontSize={0.22} color="#0f172a" anchorX="center" anchorY="bottom">
+        Quantum Ring (Animated GLB)
       </Text>
     </DraggableEquipment>
   );

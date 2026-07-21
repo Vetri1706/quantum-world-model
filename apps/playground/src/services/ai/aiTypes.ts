@@ -1,4 +1,4 @@
-export type AIProviderType = "openai" | "ollama" | "lmstudio" | "generic";
+export type AIProviderType = "groq" | "openai" | "gemini" | "anthropic" | "ollama" | "lmstudio" | "generic";
 
 export interface AISettings {
   provider: AIProviderType;
@@ -37,13 +37,13 @@ export interface AIBuilderResult {
 }
 
 export const DEFAULT_AI_SETTINGS: AISettings = {
-  provider: "openai",
-  authMode: "account",
+  provider: "groq",
+  authMode: "apikey",
   accountUser: "chatgpt-user@quantum-playground",
   apiKey: "",
-  baseUrl: "https://api.openai.com/v1",
-  model: "gpt-4o",
+  baseUrl: "https://api.groq.com/openai/v1",
+  model: "llama-3.3-70b-versatile",
   temperature: 0.2,
   maxTokens: 2048,
-  availableModels: ["gpt-4o", "gpt-4o-mini", "gpt-4.1", "gpt-5-mini"],
+  availableModels: ["llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b", "mixtral-8x7b-32768", "gemma2-9b-it"],
 };
