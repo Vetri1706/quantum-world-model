@@ -14,6 +14,7 @@ VALIDATORS = [
     "validate-references.py",
     "validate-units.py",
     "validate-review.py",
+    "validate-models.py",
 ]
 
 

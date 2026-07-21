@@ -37,6 +37,8 @@ export const AITrainingHubModal: React.FC<TrainingHubProps> = ({
           ? "training/mnisq.pdf"
           : selectedDataset === "ketgpt"
           ? "PennyLane qp.data.load('other', name='ketgpt')"
+          : selectedDataset === "vqc"
+          ? "training/quantum-model-on-a-real-dataset.ipynb"
           : "training/quantum_data.ipynb"
       }...`,
       `[CONFIG] Target: QWM Physics Transformer v2 | LR: ${learningRate} | Batch: ${batchSize} | Epochs: ${epochs}`,
@@ -135,7 +137,15 @@ export const AITrainingHubModal: React.FC<TrainingHubProps> = ({
                   onClick={() => !isTraining && setSelectedDataset("ipynb")}
                 >
                   <span className="ds-name">quantum_data.ipynb</span>
-                  <span className="ds-info">training/quantum_data.ipynb (State Vector Tensors)</span>
+                  <span className="ds-info">training/quantum_data.ipynb (PQK State Vectors)</span>
+                </label>
+
+                <label
+                  className={`ds-card ${selectedDataset === "vqc" ? "active" : ""}`}
+                  onClick={() => !isTraining && setSelectedDataset("vqc")}
+                >
+                  <span className="ds-name">quantum-model-on-a-real-dataset.ipynb</span>
+                  <span className="ds-info">training/quantum-model-on-a-real-dataset.ipynb (VQC Iris Model)</span>
                 </label>
               </div>
 

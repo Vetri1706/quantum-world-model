@@ -12,7 +12,12 @@ export function loadAISettings(): AISettings {
   } catch (err) {
     console.error("Failed to load AI settings:", err);
   }
-  return DEFAULT_AI_SETTINGS;
+  return {
+    ...DEFAULT_AI_SETTINGS,
+    provider: "ollama",
+    baseUrl: "http://localhost:11434",
+    model: "qwen2.5-coder:7b",
+  };
 }
 
 export function saveAISettings(settings: AISettings): void {
@@ -35,7 +40,7 @@ export async function fetchOllamaModels(baseUrl = "http://localhost:11434"): Pro
   } catch (err) {
     console.warn("Failed to fetch Ollama local models:", err);
   }
-  return ["llama3.1:latest", "qwen3:latest", "deepseek-r1:14b", "mistral:latest"];
+  return ["qwen2.5-coder:7b", "qwen2.5-coder:3b", "qwen2.5-coder:1.5b-instruct", "llama3.1:latest"];
 }
 
 export async function testAIConnection(settings: AISettings): Promise<{ success: boolean; message: string }> {
@@ -82,50 +87,68 @@ Simulation Metrics: ${JSON.stringify(context.metrics)}
 User Question: ${userQuery}
 `;
 
-  // Local fallback response generator if offline or no key set
+  // Fallback QWM response generator
   const fallbackResponse: AIResponse = {
-    content: `Based on the active apparatus parameters (${JSON.stringify(context.parameters)}), quantum wavefunction amplitude decays exponentially within the potential barrier. Transmission probability scales according to T ≈ 16(E/V₀)(1 - E/V₀)e^(-2κL).`,
+    content: `Based on Quantum World Model principles for ${context.experimentName}, wave amplitudes follow Schrödinger boundary conditions with parameters ${JSON.stringify(context.parameters)}.`,
     provider: settings.provider,
     model: settings.model,
     groundedConcepts: ["Wave Function", "Schrödinger Equation", "Probability Density"],
-    groundedSources: ["Griffiths Quantum Mechanics", "MIT OCW 8.04", "Feynman Lectures Vol. III"],
+    groundedSources: ["QWM Physics Engine", "Griffiths Quantum Mechanics", "MIT OCW 8.04"],
   };
 
   try {
-    let endpoint = "";
-    const headers: Record<string, string> = { "Content-Type": "application/json" };
-
-    if (settings.provider === "openai" || settings.provider === "generic" || settings.provider === "lmstudio") {
-      endpoint = `${settings.baseUrl || "https://api.openai.com/v1"}/chat/completions`;
+    if (settings.provider === "ollama") {
+      const res = await fetch(`${settings.baseUrl || "http://localhost:11434"}/api/generate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: settings.model || "qwen2.5-coder:7b",
+          prompt: `${SCIENTIST_SYSTEM_PROMPT}\n\n${promptMessage}`,
+          stream: false,
+        }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.response) {
+          return {
+            content: data.response.trim(),
+            provider: "ollama",
+            model: settings.model,
+            groundedConcepts: ["Wave Function", "Schrödinger Equation", "QWM Dynamics"],
+            groundedSources: ["Quantum World Model", "Ollama LLM"],
+          };
+        }
+      }
+    } else {
+      let endpoint = `${settings.baseUrl || "https://api.openai.com/v1"}/chat/completions`;
+      const headers: Record<string, string> = { "Content-Type": "application/json" };
       if (settings.apiKey) headers["Authorization"] = `Bearer ${settings.apiKey}`;
-    } else if (settings.provider === "ollama") {
-      endpoint = `${settings.baseUrl || "http://localhost:11434"}/v1/chat/completions`;
-    }
 
-    const body = {
-      model: settings.model,
-      temperature: settings.temperature,
-      max_tokens: settings.maxTokens,
-      messages: [
-        { role: "system", content: SCIENTIST_SYSTEM_PROMPT },
-        { role: "user", content: promptMessage },
-      ],
-    };
-
-    const res = await fetch(endpoint, { method: "POST", headers, body: JSON.stringify(body) });
-    if (res.ok) {
-      const data = await res.json();
-      const replyText = data.choices?.[0]?.message?.content || fallbackResponse.content;
-      return {
-        content: replyText,
-        provider: settings.provider,
+      const body = {
         model: settings.model,
-        groundedConcepts: ["Wave Function", "Schrödinger Equation", "Probability Density"],
-        groundedSources: ["Griffiths Quantum Mechanics", "MIT OCW 8.04", "Feynman Lectures Vol. III"],
+        temperature: settings.temperature,
+        max_tokens: settings.maxTokens,
+        messages: [
+          { role: "system", content: SCIENTIST_SYSTEM_PROMPT },
+          { role: "user", content: promptMessage },
+        ],
       };
+
+      const res = await fetch(endpoint, { method: "POST", headers, body: JSON.stringify(body) });
+      if (res.ok) {
+        const data = await res.json();
+        const replyText = data.choices?.[0]?.message?.content || fallbackResponse.content;
+        return {
+          content: replyText,
+          provider: settings.provider,
+          model: settings.model,
+          groundedConcepts: ["Wave Function", "Schrödinger Equation", "Probability Density"],
+          groundedSources: ["Griffiths Quantum Mechanics", "MIT OCW 8.04", "Feynman Lectures Vol. III"],
+        };
+      }
     }
   } catch (err) {
-    console.warn("AI Service API call failed, falling back to local grounded QWM response:", err);
+    console.warn("AI Service API call failed, falling back to local QWM response:", err);
   }
 
   return fallbackResponse;

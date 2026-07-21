@@ -1,0 +1,40 @@
+{
+  "pipeline": "QWM PyTorch Neural Network Training Pipeline",
+  "models": {
+    "quantum_dataset.csv": {
+      "checkpoint": "qwm-physics-v2-csv-custom.pt",
+      "model_type": "QWMFeasibilityRegressor",
+      "final_loss": 0.0073,
+      "accuracy": 91.52,
+      "input_dim": 3
+    },
+    "mnisq.pdf": {
+      "checkpoint": "qwm-physics-v2-mnisq-custom.pt",
+      "model_type": "QWMNISQPredictor",
+      "final_loss": 0.008,
+      "accuracy": 91.64,
+      "input_dim": 4
+    },
+    "quantum-model-on-a-real-dataset.ipynb": {
+      "checkpoint": "qwm-physics-v2-vqc-custom.pt",
+      "model_type": "VariationalQuantumClassifierNN",
+      "final_loss": 0.0771,
+      "accuracy": 96.0,
+      "input_dim": 4
+    },
+    "quantum_data.ipynb": {
+      "checkpoint": "qwm-physics-v2-ipynb-custom.pt",
+      "model_type": "ProjectedQuantumKernelNN",
+      "final_loss": 0.0087,
+      "accuracy": 100.0,
+      "input_dim": 10
+    },
+    "unified_transformer": {
+      "checkpoint": "qwm-physics-v2-unified-transformer.pt",
+      "model_type": "QWMPhysicsTransformer",
+      "final_loss": 0.0043,
+      "accuracy": 94.38,
+      "input_dim": 16
+    }
+  }
+}
