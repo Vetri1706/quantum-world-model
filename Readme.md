@@ -4,11 +4,11 @@
 
 Noeta is an AI-guided quantum physics laboratory. It pairs a trained **Quantum World Model (QWM)** — a physics simulation engine — with an interactive **3D web laboratory** and an **AI mentor** that teaches you the methodology of an experiment, lets you build it yourself, catches your mistakes, and explains what happened using the real numbers the simulation just computed. Built for Build Week with OpenAI Codex (used to build the QWM dataset parsing, core simulation engine, and interactive components) and GPT-5.6.
 
-Watch the demo · Try it live
+[Watch the demo](https://www.youtube.com/watch?v=0Wil1OZqYFE) · Try it live
 
 ## Demonstration
 
-<video src="./Recording 2026-07-22 022008.mp4" autoplay loop muted playsinline style="max-width: 100%; width: 100%; border-radius: 12px;"></video>
+![Noeta demo](demo.gif)
 
 ---
 
