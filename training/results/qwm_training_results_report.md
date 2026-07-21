@@ -8,7 +8,7 @@ This report presents the complete PyTorch training curves, validation metrics, a
 
 The graph below illustrates the training loss reduction across 40–50 epochs for all five QWM neural model architectures.
 
-![QWM Training Loss Curves](/Users/home/Quantum Playground/training/results/qwm_training_loss_curves.png)
+![QWM Training Loss Curves](qwm_training_loss_curves.png)
 
 > [!TIP]
 > **Key Observations**:
@@ -22,7 +22,7 @@ The graph below illustrates the training loss reduction across 40–50 epochs fo
 
 Comparison of final validation accuracy across all trained QWM model checkpoints:
 
-![QWM Model Accuracy Comparison](/Users/home/Quantum Playground/training/results/qwm_model_accuracy_comparison.png)
+![QWM Model Accuracy Comparison](qwm_model_accuracy_comparison.png)
 
 ### Model Performance Summary Table
 
@@ -40,7 +40,7 @@ Comparison of final validation accuracy across all trained QWM model checkpoints
 
 Detailed view of epoch-by-epoch loss reduction and accuracy trajectory for the multi-layer **QWM Physics Transformer**:
 
-![QWM Transformer Metrics](/Users/home/Quantum Playground/training/results/qwm_transformer_metrics.png)
+![QWM Transformer Metrics](qwm_transformer_metrics.png)
 
 > [!NOTE]
 > All trained PyTorch `.pt` model state dictionaries are verified and registered in [`qwm_models_manifest.json`](file:///Users/home/Quantum%20Playground/training/checkpoints/qwm_models_manifest.json) and pass all repository validation checks (`python3 validate.py`).
