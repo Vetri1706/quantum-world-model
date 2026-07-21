@@ -10,3 +10,4 @@ physicssolver/
 3d models/
 apps/playground/public/models/crystal_capsule*.glb
 apps/playground/dist/
+.vs/
